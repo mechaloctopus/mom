@@ -53,7 +53,7 @@ function QuickNav() {
     { id: 'cannabis', emoji: '🌿', label: 'Cannabis' },
     { id: 'probiotics', emoji: '❤️', label: 'Probiotics' },
     { id: 'medical', emoji: '🏥', label: 'Medical Reports' },
-    { id: 'plan', emoji: '📝', label: "Josh's Plan" },
+    { id: 'plan', emoji: '📝', label: 'Care Protocol' },
   ];
 
   const scrollTo = (id) => {
@@ -132,14 +132,14 @@ export default function App() {
               </div>
             </div>
             <p className="text-sm text-white/90 leading-relaxed">
-              A comprehensive, sourced collection of research, studies, and testimonials 
-              to help our family navigate treatment options with full transparency.
+              Research, medical records, sourced studies, and a proposed care protocol — 
+              compiled so our family can navigate treatment decisions with full transparency.
             </p>
             <div className="flex flex-wrap gap-2 mt-4">
-              <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">Brain Tumor Research</span>
-              <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">Alternative Treatments</span>
-              <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">Sourced Studies</span>
-              <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">Family Guide</span>
+              <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">Medical Records</span>
+              <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">70+ Sourced Studies</span>
+              <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">Treatment Options</span>
+              <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">Care Protocol</span>
             </div>
           </div>
         </div>

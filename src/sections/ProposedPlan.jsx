@@ -42,17 +42,16 @@ export default function ProposedPlan() {
     <section id="plan" className="section-card">
       <SectionHeader
         icon={<ClipboardList className="w-5 h-5" />}
-        title="Josh's Proposed Treatment & Care Plan"
+        title="Proposed Care Protocol"
         subtitle="Decision framework, nutrition, therapy, and monitoring"
         color="primary"
       />
 
       <div className="bg-gradient-to-br from-primary-50 to-indigo-50 border border-primary-100 rounded-2xl p-5 mb-5">
         <p className="text-sm text-gray-700 leading-relaxed mb-3">
-          Josh has spent extensive time researching and deliberating — reviewing published studies, 
-          gathering testimonials, consulting with multiple cutting-edge AI models for deep analysis, 
-          and reaching out to doctors who specialize in integrative cancer care. This proposal is the 
-          result of that research.
+          This protocol is the result of extensive research and deliberation — reviewing published studies, 
+          gathering patient testimonials, consulting with multiple cutting-edge AI models for deep analysis, 
+          and reaching out to doctors who specialize in integrative cancer care.
         </p>
         <p className="text-sm text-gray-700 leading-relaxed mb-3">
           This plan is <strong>intentional and deliberate</strong> — it is designed to adapt as new 
@@ -104,7 +103,7 @@ export default function ProposedPlan() {
         </InfoBox>
         <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 mb-3">
           <p className="text-[11px] text-blue-800 leading-relaxed">
-            <strong>Josh's current recommendation:</strong> Unless the biopsy is extremely non-invasive 
+            <strong>Recommendation:</strong> Unless the biopsy is extremely non-invasive 
             and in a safe location, or is absolutely required for a treatment decision Mom intends to make — 
             <strong>lean toward no biopsy</strong> at this time. If she is not planning to pursue chemo, 
             the main benefit of biopsy (treatment selection) is less relevant.
@@ -131,7 +130,7 @@ export default function ProposedPlan() {
         </div>
         <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 mb-3">
           <p className="text-[11px] text-blue-800 leading-relaxed">
-            <strong>Josh's perspective:</strong> This is likely Mom's decision to decline, which is understandable 
+            <strong>Perspective:</strong> This is likely Mom's decision to decline, which is understandable 
             given the modest survival benefit vs. significant quality-of-life impact. If she declines chemo, we 
             move forward with the alternative care plan below. All considerations must be laid on the table 
             transparently so she can decide with full knowledge.
@@ -251,8 +250,8 @@ export default function ProposedPlan() {
           </div>
           <p className="text-[11px] text-purple-700 leading-relaxed mb-3">
             The most difficult decision: should Mom consider, under a doctor's care, an ivermectin + 
-            mebendazole/fenbendazole anti-cancer protocol? Josh has been in contact with various doctors 
-            who could be on our team to supervise this approach.
+            mebendazole/fenbendazole anti-cancer protocol? We have been in contact with various doctors 
+            who could join our care team to supervise this approach.
           </p>
 
           <div className="space-y-2">
@@ -289,7 +288,7 @@ export default function ProposedPlan() {
         </div>
         <InfoBox variant="warning" title="Doctor Supervision Required">
           This protocol should ONLY be pursued under the care of a physician experienced with these 
-          medications. Josh has been in contact with doctors who specialize in this approach and who 
+          medications. We have been in contact with doctors who specialize in this approach and who 
           could join our care team. No one should self-medicate without medical oversight.
         </InfoBox>
       </DecisionBlock>
@@ -537,7 +536,7 @@ export default function ProposedPlan() {
       <div className="bg-gradient-to-br from-primary-600 via-primary-700 to-indigo-800 rounded-2xl p-6 text-white mb-4">
         <div className="flex items-center gap-3 mb-4">
           <HeartPulse className="w-6 h-6" />
-          <h3 className="text-base font-bold">Summary: Josh's Proposed Approach</h3>
+          <h3 className="text-base font-bold">Summary: Proposed Care Protocol</h3>
         </div>
 
         <div className="space-y-3 text-sm text-white/90 leading-relaxed">
@@ -604,7 +603,7 @@ export default function ProposedPlan() {
       </div>
 
       <div className="text-center text-xs text-gray-400 mt-4">
-        <p>Proposed by Josh — with love for our family</p>
+        <p>Compiled with love for our family</p>
         <p className="mt-1">This is a living document. Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
       </div>
     </section>

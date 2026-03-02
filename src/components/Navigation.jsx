@@ -19,7 +19,7 @@ const sections = [
   { id: 'cannabis', label: 'Cannabis Research', icon: <Leaf className="w-4 h-4" />, color: 'text-emerald-600' },
   { id: 'probiotics', label: 'Probiotics & Gut Health', icon: <Heart className="w-4 h-4" />, color: 'text-pink-600' },
   { id: 'medical', label: "Mom's Medical Reports", icon: <FileText className="w-4 h-4" />, color: 'text-blue-600' },
-  { id: 'plan', label: "Josh's Proposed Plan", icon: <ClipboardList className="w-4 h-4" />, color: 'text-primary-600' },
+  { id: 'plan', label: 'Proposed Care Protocol', icon: <ClipboardList className="w-4 h-4" />, color: 'text-primary-600' },
 ];
 
 export default function Navigation({ activeSection }) {
