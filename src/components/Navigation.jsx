@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   Menu, X, Heart, Brain, Pill, Shield, Beaker, Leaf,
   Apple, FlaskConical, AlertTriangle, Microscope,
-  Stethoscope, ChevronRight, Home, ClipboardList, FileText
+  Stethoscope, ChevronRight, Home, ClipboardList, FileText, Moon
 } from 'lucide-react';
 
 const sections = [
@@ -18,6 +18,7 @@ const sections = [
   { id: 'diet', label: 'Diet & Nutrition', icon: <Apple className="w-4 h-4" />, color: 'text-green-600' },
   { id: 'cannabis', label: 'Cannabis Research', icon: <Leaf className="w-4 h-4" />, color: 'text-emerald-600' },
   { id: 'probiotics', label: 'Probiotics & Gut Health', icon: <Heart className="w-4 h-4" />, color: 'text-pink-600' },
+  { id: 'sleepapnea', label: 'Sleep Apnea & Tumors', icon: <Moon className="w-4 h-4" />, color: 'text-red-600' },
   { id: 'medical', label: "Mom's Medical Reports", icon: <FileText className="w-4 h-4" />, color: 'text-blue-600' },
   { id: 'plan', label: 'Proposed Care Protocol', icon: <ClipboardList className="w-4 h-4" />, color: 'text-primary-600' },
 ];
