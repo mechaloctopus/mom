@@ -18,6 +18,7 @@ import MedicalReports from './sections/MedicalReports';
 import SleepApnea from './sections/SleepApnea';
 import BasalGanglia from './sections/BasalGanglia';
 import NutritionProtocol from './sections/NutritionProtocol';
+import DrugProtocol from './sections/DrugProtocol';
 
 function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -59,6 +60,7 @@ function QuickNav() {
     { id: 'basalganglia', emoji: '🔍', label: 'Basal Ganglia' },
     { id: 'nutrition', emoji: '🥗', label: 'Nutrition Plan' },
     { id: 'medical', emoji: '🏥', label: 'Medical Reports' },
+    { id: 'drugprotocol', emoji: '💊', label: 'Drug Protocol' },
     { id: 'plan', emoji: '📝', label: 'Care Protocol' },
   ];
 
@@ -97,7 +99,7 @@ export default function App() {
     const sectionIds = [
       'overview', 'chemo', 'biopsy', 'fenbendazole', 'ivermectin',
       'mebendazole', 'combination', 'safety', 'lionsmane', 'diet',
-      'cannabis', 'probiotics', 'sleepapnea', 'basalganglia', 'nutrition', 'medical', 'plan'
+      'cannabis', 'probiotics', 'sleepapnea', 'basalganglia', 'nutrition', 'medical', 'drugprotocol', 'plan'
     ];
 
     const observer = new IntersectionObserver(
@@ -180,6 +182,7 @@ export default function App() {
           <BasalGanglia />
           <NutritionProtocol />
           <MedicalReports />
+          <DrugProtocol />
           <ProposedPlan />
         </div>
 

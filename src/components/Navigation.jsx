@@ -22,6 +22,7 @@ const sections = [
   { id: 'basalganglia', label: 'Basal Ganglia Investigation', icon: <Search className="w-4 h-4" />, color: 'text-purple-600' },
   { id: 'nutrition', label: 'Nutrition & Supplement Plan', icon: <Utensils className="w-4 h-4" />, color: 'text-green-600' },
   { id: 'medical', label: "Mom's Medical Reports", icon: <FileText className="w-4 h-4" />, color: 'text-blue-600' },
+  { id: 'drugprotocol', label: 'Anti-Tumor Drug Protocol', icon: <Pill className="w-4 h-4" />, color: 'text-purple-600' },
   { id: 'plan', label: 'Proposed Care Protocol', icon: <ClipboardList className="w-4 h-4" />, color: 'text-primary-600' },
 ];
 
