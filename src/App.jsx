@@ -19,6 +19,7 @@ import SleepApnea from './sections/SleepApnea';
 import BasalGanglia from './sections/BasalGanglia';
 import NutritionProtocol from './sections/NutritionProtocol';
 import DrugProtocol from './sections/DrugProtocol';
+import ShoppingList from './sections/ShoppingList';
 
 function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -61,6 +62,7 @@ function QuickNav() {
     { id: 'nutrition', emoji: '🥗', label: 'Nutrition Plan' },
     { id: 'medical', emoji: '🏥', label: 'Medical Reports' },
     { id: 'drugprotocol', emoji: '💊', label: 'Drug Protocol' },
+    { id: 'shopping', emoji: '🛒', label: 'Shopping List' },
     { id: 'plan', emoji: '📝', label: 'Care Protocol' },
   ];
 
@@ -99,7 +101,7 @@ export default function App() {
     const sectionIds = [
       'overview', 'chemo', 'biopsy', 'fenbendazole', 'ivermectin',
       'mebendazole', 'combination', 'safety', 'lionsmane', 'diet',
-      'cannabis', 'probiotics', 'sleepapnea', 'basalganglia', 'nutrition', 'medical', 'drugprotocol', 'plan'
+      'cannabis', 'probiotics', 'sleepapnea', 'basalganglia', 'nutrition', 'medical', 'drugprotocol', 'shopping', 'plan'
     ];
 
     const observer = new IntersectionObserver(
@@ -183,6 +185,7 @@ export default function App() {
           <NutritionProtocol />
           <MedicalReports />
           <DrugProtocol />
+          <ShoppingList />
           <ProposedPlan />
         </div>
 

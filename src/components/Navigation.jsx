@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   Menu, X, Heart, Brain, Pill, Shield, Beaker, Leaf,
   Apple, FlaskConical, AlertTriangle, Microscope,
-  Stethoscope, ChevronRight, Home, ClipboardList, FileText, Moon, Search, Utensils
+  Stethoscope, ChevronRight, Home, ClipboardList, FileText, Moon, Search, Utensils, ShoppingCart
 } from 'lucide-react';
 
 const sections = [
@@ -23,6 +23,7 @@ const sections = [
   { id: 'nutrition', label: 'Nutrition & Supplement Plan', icon: <Utensils className="w-4 h-4" />, color: 'text-green-600' },
   { id: 'medical', label: "Mom's Medical Reports", icon: <FileText className="w-4 h-4" />, color: 'text-blue-600' },
   { id: 'drugprotocol', label: 'Anti-Tumor Drug Protocol', icon: <Pill className="w-4 h-4" />, color: 'text-purple-600' },
+  { id: 'shopping', label: 'Master Shopping List', icon: <ShoppingCart className="w-4 h-4" />, color: 'text-green-600' },
   { id: 'plan', label: 'Proposed Care Protocol', icon: <ClipboardList className="w-4 h-4" />, color: 'text-primary-600' },
 ];
 
