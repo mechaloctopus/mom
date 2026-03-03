@@ -144,7 +144,7 @@ export default function ShoppingList() {
         <Item
           name="Organic Barley Grass Powder"
           dose="1 tsp alternating with wheat grass — stirred into fresh juice"
-          note="Any organic brand — check Amazon or local health food store"
+          link="https://www.amazon.com/Organic-Barley-Grass-Powder-Antioxidants/dp/B00JGEQEAS"
         />
       </C>
 
@@ -153,6 +153,7 @@ export default function ShoppingList() {
         <Item
           name="Milk Thistle (Silymarin)"
           dose="420 mg/day (140 mg 3x daily) — LIVER PROTECTION"
+          link="https://www.nowfoods.com/products/supplements/silymarin-milk-thistle-extract-300-mg-veg-capsules"
           note="Primary hepatoprotectant — start 3-5 days before drug protocol begins"
         />
         <Item
@@ -247,7 +248,8 @@ export default function ShoppingList() {
         <Item
           name="Fenbendazole — Panacur C 222mg packets"
           dose="222 mg once daily, 3 days on / 4 days off"
-          note="Veterinary OTC — available at pet supply stores or Amazon. Physician should approve."
+          link="https://www.amazon.com/Panacur-Canine-Dewormer-Fenbendazole-Packages/dp/B010PLEQDE"
+          note="Veterinary OTC — physician should approve before starting"
         />
         <Item
           name="Ivermectin — 3mg or 6mg tablets"
@@ -257,11 +259,74 @@ export default function ShoppingList() {
       </C>
 
       {/* ─── JUICING ─── */}
-      <C title="Juicing Equipment" count="1 item" defaultOpen={false}>
+      <C title="Kitchen & Meal Prep" count="3 items" defaultOpen={false}>
         <Item
-          name="Cold-Press Juicer"
-          dose="If not already owned — needed for fresh green/beet juices"
-          note="Omega, Breville, or Hurom recommended. $100-300 range."
+          name="Cold-Press Juicer — Omega J8006HDS"
+          dose="For fresh green and beet juices (3x/week)"
+          link="https://www.amazon.com/Omega-J8006HDS-Nutrition-Center-Quiet/dp/B00CIU92S2"
+          note="Slow masticating juicer — preserves more nutrients than centrifugal"
+        />
+        <Item
+          name="Glass Meal Prep Containers — 10 Pack"
+          dose="For storing pre-made meals in fridge (chef preps weekly)"
+          link="https://www.amazon.com/Bayco-Glass-Meal-Prep-Containers/dp/B07F19DZR7"
+          note="BPA-free glass — microwave and dishwasher safe"
+        />
+        <Item
+          name="Weekly Pill Organizer — AM/PM"
+          dose="For organizing 15+ daily supplements into morning/midday/evening doses"
+          link="https://www.amazon.com/AUVON-Organizer-Moisture-Proof-Design-Supplement/dp/B07MYD6MRZ"
+          note="Essential for managing this many supplements — prevents missed doses"
+        />
+      </C>
+
+      {/* ─── CIRCADIAN & SLEEP ─── */}
+      <C title="Circadian Rhythm & Sleep Environment" count="4 items" defaultOpen={false}>
+        <Item
+          name="Wedge Pillow — Bed Elevation"
+          dose="Elevate head 30-45° during sleep to reduce apnea episodes and aspiration risk"
+          link="https://www.amazon.com/Cushy-Form-Wedge-Pillow-Sleeping/dp/B07RFZ3S51"
+          note="Elevating head reduces OSA severity and GERD — recommended for all apnea patients"
+        />
+        <Item
+          name="Blackout Curtains"
+          dose="For bedroom — complete darkness for circadian rhythm reset"
+          link="https://www.amazon.com/NICETOWN-Blackout-Curtains-Panels-Bedroom/dp/B0116PK4CU"
+          note="Dark environment triggers melatonin production — essential for sleep protocol"
+        />
+        <Item
+          name="Blue Light Blocking Glasses"
+          dose="Wear after sunset during wind-down routine"
+          link="https://www.amazon.com/TIJN-Blocking-Glasses-Computer-Eyeglasses/dp/B082DGR59T"
+          note="Blocks blue light that suppresses melatonin — supports circadian reset"
+        />
+        <Item
+          name="Sunrise Alarm Clock"
+          dose="Gradual light that simulates dawn — place at bedside"
+          link="https://www.amazon.com/Philips-SmartSleep-Wake-Up-Simulation-HF3520/dp/B0093162RM"
+          note="Gradual light wakes naturally, reinforces morning circadian signal"
+        />
+      </C>
+
+      {/* ─── HOME MONITORING ─── */}
+      <C title="Home Health Monitoring" count="3 items" defaultOpen={false}>
+        <Item
+          name="Blood Pressure Monitor — Upper Arm"
+          dose="Check daily — morning before medications"
+          link="https://www.amazon.com/OMRON-Platinum-Bluetooth-Pressure-Monitor/dp/B07N1GCYDP"
+          note="Monitor BP during drug protocol — report any significant changes to physician"
+        />
+        <Item
+          name="Digital Thermometer"
+          dose="Check if feeling unwell — fever may indicate infection"
+          link="https://www.amazon.com/iHealth-Thermometer-Adults-Forehead-PT3/dp/B085DX38LJ"
+          note="Forehead no-contact style — easy and hygienic"
+        />
+        <Item
+          name="Medical Records Binder"
+          dose="Organize all bloodwork results, imaging reports, medication logs"
+          link="https://www.amazon.com/UniKeep-Medical-Records-Organizer-Binder/dp/B07Q6JFXJQ"
+          note="Bring to every doctor appointment — keeps everything in one place"
         />
       </C>
 
@@ -269,30 +334,42 @@ export default function ShoppingList() {
 
       {/* ─── QUICK REFERENCE ─── */}
       <h3 className="text-sm font-bold text-gray-900 mb-3">Quick Count Summary</h3>
-      <div className="grid grid-cols-2 gap-2 mb-4">
+      <div className="grid grid-cols-3 gap-2 mb-4">
         <div className="bg-emerald-50 rounded-xl p-3 text-center">
           <p className="text-lg font-bold text-emerald-700">9</p>
-          <p className="text-[10px] text-emerald-600 font-medium">Daily Nutrition Supplements</p>
+          <p className="text-[10px] text-emerald-600 font-medium">Nutrition Supps</p>
         </div>
         <div className="bg-purple-50 rounded-xl p-3 text-center">
           <p className="text-lg font-bold text-purple-700">7</p>
-          <p className="text-[10px] text-purple-600 font-medium">Organ Protection Supplements</p>
+          <p className="text-[10px] text-purple-600 font-medium">Organ Protection</p>
         </div>
         <div className="bg-blue-50 rounded-xl p-3 text-center">
           <p className="text-lg font-bold text-blue-700">2</p>
-          <p className="text-[10px] text-blue-600 font-medium">Mushroom Supplements</p>
+          <p className="text-[10px] text-blue-600 font-medium">Mushroom Supps</p>
         </div>
         <div className="bg-amber-50 rounded-xl p-3 text-center">
           <p className="text-lg font-bold text-amber-700">3</p>
-          <p className="text-[10px] text-amber-600 font-medium">Anti-Tumor Drugs (Rx)</p>
+          <p className="text-[10px] text-amber-600 font-medium">Drugs (Rx)</p>
         </div>
         <div className="bg-pink-50 rounded-xl p-3 text-center">
           <p className="text-lg font-bold text-pink-700">2</p>
-          <p className="text-[10px] text-pink-600 font-medium">Cannabis Products</p>
+          <p className="text-[10px] text-pink-600 font-medium">Cannabis</p>
         </div>
         <div className="bg-red-50 rounded-xl p-3 text-center">
           <p className="text-lg font-bold text-red-700">4</p>
-          <p className="text-[10px] text-red-600 font-medium">Monitoring Equipment</p>
+          <p className="text-[10px] text-red-600 font-medium">Monitoring</p>
+        </div>
+        <div className="bg-teal-50 rounded-xl p-3 text-center">
+          <p className="text-lg font-bold text-teal-700">4</p>
+          <p className="text-[10px] text-teal-600 font-medium">Sleep/Circadian</p>
+        </div>
+        <div className="bg-orange-50 rounded-xl p-3 text-center">
+          <p className="text-lg font-bold text-orange-700">3</p>
+          <p className="text-[10px] text-orange-600 font-medium">Home Health</p>
+        </div>
+        <div className="bg-cyan-50 rounded-xl p-3 text-center">
+          <p className="text-lg font-bold text-cyan-700">3</p>
+          <p className="text-[10px] text-cyan-600 font-medium">Kitchen/Prep</p>
         </div>
       </div>
 
