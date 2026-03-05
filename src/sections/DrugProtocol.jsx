@@ -410,7 +410,7 @@ export default function DrugProtocol() {
             <tr className="border-b border-gray-100 bg-gray-50">
               <td className="p-2.5 font-bold text-blue-700">Week 8 (optional)</td>
               <td className="p-2.5">MR Spectroscopy of basal ganglia lesion</td>
-              <td className="p-2.5">If available, characterize the satellite lesion metabolically. Help distinguish tumor vs. hypoxic gliosis (see Basal Ganglia Investigation section).</td>
+              <td className="p-2.5">If available, characterize the satellite lesion metabolically. Help distinguish tumor vs. hypoxic gliosis (see Sleep Apnea & Brain section).</td>
             </tr>
             <tr className="border-b border-gray-100">
               <td className="p-2.5 font-bold text-red-700">Week 12</td>
@@ -558,7 +558,7 @@ export default function DrugProtocol() {
             Download Full Paper (PDF)
           </a>
         </div>
-        <p className="text-gray-500 mt-2">Additional protocol references from earlier sections: see Fenbendazole, Ivermectin, Mebendazole, and Combination Therapy sections for the full study library.</p>
+        <p className="text-gray-500 mt-2">Additional protocol references from earlier sections: see Benzimidazoles, Ivermectin, and Combination Therapy sections for the full study library.</p>
       </C>
 
       {/* ─── FOOTER ─── */}

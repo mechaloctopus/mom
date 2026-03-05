@@ -283,57 +283,16 @@ export default function NutritionProtocol() {
 
       <Divider />
 
-      {/* ─── DAILY SUPPLEMENT SCHEDULE ─── */}
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Daily Supplement & Cannabis Schedule</h3>
-
-      <div className="overflow-x-auto mb-5">
-        <table className="w-full text-[10px] border-collapse">
-          <thead><tr className="bg-emerald-50">
-            <th className="text-left p-2 font-bold text-emerald-800 border-b border-emerald-200">Time</th>
-            <th className="text-left p-2 font-bold text-emerald-800 border-b border-emerald-200">Supplement</th>
-            <th className="text-left p-2 font-bold text-emerald-800 border-b border-emerald-200">Dose</th>
-          </tr></thead>
-          <tbody>
-            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-600" colSpan="3">Morning — with breakfast</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Fish Oil (EPA/DHA Omega-3)</td><td className="p-2 font-medium">2,000 mg (≥600 mg DHA)</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Host Defense MyCommunity (Paul Stamets) or Lion's Mane</td><td className="p-2 font-medium">2 capsules (1,000 mg)</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Curcumin (with piperine/BioPerine)</td><td className="p-2 font-medium">1,000 mg</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Ashwagandha (KSM-66)</td><td className="p-2 font-medium">600 mg</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Bacopa Monnieri</td><td className="p-2 font-medium">300 mg (std. 50% bacosides)</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Lifeway Kefir (12-strain probiotic)</td><td className="p-2 font-medium">8 oz with food</td></tr>
-
-            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-600" colSpan="3">Midday — with lunch</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Green Tea Extract (EGCG)</td><td className="p-2 font-medium">400 mg</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Gotu Kola (Centella asiatica)</td><td className="p-2 font-medium">500 mg</td></tr>
-
-            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-600" colSpan="3">Afternoon — 2:00-3:00 PM</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2 text-emerald-700 font-medium">Cannabis Gummy — Daytime (1:1:1 THC:CBD:CBG)</td><td className="p-2 font-medium">5 mg THC / 5 mg CBD / 5 mg CBG</td></tr>
-
-            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-600" colSpan="3">Evening — with dinner</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Rosemary Extract (carnosic acid)</td><td className="p-2 font-medium">400 mg</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Lifeway Kefir (12-strain probiotic)</td><td className="p-2 font-medium">8 oz with food</td></tr>
-            <tr className="border-b border-gray-100"><td className="p-2"></td><td className="p-2">Fish Oil (2nd dose)</td><td className="p-2 font-medium">1,000 mg</td></tr>
-
-            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-600" colSpan="3">Bedtime — 30 min before sleep</td></tr>
-            <tr><td className="p-2"></td><td className="p-2 text-purple-700 font-medium">Cannabis Gummy — Nighttime (THC:CBD:CBN)</td><td className="p-2 font-medium">5 mg THC / 5 mg CBD / 5 mg CBN</td></tr>
-          </tbody>
-        </table>
+      {/* ─── SUPPLEMENT REFERENCE ─── */}
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4 mb-4">
+        <p className="text-xs font-bold text-purple-800 mb-1">Supplements, Drugs & Cannabis Protocol</p>
+        <p className="text-[11px] text-purple-700 leading-relaxed">
+          The complete supplement dosing schedule (25+ supplements organized by category), anti-tumor drug 
+          protocol (12-week plan), organ protection agents, cannabis protocol, bloodwork monitoring, and 
+          imaging timeline are all consolidated in the <strong>Drug & Supplement Protocol</strong> section. 
+          The <strong>Shopping List</strong> section has buy links for everything.
+        </p>
       </div>
-
-      <div className="bg-purple-50 border border-purple-100 rounded-xl p-4 mb-5">
-        <p className="text-xs font-bold text-purple-800 mb-1">Cannabis Protocol (Medical Card Required)</p>
-        <div className="text-[11px] text-purple-700 space-y-1">
-          <p><strong>Daytime (afternoon):</strong> 1:1:1 THC:CBD:CBG gummy (5/5/5 mg). Provides anti-inflammatory, anti-tumor, and neuroprotective effects with mild psychoactive component. CBG shows particular promise against glioblastoma.</p>
-          <p><strong>Nighttime (bedtime):</strong> THC:CBD:CBN gummy (5/5/5 mg). The CBN adds sedative properties to promote sleep and help regulate circadian rhythm. Taken 30 minutes before target bedtime.</p>
-          <p><strong>Note:</strong> Start at these doses and adjust based on tolerance. Some patients benefit from higher CBD ratios (2:1 CBD:THC). Consult with the dispensary pharmacist for product recommendations.</p>
-        </div>
-      </div>
-
-      <InfoBox variant="info" title="Wheat/Barley Grass">
-        Added to fresh juices on <strong>Wednesday, Friday, and Sunday</strong> (every other day). 
-        Mix 1 tsp organic wheat grass or barley grass powder into fresh juice. Rich in chlorophyll, 
-        antioxidants, and enzymes with documented anti-cancer properties.
-      </InfoBox>
 
       <Divider />
 
