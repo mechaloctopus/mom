@@ -143,50 +143,13 @@ export default function ProposedPlan() {
       {/* ───── PLAN A: NUTRITION ───── */}
       <DecisionBlock number="3" title="Nutrition & Supplement Plan (No-Brainer — Do This Regardless)" color="green">
         <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-4 mb-3">
-          <div className="flex items-center gap-2 mb-2">
-            <Utensils className="w-4 h-4 text-emerald-600" />
-            <p className="text-xs font-bold text-emerald-800">This is the easiest YES decision — we should do this no matter what.</p>
-          </div>
-          <p className="text-[11px] text-emerald-700 leading-relaxed mb-3">
-            Put Mom on a strict Mediterranean-based anti-cancer nutrition plan. Aaron has volunteered to cook, 
-            and others can help too. We all chip in to ensure she has the exact food required for optimal 
-            anti-cancer metabolism, neuroregeneration, and overall health.
+          <p className="text-xs font-bold text-emerald-800 mb-2">This is the easiest YES decision — do this no matter what.</p>
+          <p className="text-[11px] text-emerald-700 leading-relaxed mb-2">
+            Strict Mediterranean anti-cancer diet with 25+ targeted supplements, probiotics, and cannabis protocol. 
+            Aaron cooks, everyone helps. AI-planned weekly meals. Full 7-day meal plan with recipes, shopping list, 
+            and supplement schedule already prepared.
           </p>
-
-          <div className="space-y-2">
-            <div className="bg-white/70 rounded-lg p-3">
-              <p className="text-[11px] font-bold text-emerald-800">Core Diet</p>
-              <p className="text-[10px] text-emerald-600 mt-1">
-                Mediterranean diet: fatty fish (salmon, sardines), cruciferous vegetables (broccoli, kale), 
-                berries, extra virgin olive oil, walnuts, legumes, whole grains, garlic, onions, green tea. 
-                Minimize sugar, processed foods, red meat.
-              </p>
-            </div>
-            <div className="bg-white/70 rounded-lg p-3">
-              <p className="text-[11px] font-bold text-emerald-800">Supplements & Herbs</p>
-              <ul className="text-[10px] text-emerald-600 mt-1 space-y-0.5">
-                <li>• <strong>Lion's Mane mushroom</strong> — NGF/BDNF stimulation, neuroregeneration, anti-cancer</li>
-                <li>• <strong>Turmeric/Curcumin</strong> (with black pepper for absorption) — anti-inflammatory, anti-cancer, crosses blood-brain barrier</li>
-                <li>• <strong>CBD oil</strong> — neuroprotective, anti-cancer, anti-inflammatory, promotes neurogenesis</li>
-                <li>• <strong>Omega-3 fish oil</strong> (high DHA) — brain structure support, anti-inflammatory</li>
-                <li>• <strong>Ashwagandha</strong> — adaptogenic, neuroprotective, anti-cancer</li>
-                <li>• <strong>Bacopa Monnieri</strong> — BDNF enhancement, memory support</li>
-                <li>• <strong>Gotu Kola</strong> — neurogenesis, nerve repair</li>
-                <li>• <strong>Rosemary extract</strong> — carnosic acid, neuroprotective</li>
-                <li>• <strong>Green tea extract (EGCG)</strong> — anti-cancer, neuroprotective</li>
-                <li>• <strong>Fermented foods</strong> (kefir, yogurt, kimchi) — gut-brain axis, immune support</li>
-              </ul>
-            </div>
-            <div className="bg-white/70 rounded-lg p-3">
-              <p className="text-[11px] font-bold text-emerald-800">Meal Planning with AI</p>
-              <p className="text-[10px] text-emerald-600 mt-1">
-                We can use cutting-edge AI models to generate weekly meal plans tailored to anti-cancer 
-                nutrition, managing her specific dietary needs, taste preferences, and ensuring every meal 
-                is optimized. Shopping lists, prep instructions, and nutritional breakdowns can all be 
-                AI-generated and updated weekly.
-              </p>
-            </div>
-          </div>
+          <p className="text-[10px] text-emerald-600 font-bold">See: Nutrition Protocol section (full meal plan + recipes) · Drug & Supplement Protocol section (complete supplement dosing)</p>
         </div>
       </DecisionBlock>
 
@@ -244,52 +207,25 @@ export default function ProposedPlan() {
       {/* ───── PLAN C: ALTERNATIVE PROTOCOL ───── */}
       <DecisionBlock number="5" title="Alternative Treatment Protocol (Hardest Decision)" color="purple">
         <div className="bg-purple-50 border border-purple-100 rounded-xl p-4 mb-3">
-          <div className="flex items-center gap-2 mb-2">
-            <Pill className="w-4 h-4 text-purple-600" />
-            <p className="text-xs font-bold text-purple-800">Ivermectin + Mebendazole/Fenbendazole Protocol — Under Doctor Supervision</p>
-          </div>
-          <p className="text-[11px] text-purple-700 leading-relaxed mb-3">
-            The most difficult decision: should Mom consider, under a doctor's care, an ivermectin + 
-            mebendazole/fenbendazole anti-cancer protocol? We have been in contact with various doctors 
-            who could join our care team to supervise this approach.
+          <p className="text-xs font-bold text-purple-800 mb-2">Ivermectin + Mebendazole/Fenbendazole — 12-Week Trial Under Doctor Supervision</p>
+          <p className="text-[11px] text-purple-700 leading-relaxed mb-2">
+            Should Mom consider an anti-tumor drug protocol? We have contacted physicians who can supervise. 
+            The full 12-week dosing schedule, organ protection supplements, bloodwork monitoring, imaging timeline, 
+            and stop criteria are detailed in the Drug & Supplement Protocol section.
           </p>
-
-          <div className="space-y-2">
-            <div className="bg-white/70 rounded-lg p-3">
-              <p className="text-[11px] font-bold text-purple-800">Proposed Protocol Components</p>
-              <ul className="text-[10px] text-purple-600 mt-1 space-y-0.5">
-                <li>• <strong>Ivermectin</strong> — dosed per doctor guidance, targeting Akt/mTOR and WNT pathways</li>
-                <li>• <strong>Mebendazole or Fenbendazole</strong> — microtubule disruption, glucose inhibition (mebendazole preferred as it's FDA-approved for humans)</li>
-                <li>• <strong>Milk thistle (Silymarin)</strong> — liver protection during protocol</li>
-                <li>• <strong>Regular liver function monitoring</strong> — blood tests every 2–4 weeks</li>
-                <li>• <strong>Vitamin E, curcumin, CBD oil</strong> — supporting supplements per community protocols</li>
-              </ul>
-            </div>
-            <div className="bg-white/70 rounded-lg p-3">
-              <p className="text-[11px] font-bold text-purple-800">Monitoring Plan</p>
-              <ul className="text-[10px] text-purple-600 mt-1 space-y-0.5">
-                <li>• <strong>Baseline imaging</strong> — CT or MRI scan before starting protocol</li>
-                <li>• <strong>2-month minimum</strong> — commit to at least 2 months on protocol before assessing</li>
-                <li>• <strong>Follow-up imaging at 2 months</strong> — PET/CT scan to assess tumor response</li>
-                <li>• <strong>Blood work every 2–4 weeks</strong> — liver enzymes, CBC, tumor markers if available</li>
-                <li>• <strong>Symptom diary</strong> — track energy, appetite, cognition, side effects daily</li>
-              </ul>
-            </div>
-            <div className="bg-white/70 rounded-lg p-3">
-              <p className="text-[11px] font-bold text-purple-800">Decision Points</p>
-              <ul className="text-[10px] text-purple-600 mt-1 space-y-0.5">
-                <li>• <strong>If tumor shrinks (2–4 months):</strong> Continue protocol, maintain nutrition plan, continue monitoring</li>
-                <li>• <strong>If no change (2–4 months):</strong> Consider adjusting dosing or adding agents, continue monitoring</li>
-                <li>• <strong>If protocol doesn't work (4 months):</strong> Discontinue drugs, maintain nutrition plan, schedule monthly CT scans for 6 months to monitor developments</li>
-                <li>• <strong>If cancer is growing despite efforts:</strong> Return to biopsy option for more data, or prepare for hospice care with pain management if Mom chooses not to pursue chemo</li>
-              </ul>
-            </div>
+          <div className="bg-white/70 rounded-lg p-3 mb-2">
+            <p className="text-[11px] font-bold text-purple-800 mb-1">Key Decision Points:</p>
+            <ul className="text-[10px] text-purple-600 space-y-0.5">
+              <li>• <strong>Tumor shrinks (2–3 months):</strong> Continue protocol + monitoring</li>
+              <li>• <strong>No change (3 months):</strong> Adjust dosing, continue monitoring</li>
+              <li>• <strong>Protocol fails (3+ months):</strong> Stop drugs, maintain nutrition, monthly scans for 6 months</li>
+              <li>• <strong>Cancer growing:</strong> Re-evaluate biopsy or transition to comfort care per Mom's wishes</li>
+            </ul>
           </div>
+          <p className="text-[10px] text-purple-600 font-bold">See: Drug & Supplement Protocol section (full dosing, monitoring, stop criteria) · Shopping List (supplier links + pricing)</p>
         </div>
         <InfoBox variant="warning" title="Doctor Supervision Required">
-          This protocol should ONLY be pursued under the care of a physician experienced with these 
-          medications. We have been in contact with doctors who specialize in this approach and who 
-          could join our care team. No one should self-medicate without medical oversight.
+          This protocol must ONLY be pursued under physician care. No self-medication without medical oversight.
         </InfoBox>
       </DecisionBlock>
 

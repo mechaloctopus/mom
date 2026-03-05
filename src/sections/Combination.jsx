@@ -78,17 +78,11 @@ export default function Combination() {
         outcome="positive"
       />
 
-      <TestimonialCard
-        description="69-year-old with stage 4 lung cancer — improved in 2 months on combination protocol"
-        url="https://x.com/makismedicine/status/1932387904359481596?s=46"
-        outcome="positive"
-      />
-
       <XEmbed url="https://x.com/makismedicine/status/1918958115808285004" />
 
       <TestimonialCard
-        description="Pilot cured of cancer — full testimonial"
-        url="https://x.com/ivermectinkart/status/1958392281159127263?s=46"
+        description="69-year-old stage 4 lung cancer — improved in 2 months"
+        url="https://x.com/makismedicine/status/1932387904359481596?s=46"
         outcome="positive"
       />
 
@@ -99,26 +93,8 @@ export default function Combination() {
       />
 
       <TestimonialCard
-        description="Another breast cancer — positive outcome reported"
-        url="https://x.com/makismedicine/status/1833813144474403212?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Stage 3 lymphoma (terminal) — patient has recovered"
+        description="Stage 3 lymphoma (terminal) — patient recovered"
         url="https://x.com/makismedicine/status/2021298006268707028?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Paper on 3 patients using combination protocol — documented cases"
-        url="https://x.com/makismedicine/status/1956751625051341079?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Tumor shrinkage in 2 months across 2 different cancers"
-        url="https://x.com/makismedicine/status/1932387904359481596?s=46"
         outcome="positive"
       />
 
