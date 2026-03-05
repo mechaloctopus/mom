@@ -98,18 +98,46 @@ export default function ShoppingList() {
         />
       </C>
 
-      {/* ─── NUTRITION PROTOCOL SUPPLEMENTS ─── */}
-      <C title="Nutrition Protocol Supplements (Daily)" count="9 items" defaultOpen={true}>
+      {/* ─── ANTI-TUMOR BIOACTIVES ─── */}
+      <C title="Anti-Tumor Bioactive Supplements (NEW)" count="5 items" defaultOpen={true}>
         <Item
-          name="Fish Oil — Nordic Naturals Ultimate Omega"
-          dose="2,000 mg morning + 1,000 mg evening (≥600 mg DHA)"
-          link="https://www.nordicnaturals.com/products/ultimate-omega"
+          name="Black Seed Oil (Thymoquinone) — 2,000 mg/day"
+          dose="1,000 mg twice daily on empty stomach"
+          link="https://www.amazon.com/Amazing-Herbs-Premium-Black-Softgels/dp/B002RL8FBG"
+          note="Inhibits proliferation, promotes apoptosis, suppresses angiogenesis"
         />
         <Item
-          name="Curcumin / Turmeric — Qunol Extra Strength"
-          dose="1,000 mg daily — with breakfast"
+          name="Berberine — 1,000 mg/day"
+          dose="500 mg twice daily with food"
+          link="https://www.amazon.com/Toniiq-Berberine-Supplement-Concentrated-Standardized/dp/B085DPBK2M"
+          note="Cell cycle arrest, Akt/mTOR inhibitor, blood sugar control, chemosensitizer"
+        />
+        <Item
+          name="Olive Leaf Extract (Oleuropein) — 1,000 mg/day"
+          dose="500 mg twice daily with food"
+          link="https://www.amazon.com/Olive-Leaf-Extract-Oleuropein-Supplement/dp/B00F1J7KRA"
+          note="Anti-proliferative, anti-angiogenic, COX-2 suppression"
+        />
+        <Item
+          name="Modified Citrus Pectin — 15 g/day"
+          dose="5 g three times daily (powder in water, with food)"
+          link="https://www.amazon.com/EcoNugenics-PectaSol-Modified-Citrus-Pectin/dp/B001F1GJNU"
+          note="PectaSol-C brand — blocks galectin-3, core anti-metastasis agent"
+        />
+        <Item
+          name="Curcumin (Nano or w/ BioPerine) — 2,000 mg/day"
+          dose="1,000 mg twice daily with fatty food"
           link="https://www.qunol.com/products/extra-strength-turmeric-curcumin"
-          note="High absorption formula — no need for separate piperine"
+          note="Updated to 2,000 mg/day. Nano or BioPerine form for 20x absorption. Crosses BBB."
+        />
+      </C>
+
+      {/* ─── NEUROREGENERATION SUPPLEMENTS ─── */}
+      <C title="Neuroregeneration & Brain Health Supplements" count="7 items" defaultOpen={false}>
+        <Item
+          name="Fish Oil — Nordic Naturals Ultimate Omega"
+          dose="3,000 mg/day (2,000 AM + 1,000 PM, ≥600 mg DHA)"
+          link="https://www.nordicnaturals.com/products/ultimate-omega"
         />
         <Item
           name="Ashwagandha KSM-66 — NOW Foods"
@@ -331,29 +359,33 @@ export default function ShoppingList() {
       {/* ─── QUICK REFERENCE ─── */}
       <h3 className="text-sm font-bold text-gray-900 mb-3">Quick Count Summary</h3>
       <div className="grid grid-cols-3 gap-2 mb-4">
-        <div className="bg-emerald-50 rounded-xl p-3 text-center">
-          <p className="text-lg font-bold text-emerald-700">9</p>
-          <p className="text-[10px] text-emerald-600 font-medium">Nutrition Supps</p>
-        </div>
         <div className="bg-purple-50 rounded-xl p-3 text-center">
-          <p className="text-lg font-bold text-purple-700">7</p>
-          <p className="text-[10px] text-purple-600 font-medium">Organ Protection</p>
+          <p className="text-lg font-bold text-purple-700">5</p>
+          <p className="text-[10px] text-purple-600 font-medium">Anti-Tumor Bioactives</p>
+        </div>
+        <div className="bg-amber-50 rounded-xl p-3 text-center">
+          <p className="text-lg font-bold text-amber-700">7</p>
+          <p className="text-[10px] text-amber-600 font-medium">Brain/Neuro Supps</p>
+        </div>
+        <div className="bg-emerald-50 rounded-xl p-3 text-center">
+          <p className="text-lg font-bold text-emerald-700">7</p>
+          <p className="text-[10px] text-emerald-600 font-medium">Organ Protection</p>
         </div>
         <div className="bg-blue-50 rounded-xl p-3 text-center">
           <p className="text-lg font-bold text-blue-700">2</p>
           <p className="text-[10px] text-blue-600 font-medium">Mushroom Supps</p>
         </div>
-        <div className="bg-amber-50 rounded-xl p-3 text-center">
-          <p className="text-lg font-bold text-amber-700">3</p>
-          <p className="text-[10px] text-amber-600 font-medium">Drugs (Rx)</p>
+        <div className="bg-red-50 rounded-xl p-3 text-center">
+          <p className="text-lg font-bold text-red-700">2</p>
+          <p className="text-[10px] text-red-600 font-medium">Anti-Tumor Drugs</p>
         </div>
         <div className="bg-pink-50 rounded-xl p-3 text-center">
           <p className="text-lg font-bold text-pink-700">2</p>
           <p className="text-[10px] text-pink-600 font-medium">Cannabis</p>
         </div>
-        <div className="bg-red-50 rounded-xl p-3 text-center">
-          <p className="text-lg font-bold text-red-700">4</p>
-          <p className="text-[10px] text-red-600 font-medium">Monitoring</p>
+        <div className="bg-indigo-50 rounded-xl p-3 text-center">
+          <p className="text-lg font-bold text-indigo-700">4</p>
+          <p className="text-[10px] text-indigo-600 font-medium">Monitoring</p>
         </div>
         <div className="bg-teal-50 rounded-xl p-3 text-center">
           <p className="text-lg font-bold text-teal-700">4</p>

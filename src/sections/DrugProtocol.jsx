@@ -180,66 +180,99 @@ export default function DrugProtocol() {
 
       <Divider />
 
-      {/* ─── ORGAN PROTECTION ─── */}
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Organ Protection & Support Supplements</h3>
-      <p className="text-xs text-gray-500 mb-3">Taken daily throughout the 12-week protocol to protect liver, kidneys, and GI system.</p>
+      {/* ─── COMPLETE SUPPLEMENT PROTOCOL ─── */}
+      <h3 className="text-sm font-bold text-gray-900 mb-3">Complete Supplement & Dosing Protocol</h3>
+      <p className="text-xs text-gray-500 mb-3">ALL supplements in one place — anti-tumor bioactives, organ protection, neuroregeneration, and cannabis. Daily unless noted.</p>
 
-      <div className="overflow-x-auto mb-5">
+      <C title="Anti-Tumor Bioactive Supplements" defaultOpen={true}>
         <table className="w-full text-[10px] border-collapse">
-          <thead><tr className="bg-emerald-50">
-            <th className="text-left p-2.5 font-bold text-emerald-800 border-b border-emerald-200">Supplement</th>
-            <th className="text-left p-2.5 font-bold text-emerald-800 border-b border-emerald-200">Dose</th>
-            <th className="text-left p-2.5 font-bold text-emerald-800 border-b border-emerald-200">Purpose</th>
+          <thead><tr className="bg-purple-50">
+            <th className="text-left p-2 font-bold text-purple-800 border-b border-purple-200">Supplement</th>
+            <th className="text-left p-2 font-bold text-purple-800 border-b border-purple-200">Dose</th>
+            <th className="text-left p-2 font-bold text-purple-800 border-b border-purple-200">Timing & Notes</th>
           </tr></thead>
           <tbody>
-            <tr className="border-b border-gray-100">
-              <td className="p-2.5 font-bold text-gray-800">Milk Thistle (Silymarin)</td>
-              <td className="p-2.5">420 mg/day (140 mg 3x daily)</td>
-              <td className="p-2.5"><strong>Liver protection</strong> — primary hepatoprotectant. Supports liver detoxification of drug metabolites.</td>
-            </tr>
-            <tr className="border-b border-gray-100 bg-gray-50">
-              <td className="p-2.5 font-bold text-gray-800">NAC (N-Acetyl Cysteine)</td>
-              <td className="p-2.5">600 mg twice daily (1,200 mg/day)</td>
-              <td className="p-2.5"><strong>Liver + kidney protection</strong> — precursor to glutathione, the body's master antioxidant. Protects against oxidative damage from drug metabolism.</td>
-            </tr>
-            <tr className="border-b border-gray-100">
-              <td className="p-2.5 font-bold text-gray-800">Vitamin E (mixed tocopherols)</td>
-              <td className="p-2.5">400 IU daily</td>
-              <td className="p-2.5"><strong>Cell membrane protection</strong> — fat-soluble antioxidant. Part of the original Tippens protocol. Protects healthy cells during treatment.</td>
-            </tr>
-            <tr className="border-b border-gray-100 bg-gray-50">
-              <td className="p-2.5 font-bold text-gray-800">CoQ10 (Ubiquinol form)</td>
-              <td className="p-2.5">200 mg daily</td>
-              <td className="p-2.5"><strong>Mitochondrial + heart protection</strong> — supports cellular energy production and protects cardiac tissue.</td>
-            </tr>
-            <tr className="border-b border-gray-100">
-              <td className="p-2.5 font-bold text-gray-800">Alpha Lipoic Acid (ALA)</td>
-              <td className="p-2.5">300 mg twice daily (600 mg/day)</td>
-              <td className="p-2.5"><strong>Nerve + liver protection</strong> — both water- and fat-soluble antioxidant. Crosses BBB. Regenerates other antioxidants (vitamin C, E, glutathione).</td>
-            </tr>
-            <tr className="border-b border-gray-100 bg-gray-50">
-              <td className="p-2.5 font-bold text-gray-800">Quercetin</td>
-              <td className="p-2.5">500 mg twice daily (1,000 mg/day)</td>
-              <td className="p-2.5"><strong>Anti-inflammatory + synergist</strong> — enhances bioavailability of other agents. Zinc ionophore. Anti-tumor properties. Protects GI lining.</td>
-            </tr>
-            <tr className="border-b border-gray-100">
-              <td className="p-2.5 font-bold text-gray-800">Zinc (picolinate)</td>
-              <td className="p-2.5">30 mg daily</td>
-              <td className="p-2.5"><strong>Immune support</strong> — essential for immune cell function. Works with ivermectin and quercetin as zinc ionophores.</td>
-            </tr>
-            <tr>
-              <td className="p-2.5 font-bold text-gray-800">Magnesium (glycinate)</td>
-              <td className="p-2.5">400 mg at bedtime</td>
-              <td className="p-2.5"><strong>Nerve + muscle protection</strong> — supports neurological function, reduces seizure threshold, promotes sleep. Glycinate form is gentle on GI.</td>
-            </tr>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Curcumin (nano or w/ piperine)</td><td className="p-2">2,000 mg/day (1,000 mg 2x)</td><td className="p-2">With fatty food AM + PM. Nano-curcumin or BioPerine for 20x+ absorption. Anti-inflammatory, inhibits NF-κB, PI3K/Akt/mTOR, crosses BBB.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Black Seed Oil (Thymoquinone)</td><td className="p-2">2,000 mg/day (1,000 mg 2x)</td><td className="p-2">Empty stomach AM + PM. Inhibits proliferation, promotes apoptosis, suppresses angiogenesis, anti-inflammatory.</td></tr>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Berberine</td><td className="p-2">1,000 mg/day (500 mg 2x)</td><td className="p-2">With food AM + midday. Cell cycle arrest, inhibits Akt/mTOR & NF-κB, blood sugar control (starves cancer), chemosensitizer.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Modified Citrus Pectin</td><td className="p-2">15 g/day (5 g 3x)</td><td className="p-2">With food AM + midday + PM. Blocks galectin-3 (cancer cell adhesion/spread). Core anti-metastasis agent. Powder mixed into water.</td></tr>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Olive Leaf Extract (Oleuropein)</td><td className="p-2">1,000 mg/day (500 mg 2x)</td><td className="p-2">With food midday + PM. Inhibits proliferation, promotes apoptosis, suppresses angiogenesis/metastasis via COX-2.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Quercetin (w/ Bromelain)</td><td className="p-2">1,000 mg/day (500 mg 2x)</td><td className="p-2">AM + PM. Anti-inflammatory, zinc ionophore, enhances other agents, anti-tumor. Protects GI lining.</td></tr>
+            <tr><td className="p-2 font-bold text-gray-800">EGCG Green Tea Extract</td><td className="p-2">400 mg/day</td><td className="p-2">With lunch. Anti-cancer, anti-angiogenic, neuroprotective.</td></tr>
           </tbody>
         </table>
-      </div>
+      </C>
 
-      <InfoBox variant="warning" title="These Are IN ADDITION to the Nutrition Protocol Supplements">
-        The fish oil, Lion's Mane/Host Defense, curcumin, ashwagandha, bacopa, gotu kola, rosemary extract, 
-        green tea extract, kefir probiotics, and cannabis protocol from the Nutrition section continue unchanged. 
-        The supplements listed above are <strong>additional organ-protection agents</strong> specific to the drug protocol.
+      <C title="Neuroregeneration & Brain Health Supplements" defaultOpen={false}>
+        <table className="w-full text-[10px] border-collapse">
+          <thead><tr className="bg-amber-50">
+            <th className="text-left p-2 font-bold text-amber-800 border-b border-amber-200">Supplement</th>
+            <th className="text-left p-2 font-bold text-amber-800 border-b border-amber-200">Dose</th>
+            <th className="text-left p-2 font-bold text-amber-800 border-b border-amber-200">Timing & Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Fish Oil (EPA/DHA Omega-3)</td><td className="p-2">3,000 mg/day (2,000 AM + 1,000 PM)</td><td className="p-2">With food. High DHA (≥600 mg). Brain structure support, anti-inflammatory, membrane repair.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Host Defense MyCommunity or Lion's Mane</td><td className="p-2">1,000 mg/day (2 caps)</td><td className="p-2">With breakfast. NGF/BDNF stimulation, neuroregeneration, anti-tumor immunity (17 mushroom species).</td></tr>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Lion's Mane Powder (additional)</td><td className="p-2">1 tsp/day</td><td className="p-2">In kefir smoothie. Extra NGF support beyond capsules.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Ashwagandha KSM-66</td><td className="p-2">600 mg/day</td><td className="p-2">With breakfast. Adaptogenic, neuroprotective, anti-cancer withanolides, reduces cortisol.</td></tr>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Bacopa Monnieri</td><td className="p-2">300 mg/day (std. 50% bacosides)</td><td className="p-2">With breakfast. BDNF enhancement, memory + cognition recovery.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Gotu Kola</td><td className="p-2">500 mg/day</td><td className="p-2">With lunch. Neurogenesis, nerve regeneration, neuroprotective after ischemic injury.</td></tr>
+            <tr><td className="p-2 font-bold text-gray-800">Rosemary Extract</td><td className="p-2">400 mg/day</td><td className="p-2">With dinner. Carnosic acid — neuroprotective, anti-glioblastoma activity.</td></tr>
+          </tbody>
+        </table>
+      </C>
+
+      <C title="Organ Protection Supplements" defaultOpen={false}>
+        <table className="w-full text-[10px] border-collapse">
+          <thead><tr className="bg-emerald-50">
+            <th className="text-left p-2 font-bold text-emerald-800 border-b border-emerald-200">Supplement</th>
+            <th className="text-left p-2 font-bold text-emerald-800 border-b border-emerald-200">Dose</th>
+            <th className="text-left p-2 font-bold text-emerald-800 border-b border-emerald-200">Timing & Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Milk Thistle (Silymarin)</td><td className="p-2">420 mg/day (140 mg 3x)</td><td className="p-2">AM + midday + PM. PRIMARY liver protectant. Start 3-5 days before drugs.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">NAC (N-Acetyl Cysteine)</td><td className="p-2">1,200 mg/day (600 mg 2x)</td><td className="p-2">AM + PM. Glutathione precursor. Liver + kidney protection.</td></tr>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Alpha Lipoic Acid</td><td className="p-2">600 mg/day (300 mg 2x)</td><td className="p-2">Midday + PM. Nerve + liver protection. Crosses BBB. Regenerates vitamins C, E, glutathione.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Vitamin E (mixed tocopherols)</td><td className="p-2">400 IU/day</td><td className="p-2">With breakfast. Cell membrane protection. Part of Tippens protocol.</td></tr>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">CoQ10 (Ubiquinol)</td><td className="p-2">200 mg/day</td><td className="p-2">With breakfast. Mitochondrial + heart protection.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Zinc (picolinate)</td><td className="p-2">30 mg/day</td><td className="p-2">With dinner. Immune support. Zinc ionophore synergy with ivermectin + quercetin.</td></tr>
+            <tr><td className="p-2 font-bold text-gray-800">Magnesium (glycinate)</td><td className="p-2">400 mg at bedtime</td><td className="p-2">Bedtime. Nerve/muscle support, reduces seizure threshold, promotes sleep.</td></tr>
+          </tbody>
+        </table>
+      </C>
+
+      <C title="Probiotic & Gut Health" defaultOpen={false}>
+        <table className="w-full text-[10px] border-collapse">
+          <thead><tr className="bg-pink-50">
+            <th className="text-left p-2 font-bold text-pink-800 border-b border-pink-200">Item</th>
+            <th className="text-left p-2 font-bold text-pink-800 border-b border-pink-200">Dose</th>
+            <th className="text-left p-2 font-bold text-pink-800 border-b border-pink-200">Timing & Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Lifeway Kefir (12-strain)</td><td className="p-2">8 oz twice daily</td><td className="p-2">With breakfast + dinner. Gut-brain axis support, anti-tumor immunity.</td></tr>
+            <tr><td className="p-2 font-bold text-gray-800">Wheat/Barley Grass Powder</td><td className="p-2">1 tsp every other day</td><td className="p-2">In fresh juice (Wed/Fri/Sun). Chlorophyll, antioxidants, anti-cancer enzymes.</td></tr>
+          </tbody>
+        </table>
+      </C>
+
+      <C title="Cannabis Protocol (Medical Card)" defaultOpen={false}>
+        <table className="w-full text-[10px] border-collapse">
+          <thead><tr className="bg-green-50">
+            <th className="text-left p-2 font-bold text-green-800 border-b border-green-200">Product</th>
+            <th className="text-left p-2 font-bold text-green-800 border-b border-green-200">Dose</th>
+            <th className="text-left p-2 font-bold text-green-800 border-b border-green-200">Timing & Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Daytime: 1:1:1 THC:CBD:CBG</td><td className="p-2">5/5/5 mg gummy</td><td className="p-2">Afternoon (2-3 PM). Anti-tumor, anti-inflammatory, neuroprotective. CBG shows GBM promise.</td></tr>
+            <tr><td className="p-2 font-bold text-gray-800">Nighttime: THC:CBD:CBN</td><td className="p-2">5/5/5 mg gummy</td><td className="p-2">30 min before sleep. CBN sedative for circadian rhythm reset.</td></tr>
+          </tbody>
+        </table>
+      </C>
+
+      <InfoBox variant="info" title="Total Daily Supplement Count">
+        <strong>25 supplements + 2 cannabis products + 3 anti-tumor drugs</strong> = 30 items managed daily. 
+        Use the AM/PM pill organizer from the Shopping List. The physician should review this complete list 
+        for any interactions. Modified Citrus Pectin is taken as powder in water, not capsules.
       </InfoBox>
 
       <Divider />
