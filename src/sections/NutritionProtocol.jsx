@@ -101,6 +101,164 @@ export default function NutritionProtocol() {
         color="green"
       />
 
+      {/* ─── NUTRITION GUIDANCE ARTICLE ─── */}
+      <C title="The Anti-Cancer Diet: A Complete Guide for Our Family" defaultOpen={true}>
+        <div className="space-y-4">
+          {/* PET SCAN / SUGAR VISUAL */}
+          <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+            <p className="font-bold text-red-900 mb-2">Why Sugar Feeds Tumors — The PET Scan Proof</p>
+            <p className="text-gray-700 mb-2">
+              When doctors need to find tumors in the body, they inject a radioactive <strong>sugar solution</strong> (fluorodeoxyglucose / FDG) 
+              and watch where it goes on a PET scan. <strong>Tumors light up because they consume glucose at 
+              up to 200x the rate of normal cells.</strong> This is called the <strong>Warburg Effect</strong> — 
+              cancer cells are addicted to sugar for energy.
+            </p>
+            <p className="text-gray-700 mb-2">
+              The fact that doctors literally use dyed sugar to find cancer tells you everything you need 
+              to know about sugar and tumors. Every gram of refined sugar in the diet is potential fuel 
+              for tumor growth.
+            </p>
+            <p className="text-[10px] text-red-600">Source: <a href="https://pubmed.ncbi.nlm.nih.gov/15297418/" target="_blank" rel="noopener noreferrer" className="underline">Warburg Effect in cancer metabolism (PMID: 15297418)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/22972295/" target="_blank" rel="noopener noreferrer" className="underline">FDG-PET and tumor glucose metabolism (PMID: 22972295)</a></p>
+          </div>
+
+          {/* GLUCOSE vs FRUCTOSE vs SUCROSE */}
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <p className="font-bold text-amber-900 mb-2">Glucose vs. Fructose vs. Sucrose — Are They All Bad?</p>
+            <div className="space-y-2 text-gray-700">
+              <p><strong>Glucose:</strong> The primary fuel for most cancer cells. Tumors have upregulated glucose 
+              transporters (GLUT1) that suck it in. Refined glucose (white sugar, bread, pasta, white rice) 
+              causes rapid blood sugar spikes that directly feed tumors. <strong>Minimize aggressively.</strong></p>
+              <p><strong>Fructose:</strong> Processed differently than glucose — metabolized primarily in the liver. 
+              Research shows fructose may actually be <em>worse</em> than glucose for some cancers: it promotes 
+              pancreatic cancer cell proliferation, drives de novo lipogenesis (fat creation that tumors use for 
+              membranes), and activates cancer-promoting pathways. High-fructose corn syrup is particularly harmful. 
+              <strong>Avoid all added fructose</strong> (HFCS, agave syrup, fruit juice concentrates).</p>
+              <p><strong>Sucrose (table sugar):</strong> Is 50% glucose + 50% fructose — the worst of both worlds. 
+              Provides glucose directly to tumors AND fructose for liver-mediated cancer promotion. <strong>Eliminate entirely.</strong></p>
+              <p><strong>Bottom line:</strong> All refined sugars feed cancer through different but complementary mechanisms. 
+              The only acceptable sweet sources are <strong>whole fruits</strong> (fiber slows absorption), small amounts 
+              of raw honey, and date syrup — and even these should be moderate.</p>
+            </div>
+            <p className="text-[10px] text-amber-600 mt-2">Source: <a href="https://pubmed.ncbi.nlm.nih.gov/20660076/" target="_blank" rel="noopener noreferrer" className="underline">Fructose and pancreatic cancer (PMID: 20660076)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/29330843/" target="_blank" rel="noopener noreferrer" className="underline">Sugar and cancer: updated review (PMID: 29330843)</a></p>
+          </div>
+
+          {/* SPIRIT OF THE MEDITERRANEAN DIET */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+            <p className="font-bold text-emerald-900 mb-2">The Spirit of the Mediterranean Diet</p>
+            <p className="text-gray-700 mb-2">
+              The Mediterranean diet isn't a rigid rulebook — it's a <strong>philosophy of eating</strong>. 
+              It comes from cultures where people cooked with fresh, local ingredients, ate together as families, 
+              and prioritized whole foods over processed ones. For anti-cancer purposes, we're taking this 
+              philosophy and optimizing it with modern research.
+            </p>
+            <p className="text-gray-700 mb-2"><strong>The core principles:</strong></p>
+            <ul className="space-y-1 text-gray-700 mb-2">
+              <li>• <strong>Abundance:</strong> Vegetables, leafy greens, herbs, garlic, onions, olive oil — eat as much as you want</li>
+              <li>• <strong>Daily:</strong> Berries, nuts (no walnuts — allergy), legumes, whole grains, fermented foods</li>
+              <li>• <strong>Several times/week:</strong> Fatty fish (salmon, sardines, mackerel), eggs, poultry</li>
+              <li>• <strong>Sparingly:</strong> Red meat (1-2x/month max), natural sweeteners</li>
+              <li>• <strong>Never:</strong> Refined sugar, processed foods, fast food, soda, HFCS, trans fats</li>
+            </ul>
+            <p className="text-gray-700">
+              The emphasis is on <strong>anti-inflammatory, antioxidant-rich, nutrient-dense whole foods</strong> — 
+              with extra virgin olive oil as the primary fat. Every meal should be colorful, fresh, and 
+              made from real ingredients you can name.
+            </p>
+          </div>
+
+          {/* IS FRUIT OK? */}
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+            <p className="font-bold text-blue-900 mb-2">Is Fruit OK? Yes — With Guidance</p>
+            <p className="text-gray-700 mb-2">
+              <strong>Whole fruits are not the enemy.</strong> Despite containing natural sugars, whole fruits 
+              come packaged with fiber, water, vitamins, minerals, and powerful anti-cancer phytochemicals 
+              (anthocyanins, ellagic acid, quercetin) that actually <em>fight</em> cancer. The fiber slows 
+              sugar absorption dramatically — a cup of blueberries does not spike blood sugar like a 
+              tablespoon of white sugar.
+            </p>
+            <p className="font-bold text-blue-800 mb-1">Best fruits (high anti-cancer, low glycemic):</p>
+            <ul className="space-y-0.5 text-gray-700 mb-2">
+              <li>• <strong>Berries</strong> — blueberries, blackberries, raspberries (among the most powerful anti-cancer foods known)</li>
+              <li>• <strong>Citrus</strong> — lemons, limes, oranges (vitamin C, limonene)</li>
+              <li>• <strong>Avocado</strong> — technically a fruit, loaded with healthy fats</li>
+              <li>• <strong>Apples</strong> — quercetin in skin, good fiber</li>
+              <li>• <strong>Pomegranate</strong> — potent antioxidant, anti-tumor punicalagins</li>
+            </ul>
+            <p className="font-bold text-amber-800 mb-1">Limit these (higher sugar):</p>
+            <ul className="space-y-0.5 text-gray-700 mb-2">
+              <li>• Grapes, bananas, mangoes, pineapple — eat small portions, not large bowls</li>
+              <li>• Dried fruits — concentrated sugar, eat only a few (dates, figs are OK in small amounts)</li>
+            </ul>
+            <p className="font-bold text-red-800 mb-1">Avoid completely:</p>
+            <ul className="space-y-0.5 text-gray-700">
+              <li>• Fruit juices (no fiber = pure sugar hit), smoothies with added sugar, canned fruit in syrup</li>
+              <li>• <strong>Cranberries</strong> — Mom is allergic</li>
+            </ul>
+          </div>
+
+          {/* MEAT GUIDANCE */}
+          <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
+            <p className="font-bold text-orange-900 mb-2">Meat, Fish & Protein — What's Safe?</p>
+            <div className="space-y-2 text-gray-700">
+              <p><strong className="text-emerald-700">Best proteins (eat freely):</strong> Wild-caught fatty fish 
+              (salmon, sardines, mackerel, cod, halibut) — omega-3 rich, anti-inflammatory, brain-supportive. 
+              Aim for 3-4 fish meals per week. Also: organic eggs, organic chicken/turkey.</p>
+
+              <p><strong className="text-amber-700">OK sparingly (1-2x/month):</strong> Grass-fed beef, lamb — 
+              red meat contains iron and B12 but also heme iron that may promote oxidative stress in excess. 
+              Our meal plan includes lamb once per week, which is reasonable. Choose grass-fed/pasture-raised 
+              when possible — better omega-3:omega-6 ratio.</p>
+
+              <p><strong className="text-red-700">Avoid or strictly limit:</strong></p>
+              <ul className="space-y-0.5">
+                <li>• <strong>Processed meats</strong> (bacon, sausage, hot dogs, deli meats) — WHO classifies as Group 1 carcinogen (same category as cigarettes). Nitrates/nitrites form N-nitroso compounds that are directly carcinogenic.</li>
+                <li>• <strong>Charred/blackened meat</strong> — HCAs and PAHs from high-heat cooking are carcinogenic. If grilling, use lower heat and marinades (herbs, EVOO, citrus reduce HCA formation by up to 90%).</li>
+                <li>• <strong>Factory-farmed pork</strong> — high omega-6, inflammatory. If eating pork at all, choose pasture-raised and very sparingly.</li>
+                <li>• <strong>Shellfish</strong> — Mom is allergic (shrimp, crab, lobster, mussels, clams).</li>
+              </ul>
+            </div>
+            <p className="text-[10px] text-orange-600 mt-2">Source: <a href="https://pubmed.ncbi.nlm.nih.gov/26514947/" target="_blank" rel="noopener noreferrer" className="underline">WHO/IARC: processed meat and cancer (PMID: 26514947)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/15199546/" target="_blank" rel="noopener noreferrer" className="underline">Herb marinades reduce HCA in grilled meat (PMID: 15199546)</a></p>
+          </div>
+
+          {/* FATS GUIDANCE */}
+          <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+            <p className="font-bold text-green-900 mb-2">Fats — The Good, The Bad, and The Essential</p>
+            <div className="space-y-2 text-gray-700">
+              <p><strong className="text-emerald-700">Eat generously:</strong> Extra virgin olive oil (EVOO) is 
+              the foundation — use it for cooking, dressings, drizzling. Rich in oleocanthal (anti-inflammatory 
+              comparable to ibuprofen) and polyphenols. Also: avocado, raw nuts (almonds, pecans), seeds 
+              (flax, chia, hemp, pumpkin), fatty fish fat (omega-3).</p>
+              <p><strong className="text-amber-700">Use moderately:</strong> Coconut oil (MCTs can support brain 
+              energy), butter from grass-fed sources (occasional).</p>
+              <p><strong className="text-red-700">Avoid completely:</strong> Trans fats (partially hydrogenated oils), 
+              vegetable/seed oils high in omega-6 (soybean, corn, canola, sunflower — these are pro-inflammatory), 
+              margarine, deep-fried anything.</p>
+            </div>
+          </div>
+
+          {/* QUICK REFERENCE CARD */}
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+            <p className="font-bold text-gray-900 mb-2">Quick Reference: The Family Fridge Rule</p>
+            <div className="grid grid-cols-3 gap-2 text-center text-[10px]">
+              <div className="bg-emerald-100 rounded-lg p-2">
+                <p className="font-bold text-emerald-800">EAT FREELY</p>
+                <p className="text-emerald-600 mt-1">Vegetables, leafy greens, herbs, garlic, EVOO, berries, fatty fish, eggs, nuts, seeds, legumes, fermented foods, green tea</p>
+              </div>
+              <div className="bg-amber-100 rounded-lg p-2">
+                <p className="font-bold text-amber-800">EAT SPARINGLY</p>
+                <p className="text-amber-600 mt-1">Red meat (1-2x/mo), whole grains, starchy veg (sweet potato), natural sweeteners, higher-sugar fruits, butter</p>
+              </div>
+              <div className="bg-red-100 rounded-lg p-2">
+                <p className="font-bold text-red-800">NEVER EAT</p>
+                <p className="text-red-600 mt-1">Refined sugar, processed meat, soda, HFCS, trans fats, seed oils, fast food, white bread/pasta, fried food, walnuts/cranberries/shellfish</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </C>
+
+      <Divider />
+
       {/* ─── PATIENT PROFILE ─── */}
       <div className="bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-2xl p-5 mb-5">
         <h3 className="text-sm font-bold text-emerald-900 mb-2">Patient Profile</h3>

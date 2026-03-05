@@ -4,20 +4,16 @@ import Navigation from './components/Navigation';
 import Overview from './sections/Overview';
 import Chemotherapy from './sections/Chemotherapy';
 import Biopsy from './sections/Biopsy';
-import Fenbendazole from './sections/Fenbendazole';
+import Benzimidazoles from './sections/Benzimidazoles';
 import Ivermectin from './sections/Ivermectin';
-import Mebendazole from './sections/Mebendazole';
 import Combination from './sections/Combination';
-import Safety from './sections/Safety';
 import LionsMane from './sections/LionsMane';
-import Diet from './sections/Diet';
 import Cannabis from './sections/Cannabis';
 import Probiotics from './sections/Probiotics';
-import ProposedPlan from './sections/ProposedPlan';
-import MedicalReports from './sections/MedicalReports';
 import SleepApnea from './sections/SleepApnea';
-import BasalGanglia from './sections/BasalGanglia';
 import NutritionProtocol from './sections/NutritionProtocol';
+import MedicalReports from './sections/MedicalReports';
+import ProposedPlan from './sections/ProposedPlan';
 import DrugProtocol from './sections/DrugProtocol';
 import ShoppingList from './sections/ShoppingList';
 
@@ -48,20 +44,16 @@ function QuickNav() {
     { id: 'overview', emoji: '📋', label: 'Overview' },
     { id: 'chemo', emoji: '💊', label: 'Chemo' },
     { id: 'biopsy', emoji: '🔬', label: 'Biopsy' },
-    { id: 'fenbendazole', emoji: '💉', label: 'Fenben' },
+    { id: 'benzimidazoles', emoji: '�', label: 'Benzimidazoles' },
     { id: 'ivermectin', emoji: '🧪', label: 'Ivermectin' },
-    { id: 'mebendazole', emoji: '⚗️', label: 'Meben' },
     { id: 'combination', emoji: '🛡️', label: 'Combo' },
-    { id: 'safety', emoji: '⚠️', label: 'Safety' },
     { id: 'lionsmane', emoji: '🧠', label: "Lion's Mane" },
-    { id: 'diet', emoji: '🍎', label: 'Diet' },
     { id: 'cannabis', emoji: '🌿', label: 'Cannabis' },
     { id: 'probiotics', emoji: '❤️', label: 'Probiotics' },
-    { id: 'sleepapnea', emoji: '😴', label: 'Sleep & Tumors' },
-    { id: 'basalganglia', emoji: '🔍', label: 'Basal Ganglia' },
-    { id: 'nutrition', emoji: '🥗', label: 'Nutrition Plan' },
+    { id: 'sleepapnea', emoji: '😴', label: 'Sleep & Brain' },
+    { id: 'nutrition', emoji: '🥗', label: 'Nutrition' },
     { id: 'medical', emoji: '🏥', label: 'Medical Reports' },
-    { id: 'drugprotocol', emoji: '💊', label: 'Drug Protocol' },
+    { id: 'drugprotocol', emoji: '�', label: 'Drug Protocol' },
     { id: 'shopping', emoji: '🛒', label: 'Shopping List' },
     { id: 'plan', emoji: '📝', label: 'Care Protocol' },
   ];
@@ -99,9 +91,9 @@ export default function App() {
 
   useEffect(() => {
     const sectionIds = [
-      'overview', 'chemo', 'biopsy', 'fenbendazole', 'ivermectin',
-      'mebendazole', 'combination', 'safety', 'lionsmane', 'diet',
-      'cannabis', 'probiotics', 'sleepapnea', 'basalganglia', 'nutrition', 'medical', 'drugprotocol', 'shopping', 'plan'
+      'overview', 'chemo', 'biopsy', 'benzimidazoles', 'ivermectin',
+      'combination', 'lionsmane', 'cannabis', 'probiotics',
+      'sleepapnea', 'nutrition', 'medical', 'drugprotocol', 'shopping', 'plan'
     ];
 
     const observer = new IntersectionObserver(
@@ -171,17 +163,13 @@ export default function App() {
           <Overview />
           <Chemotherapy />
           <Biopsy />
-          <Fenbendazole />
+          <Benzimidazoles />
           <Ivermectin />
-          <Mebendazole />
           <Combination />
-          <Safety />
           <LionsMane />
-          <Diet />
           <Cannabis />
           <Probiotics />
           <SleepApnea />
-          <BasalGanglia />
           <NutritionProtocol />
           <MedicalReports />
           <DrugProtocol />

@@ -392,6 +392,61 @@ export default function SleepApnea() {
         </div>
       </div>
 
+      <Divider />
+
+      {/* ─── BASAL GANGLIA INVESTIGATION ─── */}
+      <h3 className="text-sm font-bold text-gray-900 mb-3">Basal Ganglia Lesion Investigation</h3>
+
+      <div className="bg-red-50 border-2 border-red-300 rounded-xl p-4 mb-3">
+        <p className="text-[11px] font-bold text-red-900 mb-1">CLINICAL DISCLAIMER</p>
+        <p className="text-[11px] text-red-800 leading-relaxed">
+          The official interpretation is that Mom's 9.8 mm basal ganglia lesion is a <strong>satellite glioma</strong>. 
+          It should be considered tumor until proven otherwise. This investigation explores whether chronic severe 
+          hypoxia could have contributed to or mimicked this lesion — it is supplementary, not a counter-diagnosis.
+        </p>
+      </div>
+
+      <Collapsible title="Could Hypoxia Have Caused the Basal Ganglia Lesion?" defaultOpen={false}>
+        <p className="mb-3">The basal ganglia are the <strong>#1 most vulnerable brain region to oxygen deprivation</strong> due to extremely high metabolic rate, dense excitatory receptors, watershed vascular territory, and high iron content. Mom's SpO2 drops to 74% create exactly the conditions known to damage these structures.</p>
+
+        <p className="font-bold mb-1">Brain Vulnerability Hierarchy to Hypoxia:</p>
+        <ol className="space-y-0.5 mb-3 list-decimal list-inside">
+          <li><strong>Basal Ganglia & Thalamus</strong> — most vulnerable (necrosis, T2/FLAIR hyperintensity)</li>
+          <li><strong>Hippocampus (CA1)</strong> — memory loss, cognitive decline</li>
+          <li><strong>Cerebral Cortex (layers 3, 5, 6)</strong> — laminar necrosis</li>
+          <li><strong>Cerebellar Purkinje Cells</strong> — ataxia, dizziness</li>
+          <li><strong>Watershed Zones</strong> — white matter degeneration</li>
+        </ol>
+
+        <p className="font-bold mb-1">Why a Focal Lesion Could Still Be Hypoxic:</p>
+        <ul className="space-y-1 mb-3">
+          <li>• <strong>Tumor compresses nearby vessels</strong> — the primary tumor's mass effect may compromise blood supply specifically to the left basal ganglia, making that side more vulnerable to hypoxic episodes</li>
+          <li>• <strong>Edema blending</strong> — the primary tumor's vasogenic edema already extends toward the basal ganglia, creating tissue with compromised blood-brain barrier integrity</li>
+          <li>• <strong>Gliosis can mimic a mass</strong> — reactive astrocyte proliferation after injury creates focal T2/FLAIR signal abnormality that can look like a small tumor on MRI</li>
+        </ul>
+
+        <p className="font-bold mb-1">Key Studies — Basal Ganglia Hypoxic Vulnerability:</p>
+        <StudyCard title="Selective vulnerability of basal ganglia to hypoxic-ischemic injury" description="Neuropathological documentation of preferential basal ganglia damage from oxygen deprivation." url="https://pubmed.ncbi.nlm.nih.gov/15930087/" type="study" />
+        <StudyCard title="MRI patterns of hypoxic-ischemic encephalopathy — basal ganglia involvement" description="T2/FLAIR hyperintensity in basal ganglia as hallmark of hypoxic injury." url="https://pubmed.ncbi.nlm.nih.gov/16166544/" type="study" />
+        <StudyCard title="OSA causes gray matter loss in basal ganglia" description="OSA patients show significant gray matter volume reductions in basal ganglia correlating with hypoxemia severity." url="https://pmc.ncbi.nlm.nih.gov/articles/PMC2491498/" type="study" />
+        <StudyCard title="OSA intermittent hypoxia causes selective neuronal injury" description="Intermittent hypoxia causes dose-dependent neuronal apoptosis in vulnerable brain regions." url="https://pubmed.ncbi.nlm.nih.gov/12629157/" type="study" />
+        <StudyCard title="Near-drowning: selective basal ganglia injury from asphyxiation" description="Basal ganglia injured even when cortical damage was minimal — directly relevant to suffocation in severe OSA." url="https://pubmed.ncbi.nlm.nih.gov/15041843/" type="study" />
+
+        <p className="font-bold mb-1 mt-3">Non-Invasive Methods to Differentiate Tumor vs. Hypoxic Injury:</p>
+        <ul className="space-y-1 mb-3">
+          <li>• <strong>MR Spectroscopy</strong> — tumor shows elevated choline/NAA; gliosis shows different metabolic profile (<a href="https://pubmed.ncbi.nlm.nih.gov/16159035/" target="_blank" rel="noopener noreferrer" className="underline text-primary-600">PMID: 16159035</a>)</li>
+          <li>• <strong>Perfusion MRI</strong> — tumor shows elevated blood volume; gliosis shows normal/reduced (<a href="https://pubmed.ncbi.nlm.nih.gov/15956506/" target="_blank" rel="noopener noreferrer" className="underline text-primary-600">PMID: 15956506</a>)</li>
+          <li>• <strong>FET-PET</strong> — amino acid uptake high in tumor, low in non-neoplastic tissue — most accurate non-invasive differentiator</li>
+          <li>• <strong>Serial MRI</strong> — if lesion shrinks with CPAP alone (no anti-tumor drugs), strongly suggests hypoxic origin</li>
+        </ul>
+
+        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3">
+          <p className="text-[11px] text-emerald-800"><strong>Bottom line:</strong> The safest approach is to treat both possibilities simultaneously — CPAP for the hypoxia hypothesis, anti-tumor protocol for the tumor hypothesis, and advanced non-invasive imaging to clarify. CPAP is indicated regardless.</p>
+        </div>
+      </Collapsible>
+
+      <Divider />
+
       <InfoBox variant="warning" title="Important Caveats">
         <ul className="space-y-1 mt-1">
           <li>• These are <strong>observational associations</strong>, not definitive proof of causation</li>

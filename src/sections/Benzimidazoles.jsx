@@ -3,22 +3,24 @@ import { Pill } from 'lucide-react';
 import { SectionHeader, StudyCard, TestimonialCard, ProConCard, InfoBox, Divider, StatCard } from '../components/Cards';
 import XEmbed from '../components/XEmbed';
 
-export default function Fenbendazole() {
+export default function Benzimidazoles() {
   return (
-    <section id="fenbendazole" className="section-card">
+    <section id="benzimidazoles" className="section-card">
       <SectionHeader
         icon={<Pill className="w-5 h-5" />}
-        title="Fenbendazole"
-        subtitle="Veterinary benzimidazole with anti-cancer research"
+        title="Benzimidazoles: Fenbendazole & Mebendazole"
+        subtitle="Anti-parasitic drugs with anti-cancer research — virtually identical cousins"
         color="primary"
       />
 
-      <InfoBox variant="info" title="What is Fenbendazole?">
-        Fenbendazole is a veterinary antiparasitic (dewormer) in the <strong>benzimidazole</strong> family. 
-        It works by binding to β-tubulin and disrupting microtubule formation — the same mechanism targeted 
-        by some chemotherapy drugs (e.g., vincristine, paclitaxel). Preclinical research shows it may also 
-        inhibit glucose uptake in cancer cells and induce apoptosis. It is virtually identical in structure 
-        to mebendazole, which is FDA-approved for human use.
+      <InfoBox variant="info" title="What Are Benzimidazoles?">
+        <strong>Fenbendazole</strong> (veterinary) and <strong>mebendazole</strong> (FDA-approved for humans) 
+        are nearly identical drugs in the benzimidazole family. Both work by binding β-tubulin to disrupt 
+        microtubule formation — the same mechanism targeted by chemo drugs like vincristine and paclitaxel. 
+        They also inhibit glucose uptake in cancer cells and induce apoptosis. The only structural difference 
+        is one atom (carbonyl vs. sulfur linkage). Mebendazole has <strong>confirmed brain penetration</strong> and 
+        active clinical trials for glioblastoma. Fenbendazole has more preclinical data and patient testimonials. 
+        Our protocol uses both.
       </InfoBox>
 
       <h3 className="text-sm font-bold text-gray-900 mb-3">Mechanism of Action</h3>
@@ -245,6 +247,46 @@ export default function Fenbendazole() {
         description="Dr. Mark Gordon discusses fenbendazole"
         url="https://x.com/joetippen/status/2027672788631212096?s=46"
         outcome="positive"
+      />
+
+      <Divider />
+
+      {/* ─── MEBENDAZOLE SPECIFIC ─── */}
+      <h3 className="text-sm font-bold text-gray-900 mb-3">Mebendazole — Clinical Trials & Brain Penetration</h3>
+      <InfoBox variant="success" title="Why Mebendazole Matters">
+        Mebendazole is FDA-approved for humans, has confirmed blood-brain barrier penetration, and has 
+        progressed into Phase 1/2 clinical trials for glioblastoma. Johns Hopkins researchers patented 
+        an enhanced formulation specifically for cancer. It can be prescribed off-label by any physician.
+      </InfoBox>
+
+      <StudyCard
+        title="Brain penetration and efficacy of different mebendazole formulations"
+        description="Critical study confirming mebendazole crosses the blood-brain barrier at therapeutic concentrations."
+        findings="Mebendazole reaches brain tumors — essential for treating glioblastoma."
+        url="https://aacrjournals.org/clincancerres/article/21/15/3462/78928/Brain-Penetration-and-Efficacy-of-Different"
+        type="study"
+      />
+      <StudyCard
+        title="Mebendazole clinical trial for brain tumors (NCT01729260)"
+        description="Registered Phase 1/2 clinical trial studying mebendazole for brain tumor treatment."
+        url="https://clinicaltrials.gov/study/NCT01729260"
+        type="trial"
+      />
+      <StudyCard
+        title="Mebendazole as anti-cancer agent — clinical evidence"
+        url="https://pubmed.ncbi.nlm.nih.gov/33506200/"
+        type="study"
+      />
+      <StudyCard
+        title="Johns Hopkins enhanced mebendazole formulation patent for cancer"
+        description="Enhanced bioavailability formulation designed specifically for cancer treatment."
+        url="https://trial.medpath.com/news/a86ded46bc870bbd/johns-hopkins-researchers-patent-enhanced-mebendazole-formulation-for-cancer-treatment"
+        type="article"
+      />
+      <StudyCard
+        title="Glioblastoma Foundation drug development award for mebendazole"
+        url="https://glioblastomafoundation.org/news/glioblastoma-foundation-announces-drug-development-award"
+        type="article"
       />
 
       <Divider />
