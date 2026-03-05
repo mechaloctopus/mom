@@ -142,6 +142,89 @@ export default function NutritionProtocol() {
             <p className="text-[10px] text-amber-600 mt-2">Source: <a href="https://pubmed.ncbi.nlm.nih.gov/20660076/" target="_blank" rel="noopener noreferrer" className="underline">Fructose and pancreatic cancer (PMID: 20660076)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/29330843/" target="_blank" rel="noopener noreferrer" className="underline">Sugar and cancer: updated review (PMID: 29330843)</a></p>
           </div>
 
+          {/* UPF AND BRAIN CANCER */}
+          <div className="bg-rose-50 border border-rose-200 rounded-xl p-4">
+            <p className="font-bold text-rose-900 mb-2">Ultra-Processed Foods and Brain Cancer — The UK Biobank Data</p>
+            <p className="text-gray-700 mb-2">
+              A massive prospective study following <strong>197,000+ UK adults</strong> found that people eating the 
+              most ultra-processed foods (UPFs) had a <strong>52% higher risk of brain cancer</strong> compared 
+              to those eating the least (HR 1.52, 95% CI 1.04–2.23). A sub-analysis specifically for glioma 
+              trended in the same direction (HR 1.34) though was not statistically significant due to smaller 
+              case counts. A separate Italian case-control study found that for every 1% increase in UPF 
+              contribution to the diet, the odds of <em>malignant</em> CNS tumors rose 11% (OR 1.11).
+            </p>
+            <p className="text-gray-700 mb-2">
+              <strong>What counts as UPF?</strong> Packaged snacks, instant noodles, frozen meals, mass-produced bread, 
+              flavored yogurts, breakfast cereals, soda, candy, chips, margarine, hot dogs — anything with a long 
+              ingredient list of things you wouldn't find in a home kitchen. The issue isn't just one bad ingredient — 
+              it's the entire pattern of industrial processing: nutrient stripping, additive loading, and metabolic disruption.
+            </p>
+            <p className="text-[10px] text-rose-600">Source: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9985039/" target="_blank" rel="noopener noreferrer" className="underline">UPF and cancer risk in UK Biobank (PMC9985039)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/36521255/" target="_blank" rel="noopener noreferrer" className="underline">UPF and CNS tumors — MEDICEA study (PMID: 36521255)</a></p>
+          </div>
+
+          {/* HYPERGLYCEMIA AND GBM SURVIVAL */}
+          <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+            <p className="font-bold text-red-900 mb-2">Blood Sugar and Brain Tumor Survival — GBM-Specific Clinical Data</p>
+            <p className="text-gray-700 mb-2">
+              Beyond the general Warburg effect, <strong>two major clinical studies</strong> examined blood glucose 
+              levels in actual GBM patients during treatment:
+            </p>
+            <ul className="space-y-1 text-gray-700 mb-2">
+              <li>• <strong>Study 1 (191 GBM patients):</strong> Those with the highest average blood glucose 
+              had <strong>57% higher risk of death</strong> compared to the lowest glucose group (HR 1.57) — 
+              even after adjusting for steroid use, age, and performance status.</li>
+              <li>• <strong>Study 2 (393 GBM patients, two cohorts):</strong> Confirmed the finding — patients 
+              above median glucose had <strong>47–67% higher mortality</strong> (HR 1.47 and 1.67 across cohorts).</li>
+              <li>• <strong>Meta-analysis:</strong> Pooled data across studies confirms hyperglycemia associates 
+              with worse GBM survival (pooled HR ~1.67).</li>
+            </ul>
+            <p className="text-gray-700 mb-2">
+              This is not abstract theory — these are real GBM patients where higher blood sugar predicted 
+              shorter survival. <strong>Every meal choice that spikes blood sugar is a choice that may be 
+              giving the tumor an advantage.</strong>
+            </p>
+            <p className="text-[10px] text-red-600">Source: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2667812/" target="_blank" rel="noopener noreferrer" className="underline">Derr et al. — Glucose and GBM survival (PMC2667812)</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4498235/" target="_blank" rel="noopener noreferrer" className="underline">Tieu et al. — Glycemia during RT+TMZ (PMC4498235)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/29803727/" target="_blank" rel="noopener noreferrer" className="underline">Meta-analysis: hyperglycemia in GBM (PMID: 29803727)</a></p>
+          </div>
+
+          {/* THREE PILLARS OF ULTRA-PROCESSING */}
+          <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+            <p className="font-bold text-purple-900 mb-2">The Three Pillars of Ultra-Processing: Sugar, Flour, and Oil</p>
+            <p className="text-gray-700 mb-2">
+              Ultra-processed food isn't one ingredient — it's three pillars of industrial processing 
+              that each independently harm cancer patients. The research supports avoiding all three:
+            </p>
+            <div className="space-y-2">
+              <div className="bg-white/70 rounded-lg p-3">
+                <p className="text-[11px] font-bold text-red-800">Pillar 1: Processed Sugar</p>
+                <p className="text-[11px] text-gray-600">GBM patients with higher blood glucose have 47–67% worse survival. 
+                Refined sugar causes the exact glucose spikes that feed tumors. Eliminate white sugar, HFCS, and all added sweeteners.</p>
+              </div>
+              <div className="bg-white/70 rounded-lg p-3">
+                <p className="text-[11px] font-bold text-amber-800">Pillar 2: Processed Flour & Refined Carbs</p>
+                <p className="text-[11px] text-gray-600">A case-control study found the highest glycemic-index diets had 
+                <strong>3.5x higher odds of glioma</strong> (OR 3.51). White rice, white bread, and white pasta behave 
+                like sugar in the body — they spike blood glucose almost as fast. Refined grains were consistently 
+                higher in glioma patients' diets across multiple studies. Choose whole grains, sweet potato, and legumes instead.</p>
+              </div>
+              <div className="bg-white/70 rounded-lg p-3">
+                <p className="text-[11px] font-bold text-orange-800">Pillar 3: Processed Oils (Hydrogenated & Industrial Seed Oils)</p>
+                <p className="text-[11px] text-gray-600">Multiple glioma case-control studies found that glioma patients 
+                reported <strong>higher intake of partially hydrogenated vegetable oils</strong> and lower intake 
+                of non-hydrogenated oils compared to controls. While direct causal proof for specific oil types 
+                in glioma is still limited, the pattern is clear: glioma diets cluster around higher industrial fats. 
+                Trans fats (partially hydrogenated oils) promote systemic inflammation, disrupt cell membranes, and are 
+                banned in many countries for good reason. Use EVOO, avocado oil, and coconut oil instead of 
+                soybean, corn, canola, or any hydrogenated oil.</p>
+              </div>
+            </div>
+            <p className="text-gray-700 mt-2">
+              <strong>The simple rule:</strong> If a sugar, flour, or oil has been industrially processed 
+              to be cheaper, whiter, or longer-lasting — it doesn't belong in our kitchen. Cook with 
+              real ingredients. If it comes in a box with a barcode and 30 ingredients, put it back.
+            </p>
+            <p className="text-[10px] text-purple-600 mt-2">Source: <a href="https://pubmed.ncbi.nlm.nih.gov/34633902/" target="_blank" rel="noopener noreferrer" className="underline">Glycemic index/load and glioma (PMID: 34633902)</a> · <a href="https://www.nature.com/articles/s41598-021-85562-2" target="_blank" rel="noopener noreferrer" className="underline">Refined carbs, hydrogenated oils, and glioma (Nature Sci Rep)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/31240996/" target="_blank" rel="noopener noreferrer" className="underline">Dietary insulin load and glioma (PMID: 31240996)</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6620629/" target="_blank" rel="noopener noreferrer" className="underline">Pooled prospective diet-glioma analysis (PMC6620629)</a></p>
+          </div>
+
           {/* SPIRIT OF THE MEDITERRANEAN DIET */}
           <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
             <p className="font-bold text-emerald-900 mb-2">The Spirit of the Mediterranean Diet</p>
