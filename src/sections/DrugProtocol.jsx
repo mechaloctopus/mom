@@ -217,7 +217,8 @@ export default function DrugProtocol() {
             <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Ashwagandha KSM-66</td><td className="p-2">600 mg/day</td><td className="p-2">With breakfast. Adaptogenic, neuroprotective, anti-cancer withanolides, reduces cortisol.</td></tr>
             <tr className="border-b border-gray-100"><td className="p-2 font-bold text-gray-800">Bacopa Monnieri</td><td className="p-2">300 mg/day (std. 50% bacosides)</td><td className="p-2">With breakfast. BDNF enhancement, memory + cognition recovery.</td></tr>
             <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Gotu Kola</td><td className="p-2">500 mg/day</td><td className="p-2">With lunch. Neurogenesis, nerve regeneration, neuroprotective after ischemic injury.</td></tr>
-            <tr><td className="p-2 font-bold text-gray-800">Rosemary Extract</td><td className="p-2">400 mg/day</td><td className="p-2">With dinner. Carnosic acid — neuroprotective, anti-glioblastoma activity.</td></tr>
+            <tr className="border-b border-gray-100 bg-gray-50"><td className="p-2 font-bold text-gray-800">Rosemary Extract</td><td className="p-2">400 mg/day</td><td className="p-2">With dinner. Carnosic acid — neuroprotective, anti-glioblastoma activity.</td></tr>
+            <tr><td className="p-2 font-bold text-gray-800">Tulsi (Holy Basil) Extract</td><td className="p-2">600 mg 2x/week</td><td className="p-2">Tue + Sat with food. Adaptogenic, radioprotective, anti-cancer (ursolic acid), immunomodulatory, reduces cortisol. Synergizes with ashwagandha.</td></tr>
           </tbody>
         </table>
       </C>

@@ -213,6 +213,12 @@ export default function ShoppingList() {
           note="Zinc ionophore — enhances other agents"
         />
         <Item
+          name="Tulsi (Holy Basil) Extract — 600mg"
+          dose="600 mg twice per week (Tue + Sat) — adaptogenic, radioprotective, anti-cancer"
+          link="https://www.amazon.com/dp/B0013OQGO6"
+          note="Ursolic acid: anti-tumor, immunomodulatory. Synergizes with ashwagandha."
+        />
+        <Item
           name="Zinc Picolinate — 30mg"
           dose="30 mg daily — immune support"
           link="https://www.walgreens.com/store/c/nature-made-zinc-30-mg-tablets/ID=prod3504-product"

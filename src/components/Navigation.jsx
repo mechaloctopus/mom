@@ -20,6 +20,7 @@ const sections = [
   { id: 'medical', label: "Mom's Medical Reports", icon: <FileText className="w-4 h-4" />, color: 'text-blue-600' },
   { id: 'drugprotocol', label: 'Drug & Supplement Protocol', icon: <Pill className="w-4 h-4" />, color: 'text-purple-600' },
   { id: 'shopping', label: 'Shopping List', icon: <ShoppingCart className="w-4 h-4" />, color: 'text-green-600' },
+  { id: 'actionplan', label: 'Family Action Plan', icon: <ClipboardList className="w-4 h-4" />, color: 'text-emerald-600' },
   { id: 'plan', label: 'Proposed Care Protocol', icon: <ClipboardList className="w-4 h-4" />, color: 'text-primary-600' },
 ];
 

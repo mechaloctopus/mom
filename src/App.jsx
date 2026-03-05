@@ -16,6 +16,7 @@ import MedicalReports from './sections/MedicalReports';
 import ProposedPlan from './sections/ProposedPlan';
 import DrugProtocol from './sections/DrugProtocol';
 import ShoppingList from './sections/ShoppingList';
+import ActionPlan from './sections/ActionPlan';
 
 function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -55,6 +56,7 @@ function QuickNav() {
     { id: 'medical', emoji: '🏥', label: 'Medical Reports' },
     { id: 'drugprotocol', emoji: '�', label: 'Drug Protocol' },
     { id: 'shopping', emoji: '🛒', label: 'Shopping List' },
+    { id: 'actionplan', emoji: '✅', label: 'Action Plan' },
     { id: 'plan', emoji: '📝', label: 'Care Protocol' },
   ];
 
@@ -93,7 +95,7 @@ export default function App() {
     const sectionIds = [
       'overview', 'chemo', 'biopsy', 'benzimidazoles', 'ivermectin',
       'combination', 'lionsmane', 'cannabis', 'probiotics',
-      'sleepapnea', 'nutrition', 'medical', 'drugprotocol', 'shopping', 'plan'
+      'sleepapnea', 'nutrition', 'medical', 'drugprotocol', 'shopping', 'actionplan', 'plan'
     ];
 
     // Hash fragment deep-link support
@@ -186,6 +188,7 @@ export default function App() {
           <MedicalReports />
           <DrugProtocol />
           <ShoppingList />
+          <ActionPlan />
           <ProposedPlan />
         </div>
 
