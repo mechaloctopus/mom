@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Moon, ChevronDown, ChevronUp } from 'lucide-react';
-import { SectionHeader, StudyCard, InfoBox, Divider, StatCard } from '../components/Cards';
+import { SectionHeader, StudyCard, InfoBox, Divider, StatCard, BackToNav } from '../components/Cards';
 
 function Collapsible({ title, defaultOpen = false, children }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -461,6 +461,7 @@ export default function SleepApnea() {
       <div className="text-center text-[10px] text-gray-400 mt-4">
         30+ studies compiled from PubMed, PubMed Central, peer-reviewed journals, and meta-analyses
       </div>
+      <BackToNav />
     </section>
   );
 }

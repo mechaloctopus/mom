@@ -159,3 +159,28 @@ export function SectionHeader({ icon, title, subtitle, color = 'primary' }) {
 export function Divider() {
   return <div className="border-t border-gray-100 my-5" />;
 }
+
+export function SectionLink({ to, children }) {
+  const handleClick = (e) => {
+    e.preventDefault();
+    const el = document.getElementById(to);
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.pageYOffset - 70;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      window.history.replaceState(null, '', '#' + to);
+    }
+  };
+  return <a href={'#' + to} onClick={handleClick} className="text-primary-600 underline hover:text-primary-800 font-medium">{children}</a>;
+}
+
+export function BackToNav() {
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.history.replaceState(null, '', window.location.pathname);
+  };
+  return (
+    <button onClick={handleClick} className="w-full mt-4 py-2 text-[11px] text-gray-400 hover:text-primary-600 transition-colors flex items-center justify-center gap-1 print:hidden">
+      <span>↑</span> Back to top
+    </button>
+  );
+}

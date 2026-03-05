@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ShoppingCart, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
-import { SectionHeader, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, InfoBox, Divider, BackToNav } from '../components/Cards';
 
 function C({ title, count, defaultOpen = false, children }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -411,6 +411,7 @@ export default function ShoppingList() {
         Buy links are recommendations — equivalent products from trusted brands are acceptable<br/>
         Always verify supplement quality (third-party tested, GMP certified preferred)
       </div>
+      <BackToNav />
     </section>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Leaf } from 'lucide-react';
-import { SectionHeader, StudyCard, ProConCard, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, StudyCard, ProConCard, InfoBox, Divider, BackToNav } from '../components/Cards';
 
 export default function Cannabis() {
   return (
@@ -173,6 +173,7 @@ export default function Cannabis() {
         relevant to recovery from the hypoxic event. Low-dose CBD oil may be worth discussing with 
         the medical team as a complementary approach.
       </InfoBox>
+      <BackToNav />
     </section>
   );
 }

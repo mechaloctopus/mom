@@ -1,6 +1,6 @@
 import React from 'react';
 import { Brain } from 'lucide-react';
-import { SectionHeader, StudyCard, ProConCard, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, StudyCard, ProConCard, InfoBox, Divider, BackToNav } from '../components/Cards';
 
 export default function LionsMane() {
   return (
@@ -152,6 +152,7 @@ export default function LionsMane() {
         (1) potential neuroregeneration after the hypoxic event (SpO2 74%), and (2) possible anti-cancer 
         support. Its excellent safety profile makes it a reasonable supplement to discuss with the medical team.
       </InfoBox>
+      <BackToNav />
     </section>
   );
 }

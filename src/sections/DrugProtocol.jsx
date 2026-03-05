@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Syringe, ChevronDown, ChevronUp, AlertTriangle, ExternalLink } from 'lucide-react';
-import { SectionHeader, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, InfoBox, Divider, BackToNav } from '../components/Cards';
 
 function C({ title, defaultOpen = false, children }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -580,6 +580,7 @@ export default function DrugProtocol() {
       <div className="text-center text-[10px] text-gray-400 mt-4">
         Based on the Makis/Marik orthomolecular protocol • To be administered under physician supervision only
       </div>
+      <BackToNav />
     </section>
   );
 }

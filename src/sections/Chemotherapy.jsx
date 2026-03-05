@@ -1,6 +1,6 @@
 import React from 'react';
 import { Stethoscope } from 'lucide-react';
-import { SectionHeader, StudyCard, StatCard, ProConCard, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, StudyCard, InfoBox, Divider, StatCard, ProConCard, BackToNav } from '../components/Cards';
 
 export default function Chemotherapy() {
   return (
@@ -113,6 +113,7 @@ export default function Chemotherapy() {
         url="https://pmc.ncbi.nlm.nih.gov/articles/PMC5546458/"
         type="study"
       />
+      <BackToNav />
     </section>
   );
 }

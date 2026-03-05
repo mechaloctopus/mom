@@ -96,6 +96,18 @@ export default function App() {
       'sleepapnea', 'nutrition', 'medical', 'drugprotocol', 'shopping', 'plan'
     ];
 
+    // Hash fragment deep-link support
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      setTimeout(() => {
+        const target = document.getElementById(hash);
+        if (target) {
+          const y = target.getBoundingClientRect().top + window.pageYOffset - 70;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }, 300);
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

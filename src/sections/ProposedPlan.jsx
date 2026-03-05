@@ -1,6 +1,6 @@
 import React from 'react';
 import { ClipboardList, Utensils, Dumbbell, Pill, Moon, Sun, Activity, HeartPulse, Users, AlertTriangle } from 'lucide-react';
-import { SectionHeader, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, InfoBox, Divider, BackToNav } from '../components/Cards';
 
 function DecisionBlock({ number, title, color, children }) {
   const colors = {
@@ -542,6 +542,7 @@ export default function ProposedPlan() {
         <p>Compiled with love for our family</p>
         <p className="mt-1">This is a living document. Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
       </div>
+      <BackToNav />
     </section>
   );
 }

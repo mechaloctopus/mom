@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pill } from 'lucide-react';
-import { SectionHeader, StudyCard, TestimonialCard, ProConCard, InfoBox, Divider, StatCard } from '../components/Cards';
+import { SectionHeader, StudyCard, TestimonialCard, ProConCard, InfoBox, Divider, StatCard, BackToNav } from '../components/Cards';
 import XEmbed from '../components/XEmbed';
 
 export default function Benzimidazoles() {
@@ -302,6 +302,7 @@ export default function Benzimidazoles() {
         It is critical to acknowledge that alternative treatments do not work for everyone. 
         This negative testimonial is included for transparency and honest evaluation.
       </InfoBox>
+      <BackToNav />
     </section>
   );
 }

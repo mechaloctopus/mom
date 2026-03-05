@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
-import { SectionHeader, StudyCard, ProConCard, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, StudyCard, ProConCard, InfoBox, Divider, BackToNav } from '../components/Cards';
 
 export default function Probiotics() {
   return (
@@ -188,6 +188,7 @@ export default function Probiotics() {
         guidance. Consider a high-quality multi-strain probiotic supplement containing Lactobacillus and 
         Bifidobacterium species.
       </InfoBox>
+      <BackToNav />
     </section>
   );
 }

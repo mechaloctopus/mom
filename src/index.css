@@ -79,3 +79,49 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r;
   }
 }
+
+/* Print-friendly styles */
+@media print {
+  body {
+    background: white !important;
+    font-size: 11pt;
+  }
+
+  .section-card {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 12pt;
+  }
+
+  nav, button, .print\\:hidden,
+  [class*="fixed"], [class*="sticky"] {
+    display: none !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #666;
+    word-break: break-all;
+  }
+
+  a[href^="#"]::after {
+    content: "";
+  }
+
+  table {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  img, svg {
+    max-width: 100% !important;
+  }
+}

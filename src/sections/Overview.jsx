@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, AlertTriangle, Brain, Clock } from 'lucide-react';
-import { SectionHeader, StatCard, InfoBox } from '../components/Cards';
+import { SectionHeader, StatCard, InfoBox, BackToNav } from '../components/Cards';
 
 export default function Overview() {
   return (
@@ -58,6 +58,7 @@ export default function Overview() {
           <strong>Proposed Care Protocol</strong> at the end ties everything into an actionable plan.
         </p>
       </InfoBox>
+      <BackToNav />
     </section>
   );
 }

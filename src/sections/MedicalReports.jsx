@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FileText, AlertTriangle, Brain, Stethoscope, ChevronDown, ChevronUp } from 'lucide-react';
-import { SectionHeader, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, InfoBox, Divider, BackToNav } from '../components/Cards';
 
 function Collapsible({ title, defaultOpen = false, children }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -438,6 +438,7 @@ export default function MedicalReports() {
         Source: Original hospital radiology reports from TMC Center, Texoma Medical Center<br/>
         Transcribed and analyzed from document images dated February 27–28, 2026
       </div>
+      <BackToNav />
     </section>
   );
 }

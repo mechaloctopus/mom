@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Utensils, ChevronDown, ChevronUp, AlertTriangle } from 'lucide-react';
-import { SectionHeader, StudyCard, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, StudyCard, InfoBox, Divider, BackToNav } from '../components/Cards';
 
 function C({ title, defaultOpen = false, children }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -448,22 +448,12 @@ export default function NutritionProtocol() {
         </ul>
       </C>
 
-      <C title="Supplements & Health Products" defaultOpen={false}>
-        <ul className="space-y-1">
-          <li>• <strong>Fish Oil</strong> — high-quality (Nordic Naturals or similar), ≥600mg DHA per serving</li>
-          <li>• <strong>Host Defense MyCommunity</strong> (Paul Stamets) or <strong>Lion's Mane capsules</strong> — 60 ct</li>
-          <li>• <strong>Curcumin with BioPerine</strong> — 1,000mg capsules, 30 ct</li>
-          <li>• <strong>Ashwagandha KSM-66</strong> — 600mg capsules, 30 ct</li>
-          <li>• <strong>Bacopa Monnieri</strong> — 300mg (std. 50% bacosides), 30 ct</li>
-          <li>• <strong>Gotu Kola</strong> — 500mg capsules, 30 ct</li>
-          <li>• <strong>Rosemary Extract</strong> — 400mg capsules, 30 ct</li>
-          <li>• <strong>Green Tea Extract (EGCG)</strong> — 400mg capsules, 30 ct</li>
-          <li>• <strong>Organic wheat grass powder</strong> — 1 container</li>
-          <li>• <strong>Organic barley grass powder</strong> — 1 container</li>
-          <li>• <strong>Cannabis gummies — Daytime</strong>: 1:1:1 THC:CBD:CBG (5mg each)</li>
-          <li>• <strong>Cannabis gummies — Nighttime</strong>: THC:CBD:CBN blend (5mg each)</li>
-        </ul>
-      </C>
+      <div className="bg-purple-50 border border-purple-100 rounded-xl p-3 mb-3">
+        <p className="text-[11px] text-purple-700 font-medium">
+          <strong>Supplements & drugs:</strong> Full list with buy links in the <a href="#shopping" className="underline text-purple-600">Shopping List</a> section. 
+          Complete dosing schedule in the <a href="#drugprotocol" className="underline text-purple-600">Drug & Supplement Protocol</a> section.
+        </p>
+      </div>
 
       <C title="For Fresh Juicing" defaultOpen={false}>
         <ul className="space-y-1">
@@ -643,7 +633,7 @@ export default function NutritionProtocol() {
         <p className="mb-2"><strong>Lion's Mane / Host Defense MyCommunity:</strong> Stimulates NGF and BDNF for neuroregeneration. Beta-glucans enhance anti-tumor immunity. Paul Stamets' Host Defense contains 17 mushroom species including Lion's Mane, Turkey Tail, Reishi, Maitake, and Chaga — all with documented anti-cancer and immune-modulating properties.</p>
         <StudyCard title="Neurotrophic properties of Lion's Mane — NGF stimulation" description="Hericenones and erinacines promote nerve growth factor synthesis." url="https://pubmed.ncbi.nlm.nih.gov/24266378/" type="study" />
 
-        <p className="mb-2 mt-3"><strong>Curcumin with BioPerine:</strong> Crosses the blood-brain barrier. Anti-inflammatory, anti-cancer. Inhibits GBM cell growth and enhances chemo sensitivity. Black pepper (piperine) increases absorption 2,000%.</p>
+        <p className="mb-2 mt-3"><strong>Curcumin 2,000 mg/day (nano or with BioPerine):</strong> Crosses the blood-brain barrier. Anti-inflammatory, anti-cancer. Inhibits GBM cell growth and enhances chemo sensitivity. Nano-curcumin or piperine increases absorption 2,000%.</p>
         <StudyCard title="Curcumin effects on glioblastoma" description="Crosses BBB, inhibits GBM cell growth, enhances temozolomide sensitivity." url="https://pubmed.ncbi.nlm.nih.gov/26851267/" type="study" />
 
         <p className="mb-2 mt-3"><strong>Ashwagandha KSM-66:</strong> Adaptogenic herb with neuroprotective and anti-cancer properties. Withanolides show activity against brain tumor cells. Reduces cortisol and stress.</p>
@@ -705,6 +695,7 @@ export default function NutritionProtocol() {
         All supplement dosages based on published research — consult physician before starting<br/>
         Allergies excluded: walnuts, cranberries, shellfish
       </div>
+      <BackToNav />
     </section>
   );
 }

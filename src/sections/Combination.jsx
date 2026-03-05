@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield } from 'lucide-react';
-import { SectionHeader, TestimonialCard, ProConCard, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, TestimonialCard, ProConCard, InfoBox, Divider, BackToNav } from '../components/Cards';
 import XEmbed from '../components/XEmbed';
 
 export default function Combination() {
@@ -103,6 +103,7 @@ export default function Combination() {
         url="https://x.com/makismedicine/status/2002085325963927729?s=46"
         outcome="positive"
       />
+      <BackToNav />
     </section>
   );
 }

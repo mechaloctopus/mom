@@ -1,6 +1,6 @@
 import React from 'react';
 import { Microscope } from 'lucide-react';
-import { SectionHeader, StudyCard, TestimonialCard, ProConCard, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, StudyCard, TestimonialCard, ProConCard, InfoBox, Divider, BackToNav } from '../components/Cards';
 import XEmbed from '../components/XEmbed';
 
 export default function Biopsy() {
@@ -384,6 +384,7 @@ export default function Biopsy() {
           the treatment decision — and if the alternative approaches cannot provide sufficient information.
         </p>
       </InfoBox>
+      <BackToNav />
     </section>
   );
 }

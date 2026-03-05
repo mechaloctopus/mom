@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlaskConical } from 'lucide-react';
-import { SectionHeader, StudyCard, TestimonialCard, ProConCard, InfoBox, Divider } from '../components/Cards';
+import { SectionHeader, StudyCard, TestimonialCard, ProConCard, InfoBox, Divider, BackToNav } from '../components/Cards';
 import XEmbed from '../components/XEmbed';
 
 export default function Ivermectin() {
@@ -191,6 +191,7 @@ export default function Ivermectin() {
         url="https://x.com/vaidyaparampara/status/2024154558570881286?s=46"
         outcome="positive"
       />
+      <BackToNav />
     </section>
   );
 }
