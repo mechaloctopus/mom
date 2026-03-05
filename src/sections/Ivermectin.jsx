@@ -151,12 +151,6 @@ export default function Ivermectin() {
       <XEmbed url="https://x.com/buy_ivermectin1/status/2024563419798786237" />
 
       <TestimonialCard
-        description="Cancer surgeon says she's seen ivermectin turn cancer around in patients"
-        url="https://x.com/buy_ivermectin1/status/2024563419798786237?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
         description="Cancer surgeon — additional testimony on ivermectin efficacy"
         url="https://x.com/ivermectinkart/status/2019031085804581273?s=46"
         outcome="positive"

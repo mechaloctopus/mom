@@ -290,19 +290,7 @@ export default function Biopsy() {
 
       <XEmbed url="https://x.com/newstart_2024/status/1999513001972404625" />
 
-      <TestimonialCard
-        description="Doctor explaining why biopsies can be harmful — needle-tract seeding, tumor manipulation risks, and alternatives to invasive biopsy"
-        url="https://x.com/newstart_2024/status/1999513001972404625?s=20"
-        outcome="negative"
-      />
-
       <XEmbed url="https://x.com/thehealthb0t/status/2012659911885455375" />
-
-      <TestimonialCard
-        description="Detailed breakdown of why biopsies can spread cancer — research cited, doctor quotes, and safer diagnostic alternatives discussed"
-        url="https://x.com/thehealthb0t/status/2012659911885455375?s=20"
-        outcome="negative"
-      />
 
       <TestimonialCard
         description="Patient/family testimonial on biopsy experience — when the biopsy was a bad move and made things worse"

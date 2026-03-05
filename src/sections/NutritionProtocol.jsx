@@ -565,13 +565,21 @@ export default function NutritionProtocol() {
         <StudyCard title="CBD promotes hippocampal neurogenesis" description="CBD stimulates new neuron growth via CB1 and 5-HT1A receptors." url="https://pubmed.ncbi.nlm.nih.gov/20804782/" type="study" />
       </C>
 
-      <C title="Why No Refined Sugar" defaultOpen={false}>
-        <p className="mb-2">Cancer cells consume glucose at rates up to 200x higher than normal cells (the Warburg effect). While we cannot completely starve a tumor of glucose (the brain needs it), minimizing refined sugar and maintaining stable blood sugar reduces the excess glucose available to tumor cells.</p>
-        <ul className="space-y-1">
-          <li>• All natural sweetness in this plan comes from whole fruits, dates, and a small amount of raw honey</li>
-          <li>• Complex carbohydrates (quinoa, barley, oats) provide steady glucose without spikes</li>
+      <C title="Why No Refined Sugar + Foods to Avoid" defaultOpen={false}>
+        <p className="mb-2">Cancer cells consume glucose at rates up to 200x higher than normal cells (the Warburg effect). Minimizing refined sugar reduces excess glucose available to tumor cells.</p>
+        <ul className="space-y-1 mb-3">
+          <li>• All natural sweetness comes from whole fruits, dates, and small amounts of raw honey</li>
+          <li>• Complex carbs (quinoa, barley, oats) provide steady glucose without spikes</li>
           <li>• High fiber slows glucose absorption</li>
-          <li>• No fruit juice concentrates, sodas, pastries, or white flour products</li>
+        </ul>
+        <p className="font-bold mb-1 text-red-800">Foods to Avoid / Reduce:</p>
+        <ul className="space-y-1 text-red-700">
+          <li>• <strong>Refined sugar / high-glycemic foods</strong> — feeds tumor metabolism (Warburg effect)</li>
+          <li>• <strong>Processed meats</strong> — WHO Group 1 carcinogen, increased cancer risk</li>
+          <li>• <strong>Excessive alcohol</strong> — known carcinogen and neurotoxin, impairs brain recovery</li>
+          <li>• <strong>Trans fats / ultra-processed foods</strong> — pro-inflammatory, worse cancer outcomes</li>
+          <li>• <strong>Excessive red meat</strong> — associated with increased risk of certain cancers</li>
+          <li>• <strong>Sodas, pastries, white flour</strong> — glucose spikes with no nutritional value</li>
         </ul>
       </C>
 

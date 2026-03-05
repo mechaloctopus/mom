@@ -236,25 +236,21 @@ export default function ShoppingList() {
       </C>
 
       {/* ─── DRUGS (PRESCRIPTION / OTC) ─── */}
-      <C title="Anti-Tumor Drugs (Physician Required)" count="3 items" defaultOpen={false}>
+      <C title="Anti-Tumor Drugs (Physician Required)" count="2 items" defaultOpen={false}>
         <InfoBox variant="danger" title="Physician Must Prescribe / Approve">
           Do NOT purchase or start any of these without physician approval and baseline bloodwork.
         </InfoBox>
         <Item
-          name="Mebendazole — 100mg tablets"
-          dose="200 mg twice daily (400 mg/day), 3 days on / 4 days off"
-          note="Prescription required — physician will prescribe. Generic available."
+          name="Ivermectin (1,000 mg) + Mebendazole (14,400 mg) — Makis Protocol Bundle"
+          dose="Ivermectin: 0.5 mg/kg 2x/week · Mebendazole: 200 mg 2x/day, 3 on / 4 off"
+          link="https://allfamilypharmacy.com/makis/"
+          note="$364 for both — All Family Pharmacy (Makis protocol bundle)"
         />
         <Item
-          name="Fenbendazole — Panacur C 222mg packets"
+          name="Fenbendazole 222mg Capsules — 120 Count (8,000 mg total)"
           dose="222 mg once daily, 3 days on / 4 days off"
-          link="https://www.amazon.com/Panacur-Canine-Dewormer-Fenbendazole-Packages/dp/B010PLEQDE"
-          note="Veterinary OTC — physician should approve before starting"
-        />
-        <Item
-          name="Ivermectin — 3mg or 6mg tablets"
-          dose="0.5 mg/kg (~36 mg for 180 lbs), 2 days/week"
-          note="Prescription required — physician will prescribe and titrate dose."
+          link="https://shopbplife.com/collections/fenbendazole-capsules/products/fenbendazole-222mg-capsules-120-count?variant=43367925022860"
+          note="$75 — BP Life fenbendazole capsules (human-grade, physician should approve)"
         />
       </C>
 

@@ -160,12 +160,6 @@ export default function Fenbendazole() {
       <XEmbed url="https://x.com/ivermaccess/status/1972636438543122654" />
 
       <TestimonialCard
-        description="Brain cancer battle — patient reports improvement using fenbendazole protocol"
-        url="https://x.com/ivermaccess/status/1972636438543122654?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
         description="Terminal cancer patient — 2.5 months later reported cancer free"
         url="https://x.com/makismedicine/status/1837078871201444106?s=46"
         outcome="positive"
@@ -198,12 +192,6 @@ export default function Fenbendazole() {
       <XEmbed url="https://x.com/makismedicine/status/1925853465898570164" />
 
       <TestimonialCard
-        description="Tumors shrank 98% in patient in India"
-        url="https://x.com/makismedicine/status/1925853465898570164?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
         description="Patient reports on fenbendazole for cancer"
         url="https://x.com/skymeds_store/status/1999323888686366792?s=46"
         outcome="positive"
@@ -216,12 +204,6 @@ export default function Fenbendazole() {
       />
 
       <XEmbed url="https://x.com/thehealthb0t/status/2006417338057502832" />
-
-      <TestimonialCard
-        description="Joe Tippens full story — stage 4 lung cancer, reported complete remission"
-        url="https://x.com/thehealthb0t/status/2006417338057502832?s=46"
-        outcome="positive"
-      />
 
       <TestimonialCard
         description="Joe Rogan discusses fenbendazole for cancer"

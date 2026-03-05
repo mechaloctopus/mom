@@ -73,12 +73,6 @@ export default function Combination() {
       <XEmbed url="https://x.com/p_mcculloughmd/status/1957602996323246197" />
 
       <TestimonialCard
-        description="Peter McCullough MD posting about fenbendazole/ivermectin anti-cancer protocols"
-        url="https://x.com/p_mcculloughmd/status/1957602996323246197?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
         description="Mel Gibson's 3 friends — reported positive outcomes with alternative cancer protocols"
         url="https://x.com/makismedicine/status/1877545575098261801?s=46"
         outcome="positive"
@@ -91,12 +85,6 @@ export default function Combination() {
       />
 
       <XEmbed url="https://x.com/makismedicine/status/1918958115808285004" />
-
-      <TestimonialCard
-        description="Pilot with stage 4 lung cancer — tumors shrank after 2.5 months"
-        url="https://x.com/makismedicine/status/1918958115808285004?s=46"
-        outcome="positive"
-      />
 
       <TestimonialCard
         description="Pilot cured of cancer — full testimonial"
