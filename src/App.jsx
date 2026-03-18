@@ -74,6 +74,18 @@ function QuickNav() {
   return (
     <div className="section-card">
       <h3 className="text-sm font-bold text-gray-900 mb-3">Quick Navigation</h3>
+      {/* Biopsy Methodology — featured link to separate page */}
+      <a
+        href="#/biopsy-methodology"
+        className="flex items-center gap-3 p-3 mb-3 rounded-xl bg-indigo-50 border-2 border-indigo-200 hover:bg-indigo-100 hover:border-indigo-300 transition-all text-indigo-700"
+      >
+        <span className="text-xl">🔬</span>
+        <div className="flex-1">
+          <span className="text-xs font-bold">Biopsy Methodology</span>
+          <p className="text-[10px] text-indigo-500 font-medium leading-tight">Phase 2 Deep Dive — PCR, Diagnostics, All Scenarios</p>
+        </div>
+        <span className="text-[9px] bg-indigo-200 text-indigo-800 px-1.5 py-0.5 rounded-full font-bold">NEW</span>
+      </a>
       <div className="grid grid-cols-3 gap-2">
         {sections.map((s) => (
           <button
