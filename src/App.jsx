@@ -159,6 +159,13 @@ export default function App() {
               <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">Treatment Options</span>
               <span className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">Care Protocol</span>
             </div>
+            <a
+              href="#/biopsy-methodology"
+              className="mt-4 flex items-center gap-2 px-4 py-2.5 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl transition-colors w-fit"
+            >
+              <span className="text-sm">🔬</span>
+              <span className="text-xs font-bold">Biopsy Methodology — Phase 2 Deep Dive →</span>
+            </a>
           </div>
         </div>
 
