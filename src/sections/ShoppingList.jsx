@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingCart, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
-import { SectionHeader, InfoBox, Divider, BackToNav } from '../components/Cards';
+import { ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 
 function C({ title, count, defaultOpen = false, children }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -40,21 +39,10 @@ function Item({ name, dose, link, note }) {
 
 export default function ShoppingList() {
   return (
-    <section id="shopping" className="section-card">
-      <SectionHeader
-        icon={<ShoppingCart className="w-5 h-5" />}
-        title="Master Shopping List"
-        subtitle="Everything needed for the full protocol — supplements, equipment, and drugs"
-        color="green"
-      />
-
-      <InfoBox variant="info" title="How This List Is Organized">
-        This is the <strong>master shopping list</strong> for all non-food items in the protocol. 
-        Food/grocery shopping is in the Nutrition & Supplement Protocol section. Checkboxes are 
-        interactive — tap to mark items as purchased. Buy links go to recommended products.
-      </InfoBox>
-
-      <Divider />
+    <section id="shopping">
+      <p className="text-sm text-gray-700 leading-relaxed mb-4">
+        Master procurement list for all non-food items in the protocol. Checkboxes are interactive. Buy links go to recommended products. Food/grocery items are in the Metabolic Therapy section.
+      </p>
 
       {/* ─── MONITORING EQUIPMENT ─── */}
       <C title="Monitoring Equipment & Medical Devices" count="4 items" defaultOpen={true}>
@@ -271,9 +259,10 @@ export default function ShoppingList() {
 
       {/* ─── DRUGS (PRESCRIPTION / OTC) ─── */}
       <C title="Anti-Tumor Drugs (Physician Required)" count="2 items" defaultOpen={false}>
-        <InfoBox variant="danger" title="Physician Must Prescribe / Approve">
-          Do NOT purchase or start any of these without physician approval and baseline bloodwork.
-        </InfoBox>
+        <div className="bg-red-50 border border-red-200 rounded p-3 mb-3">
+          <p className="text-xs font-bold text-red-900">Physician Must Prescribe / Approve</p>
+          <p className="text-xs text-red-800">Do NOT purchase or start any of these without physician approval and baseline bloodwork.</p>
+        </div>
         <Item
           name="Ivermectin (1,000 mg) + Mebendazole (14,400 mg) — Makis Protocol Bundle"
           dose="Ivermectin: 0.5 mg/kg 2x/week · Mebendazole: 200 mg 2x/day, 3 on / 4 off"
@@ -407,17 +396,14 @@ export default function ShoppingList() {
         </div>
       </div>
 
-      <InfoBox variant="warning" title="Reminder: Food Shopping Is Separate">
-        The weekly grocery/food shopping list (proteins, vegetables, fruits, grains, herbs, etc.) 
-        is in the <strong>Nutrition & Supplement Protocol</strong> section. This list covers only 
-        supplements, equipment, cannabis, and medications.
-      </InfoBox>
+      <p className="text-sm text-gray-500 italic mt-4 mb-2">
+        Food/grocery shopping list is in the Metabolic Therapy section. This list covers only supplements, equipment, cannabis, and medications.
+      </p>
 
       <div className="text-center text-[10px] text-gray-400 mt-4">
         Buy links are recommendations — equivalent products from trusted brands are acceptable<br/>
         Always verify supplement quality (third-party tested, GMP certified preferred)
       </div>
-      <BackToNav />
     </section>
   );
 }

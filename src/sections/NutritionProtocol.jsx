@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Utensils, ChevronDown, ChevronUp, AlertTriangle } from 'lucide-react';
-import { SectionHeader, StudyCard, InfoBox, Divider, BackToNav } from '../components/Cards';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 function C({ title, defaultOpen = false, children }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -93,13 +92,7 @@ const DAYS = [
 
 export default function NutritionProtocol() {
   return (
-    <section id="nutrition" className="section-card">
-      <SectionHeader
-        icon={<Utensils className="w-5 h-5" />}
-        title="Nutrition & Supplement Protocol"
-        subtitle="Mediterranean anti-cancer meal plan, supplements, and cannabis protocol"
-        color="green"
-      />
+    <section id="nutrition">
 
       {/* ─── NUTRITION GUIDANCE ARTICLE ─── */}
       <C title="The Anti-Cancer Diet: A Complete Guide for Our Family" defaultOpen={true}>
@@ -778,7 +771,6 @@ export default function NutritionProtocol() {
         All supplement dosages based on published research — consult physician before starting<br/>
         Allergies excluded: walnuts, cranberries, shellfish
       </div>
-      <BackToNav />
     </section>
   );
 }

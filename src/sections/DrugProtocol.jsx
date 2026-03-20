@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Syringe, ChevronDown, ChevronUp, AlertTriangle, ExternalLink } from 'lucide-react';
-import { SectionHeader, InfoBox, Divider, BackToNav } from '../components/Cards';
+import { ChevronDown, ChevronUp, AlertTriangle, ExternalLink } from 'lucide-react';
 
 function C({ title, defaultOpen = false, children }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -17,13 +16,7 @@ function C({ title, defaultOpen = false, children }) {
 
 export default function DrugProtocol() {
   return (
-    <section id="drugprotocol" className="section-card">
-      <SectionHeader
-        icon={<Syringe className="w-5 h-5" />}
-        title="Anti-Tumor Drug Protocol"
-        subtitle="12-week physician-monitored treatment plan"
-        color="purple"
-      />
+    <section id="drugprotocol">
 
       {/* ─── DISCLAIMER ─── */}
       <div className="bg-red-50 border-2 border-red-300 rounded-2xl p-5 mb-5">
@@ -581,7 +574,6 @@ export default function DrugProtocol() {
       <div className="text-center text-[10px] text-gray-400 mt-4">
         Based on the Makis/Marik orthomolecular protocol • To be administered under physician supervision only
       </div>
-      <BackToNav />
     </section>
   );
 }
