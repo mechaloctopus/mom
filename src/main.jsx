@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import BiopsyMethodology from './pages/BiopsyMethodology.jsx'
+import DoxycyclineAnomaly from './pages/DoxycyclineAnomaly.jsx'
 import './index.css'
 
 function Router() {
@@ -15,6 +16,9 @@ function Router() {
 
   if (path === '#/biopsy-methodology') {
     return <BiopsyMethodology />;
+  }
+  if (path === '#/doxycycline-anomaly') {
+    return <DoxycyclineAnomaly />;
   }
 
   return <App />;

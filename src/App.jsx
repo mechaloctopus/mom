@@ -86,6 +86,17 @@ function QuickNav() {
         </div>
         <span className="text-[9px] bg-indigo-200 text-indigo-800 px-1.5 py-0.5 rounded-full font-bold">NEW</span>
       </a>
+      <a
+        href="#/doxycycline-anomaly"
+        className="flex items-center gap-3 p-3 mb-3 rounded-xl bg-amber-50 border-2 border-amber-200 hover:bg-amber-100 hover:border-amber-300 transition-all text-amber-700"
+      >
+        <span className="text-xl">⚡</span>
+        <div className="flex-1">
+          <span className="text-xs font-bold">Doxycycline Anomaly</span>
+          <p className="text-[10px] text-amber-500 font-medium leading-tight">Clinical Hypothesis — Why Doxy Worked &amp; What It Means</p>
+        </div>
+        <span className="text-[9px] bg-amber-200 text-amber-800 px-1.5 py-0.5 rounded-full font-bold">NEW</span>
+      </a>
       <div className="grid grid-cols-3 gap-2">
         {sections.map((s) => (
           <button

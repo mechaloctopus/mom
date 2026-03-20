@@ -94,7 +94,7 @@ export default function Navigation({ activeSection }) {
                   </button>
                 ))}
               </nav>
-              <div className="mt-4 mx-4">
+              <div className="mt-4 mx-4 space-y-2">
                 <a
                   href="#/biopsy-methodology"
                   className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition-all duration-200"
@@ -102,6 +102,14 @@ export default function Navigation({ activeSection }) {
                   <Microscope className="w-4 h-4" />
                   <span className="flex-1">Biopsy Methodology</span>
                   <span className="text-[9px] bg-indigo-200 text-indigo-800 px-1.5 py-0.5 rounded-full font-bold">NEW</span>
+                </a>
+                <a
+                  href="#/doxycycline-anomaly"
+                  className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold bg-amber-50 text-amber-700 hover:bg-amber-100 transition-all duration-200"
+                >
+                  <FlaskConical className="w-4 h-4" />
+                  <span className="flex-1">Doxycycline Anomaly</span>
+                  <span className="text-[9px] bg-amber-200 text-amber-800 px-1.5 py-0.5 rounded-full font-bold">NEW</span>
                 </a>
               </div>
               <div className="mt-4 mx-4 p-3 bg-amber-50 border border-amber-100 rounded-xl">
