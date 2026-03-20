@@ -136,8 +136,8 @@ export default function DoxycyclineAnomaly() {
               <ul className="space-y-1.5 text-[11px] text-emerald-800">
                 <li>• Found unresponsive, in status epilepticus or prolonged seizure</li>
                 <li>• Low oxygen saturation + pneumonia</li>
-                <li>• RSV testing negative</li>
-                <li>• Treated with: <strong>doxycycline</strong> (for suspected atypical pneumonia) + corticosteroids + anti-seizure meds</li>
+                <li>• RSV testing <strong>positive</strong></li>
+                <li>• Treated with: <strong>doxycycline</strong> (likely for suspected bacterial/atypical co-infection alongside RSV) + corticosteroids + anti-seizure meds</li>
                 <li>• <strong>Dramatic recovery within ~3 days</strong> — from vegetative/unresponsive to speaking and near-normal function</li>
                 <li>• ~10 days of stability before relapse with worsening symptoms</li>
               </ul>
