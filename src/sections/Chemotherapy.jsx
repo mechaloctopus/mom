@@ -1,119 +1,70 @@
 import React from 'react';
-import { Stethoscope } from 'lucide-react';
-import { SectionHeader, StudyCard, InfoBox, Divider, StatCard, ProConCard, BackToNav } from '../components/Cards';
+import { ExternalLink } from 'lucide-react';
+
+function Cite({ url, children }) {
+  return <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline inline-flex items-center gap-0.5">{children} <ExternalLink className="w-2.5 h-2.5" /></a>;
+}
 
 export default function Chemotherapy() {
   return (
-    <section id="chemo" className="section-card">
-      <SectionHeader
-        icon={<Stethoscope className="w-5 h-5" />}
-        title="Standard Treatment: Temozolomide"
-        subtitle="Chemotherapy — the recommended conventional option"
-        color="red"
-      />
-
-      <InfoBox variant="warning" title="Current Situation">
-        The recommended conventional option is extremely expensive and has limited effectiveness. 
-        The standard of care for glioblastoma (GBM) is the Stupp protocol: maximal surgical resection 
-        followed by radiation therapy with concurrent and adjuvant temozolomide chemotherapy.
-      </InfoBox>
-
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Key Statistics</h3>
-      <div className="grid grid-cols-2 gap-3 mb-5">
-        <StatCard value="14.6 mo" label="Median Survival" sublabel="With temozolomide" color="amber" />
-        <StatCard value="12.1 mo" label="Median Survival" sublabel="Radiation only" color="red" />
-        <StatCard value="9.8%" label="5-Year Survival" sublabel="With temozolomide" color="purple" />
-        <StatCard value="1.9%" label="5-Year Survival" sublabel="Without temozolomide" color="red" />
-      </div>
-
-      <p className="text-xs text-gray-500 leading-relaxed mb-4">
-        The landmark 2005 Stupp trial showed temozolomide extends median overall survival by about 2.5 months 
-        (14.6 vs 12.1 months). At 2 years, 26.5% survive with chemo vs 10.4% without. 
-        At 5 years, only ~9.8% survive with temozolomide. More recent real-world data sometimes shows 
-        15–20+ months in select groups, but prognosis remains poor overall.
+    <section id="chemo">
+      <p className="text-sm text-gray-700 leading-relaxed mb-4">
+        The standard of care for glioblastoma is the <strong>Stupp protocol</strong>: maximal safe surgical resection followed by 60 Gy radiation in 30 fractions with concurrent temozolomide (75 mg/m²), then 6 cycles of adjuvant temozolomide (150–200 mg/m², 5/28 days). This protocol has been the global standard since 2005.
       </p>
 
-      <ProConCard
-        pros={[
-          'Only proven treatment to extend survival in GBM (by ~2.5 months median)',
-          'FDA-approved standard of care with decades of data',
-          '5-year survival improves from 1.9% to 9.8% (Stupp trial)',
-          'MGMT methylation status can predict better response (~21.7 months median OS)',
-          'Extended cycles (>6) may improve survival in some patients (19–26 months)',
-        ]}
-        cons={[
-          'Median survival still only ~14.6 months — most patients do not survive long-term',
-          'Severe side effects: myelosuppression, nausea, fatigue, lymphopenia, infection risk',
-          'Extremely expensive treatment',
-          '5-year survival is still less than 10%',
-          'Quality of life concerns during treatment',
-          'Tumor almost always recurs even with treatment',
-          'Some real-world populations show worse outcomes than clinical trials (10–11 month median OS)',
-        ]}
-      />
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Survival Data</h3>
+      <div className="overflow-x-auto mb-4">
+        <table className="w-full text-sm border border-gray-300">
+          <thead><tr className="bg-gray-100 border-b border-gray-300"><th className="p-2.5 text-left font-semibold text-gray-700">Metric</th><th className="p-2.5 text-left font-semibold text-gray-700">With TMZ</th><th className="p-2.5 text-left font-semibold text-gray-700">Without TMZ</th></tr></thead>
+          <tbody className="text-gray-700">
+            <tr className="border-b border-gray-200"><td className="p-2.5">Median overall survival</td><td className="p-2.5 font-semibold">14.6 months</td><td className="p-2.5">12.1 months</td></tr>
+            <tr className="border-b border-gray-200"><td className="p-2.5">2-year survival</td><td className="p-2.5 font-semibold">26.5%</td><td className="p-2.5">10.4%</td></tr>
+            <tr className="border-b border-gray-200"><td className="p-2.5">5-year survival</td><td className="p-2.5 font-semibold">9.8%</td><td className="p-2.5">1.9%</td></tr>
+            <tr><td className="p-2.5">MGMT-methylated subset</td><td className="p-2.5 font-semibold">21.7 months</td><td className="p-2.5">15.3 months</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-      <Divider />
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Landmark Studies</h3>
+      <p className="text-sm text-gray-700 leading-relaxed mb-4">
+        Temozolomide extends median survival by approximately 2.5 months. The benefit is substantially greater in patients with <strong>MGMT promoter methylation</strong> (~40% of GBM), where median survival reaches 21.7 months. In MGMT-unmethylated patients (~60%), the benefit is marginal (1–2 months). Real-world data often shows lower outcomes than clinical trials, with population-based studies reporting median OS of 10–11 months. Extended TMZ courses ({">"} 6 cycles) may further improve survival in select patients (19–26 months median OS).
+      </p>
 
-      <StudyCard
-        title="Stupp Trial — Radiotherapy plus temozolomide for glioblastoma (NEJM 2005)"
-        description="Phase III trial establishing the standard of care. 573 patients randomized to radiation alone vs. radiation + temozolomide."
-        findings="Median OS 14.6 months (chemo) vs 12.1 months (radiation only). 2-year survival 26.5% vs 10.4%. This became the global standard."
-        url="https://www.nejm.org/doi/full/10.1056/NEJMoa043330"
-        type="study"
-      />
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Considerations</h3>
+      <div className="overflow-x-auto mb-4">
+        <table className="w-full text-sm border border-gray-300">
+          <thead><tr className="bg-gray-100 border-b border-gray-300"><th className="p-2.5 text-left font-semibold text-gray-700">Arguments For</th><th className="p-2.5 text-left font-semibold text-gray-700">Arguments Against</th></tr></thead>
+          <tbody className="text-gray-700 align-top">
+            <tr><td className="p-2.5">
+              <ul className="list-disc pl-4 space-y-1">
+                <li>Only proven treatment to extend GBM survival</li>
+                <li>FDA-approved with decades of data</li>
+                <li>MGMT-methylated patients derive meaningful benefit</li>
+                <li>Extended cycles may improve long-term outcomes</li>
+              </ul>
+            </td><td className="p-2.5">
+              <ul className="list-disc pl-4 space-y-1">
+                <li>Median survival still under 15 months; 5-year survival under 10%</li>
+                <li>Severe toxicity: myelosuppression, lymphopenia, infection risk</li>
+                <li>MGMT-unmethylated patients derive marginal benefit</li>
+                <li>Tumor almost always recurs even with treatment</li>
+                <li>Significant quality-of-life impact</li>
+                <li>Extremely expensive</li>
+              </ul>
+            </td></tr>
+          </tbody>
+        </table>
+      </div>
 
-      <StudyCard
-        title="Stupp Trial 5-Year Update (Lancet Oncology 2009)"
-        description="Long-term follow-up of the original Stupp trial with 5-year survival data."
-        findings="5-year OS 9.8% with temozolomide vs 1.9% without. 27.2% survived to 2 years. Benefit durable but small in absolute terms."
-        url="https://pubmed.ncbi.nlm.nih.gov/19269895/"
-        type="study"
-      />
-
-      <Divider />
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Additional Studies</h3>
-
-      <StudyCard
-        title="Survival in research studies in the US (Grossman et al., 2010)"
-        description="Combined analysis of US research populations receiving temozolomide."
-        findings="Median OS around 14–16 months in aligned clinical trial populations."
-        url="https://pubmed.ncbi.nlm.nih.gov/20371685/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Long-term adjuvant temozolomide effect (Huang et al., 2021)"
-        description="Compares standard (6 cycles) vs extended temozolomide treatment duration."
-        findings="Standard: median OS 19.4 months, 2-year survival 36%. Extended: median OS 25.6 months, 2-year survival 66%."
-        url="https://pmc.ncbi.nlm.nih.gov/articles/PMC8561964/"
-        type="study"
-      />
-
-      <StudyCard
-        title="GBM and increased survival with longer chemo (Abou Jaoude et al., 2019)"
-        description="Retrospective study on whether longer temozolomide courses improve outcomes."
-        findings="Longer temozolomide linked to better long-term survival; 5-year survival ~4%."
-        url="https://pmc.ncbi.nlm.nih.gov/articles/PMC6710024/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Temozolomide chronotherapy (Damato et al., 2021)"
-        description="Examined whether timing of temozolomide dosing affects outcomes."
-        findings="Median OS ~15 months overall with variations by timing/dosing schedule."
-        url="https://pmc.ncbi.nlm.nih.gov/articles/PMC8086242/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Post-FDA approval survival benefit (Zhu et al., 2017)"
-        description="Population-based study of survival trends after temozolomide and bevacizumab approval."
-        findings="Real-world median OS improved to 10–11 months in post-approval eras (lower than clinical trials)."
-        url="https://pmc.ncbi.nlm.nih.gov/articles/PMC5546458/"
-        type="study"
-      />
-      <BackToNav />
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Key Studies</h3>
+      <ol className="list-decimal pl-6 text-sm text-gray-700 leading-relaxed space-y-2">
+        <li>Stupp R et al. Radiotherapy plus concomitant and adjuvant temozolomide for glioblastoma. <em>NEJM</em> 2005. <Cite url="https://www.nejm.org/doi/full/10.1056/NEJMoa043330">NEJM</Cite></li>
+        <li>Stupp R et al. Effects of radiotherapy with concomitant and adjuvant temozolomide — 5-year analysis. <em>Lancet Oncol</em> 2009. <Cite url="https://pubmed.ncbi.nlm.nih.gov/19269895/">PMID: 19269895</Cite></li>
+        <li>Grossman SA et al. Survival of patients with newly diagnosed GBM treated with radiation and TMZ on research protocols in the US. <em>Clin Cancer Res</em> 2010. <Cite url="https://pubmed.ncbi.nlm.nih.gov/20371685/">PMID: 20371685</Cite></li>
+        <li>Huang J et al. Long-term adjuvant TMZ — standard vs extended treatment. <em>Front Oncol</em> 2021. <Cite url="https://pmc.ncbi.nlm.nih.gov/articles/PMC8561964/">PMC8561964</Cite></li>
+        <li>Abou Jaoude JF et al. GBM and increased survival with longer chemotherapy. 2019. <Cite url="https://pmc.ncbi.nlm.nih.gov/articles/PMC6710024/">PMC6710024</Cite></li>
+        <li>Damato AL et al. Temozolomide chronotherapy. <em>Neuro-Oncol Adv</em> 2021. <Cite url="https://pmc.ncbi.nlm.nih.gov/articles/PMC8086242/">PMC8086242</Cite></li>
+        <li>Zhu P et al. Post-FDA approval survival benefit — population-based study. 2017. <Cite url="https://pmc.ncbi.nlm.nih.gov/articles/PMC5546458/">PMC5546458</Cite></li>
+      </ol>
     </section>
   );
 }

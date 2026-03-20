@@ -1,64 +1,36 @@
 import React from 'react';
-import { Heart, AlertTriangle, Brain, Clock } from 'lucide-react';
-import { SectionHeader, StatCard, InfoBox, BackToNav } from '../components/Cards';
 
 export default function Overview() {
   return (
-    <section id="overview" className="section-card">
-      <SectionHeader
-        icon={<Heart className="w-5 h-5" />}
-        title="Overview"
-        subtitle="Understanding the situation"
-        color="primary"
-      />
+    <section id="overview">
+      <p className="text-sm text-gray-700 leading-relaxed mb-4">
+        <strong>Brenda Tullis, 64-year-old female</strong>, presents with a left parietal lobe infiltrative mass first identified on MRI in July 2025 as a large non-enhancing signal abnormality measuring 9.3 × 5.1 × 5.6 cm, most suggestive of glioma. A February 2026 follow-up MRI demonstrated interval evolution: the primary mass now measures 3.7 × 5.8 × 4.4 cm with emerging minimal peripheral enhancement, surrounding vasogenic edema extending into adjacent lobes, and a <strong>new 9.8 mm minimally enhancing satellite lesion</strong> in the anterior thalamic cortex — consistent with progressing infiltrative glioma with possible grade transition. Biopsy is pending.
+      </p>
 
-      <div className="bg-gradient-to-br from-primary-50 to-blue-50 border border-primary-100 rounded-2xl p-5 mb-5">
-        <h3 className="text-base font-bold text-gray-900 mb-2">What We're Facing</h3>
-        <p className="text-sm text-gray-600 leading-relaxed mb-3">
-          Our mother, <strong>Brenda Tullis (64)</strong>, has a <strong>left parietal lobe brain tumor</strong> measuring 
-          3.7 × 5.8 × 4.4 cm, first discovered in July 2025. A February 2026 MRI confirmed the tumor and revealed 
-          a <strong>new satellite lesion</strong> (9.8 mm) near the left basal ganglion — indicating progression. 
-          She was admitted to the ICU with altered awareness, seizures, hypoxemia (SpO2 dropped to 74%), and active RSV infection.
-        </p>
-        <p className="text-sm text-gray-600 leading-relaxed">
-          This resource compiles published studies, clinical data, patient testimonials, and her actual 
-          hospital records to help our family make the most informed decisions possible — both conventional and alternative.
-        </p>
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Key Clinical Parameters</h3>
+      <div className="overflow-x-auto mb-4">
+        <table className="w-full text-sm border border-gray-300">
+          <tbody className="text-gray-700">
+            <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold w-40">Primary mass</td><td className="p-2.5">3.7 × 5.8 × 4.4 cm, left parietal lobe, minimal peripheral enhancement</td></tr>
+            <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Satellite lesion</td><td className="p-2.5">9.8 mm, anterior thalamic cortex (new finding, Feb 2026)</td></tr>
+            <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Midline shift</td><td className="p-2.5">~3 mm left-to-right</td></tr>
+            <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Edema</td><td className="p-2.5">Confluent vasogenic edema, refractory to corticosteroids + osmotic therapy</td></tr>
+            <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Seizures</td><td className="p-2.5">Refractory, requiring multiple anti-epileptic agents</td></tr>
+            <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">SpO2 event</td><td className="p-2.5">Prolonged hypoxemia to 74% during prior hospitalization</td></tr>
+            <tr><td className="p-2.5 font-semibold">Incidental finding</td><td className="p-2.5">Indeterminate left adrenal nodule (2.8 cm) — requires follow-up to exclude metastatic disease</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 mb-5">
-        <StatCard value="3.7×5.8cm" label="Primary Tumor" sublabel="Left parietal lobe" color="red" />
-        <StatCard value="9.8mm" label="New Satellite Lesion" sublabel="Near left basal ganglion" color="red" />
-        <StatCard value="3mm" label="Midline Shift" sublabel="Brain pushed right" color="amber" />
-        <StatCard value="74%" label="SpO2 Event" sublabel="Prolonged low oxygen" color="purple" />
-      </div>
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Environmental History</h3>
+      <p className="text-sm text-gray-700 leading-relaxed mb-4">
+        Patient resides in dilapidated housing with exposure to chickens, rabbits, and routine contact with stray animals including potential feline exposure. This environmental profile is relevant to infectious differential diagnoses, particularly toxoplasmosis, fungal infections, and other opportunistic organisms (see <a href="#/doxycycline-anomaly" className="text-blue-700 hover:underline">Doxycycline Anomaly Report</a>).
+      </p>
 
-      <InfoBox title="Key Concerns" variant="warning">
-        <ul className="space-y-1.5 mt-1">
-          <li className="flex items-start gap-2">
-            <Brain className="w-3 h-3 mt-0.5 flex-shrink-0" />
-            <span>Brain tumor with new satellite lesion — local progression confirmed on Feb 2026 MRI</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <AlertTriangle className="w-3 h-3 mt-0.5 flex-shrink-0" />
-            <span>ICU admission — altered awareness, seizures, hypoxemia (SpO2 74%), active RSV</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <Clock className="w-3 h-3 mt-0.5 flex-shrink-0" />
-            <span>Indeterminate left adrenal nodule (2.8 cm) — needs non-invasive follow-up to rule out spread</span>
-          </li>
-        </ul>
-      </InfoBox>
-
-      <InfoBox title="How to Use This Resource" variant="info">
-        <p>
-          Use the menu (top right) or quick-nav grid above to jump between sections. Each section 
-          includes sourced studies, arguments for and against, and key statistics. Mom's actual 
-          hospital reports are transcribed in the <strong>Medical Reports</strong> section. The 
-          <strong>Proposed Care Protocol</strong> at the end ties everything into an actionable plan.
-        </p>
-      </InfoBox>
-      <BackToNav />
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Scope of This Document</h3>
+      <p className="text-sm text-gray-700 leading-relaxed">
+        This compilation integrates peer-reviewed research, the patient{"'"}s medical records, proposed treatment protocols (conventional and investigational), nutritional strategy, and real-time clinical observations. Each chapter includes sourced studies with PubMed links for independent verification. The document is maintained as a living resource and updated as new data becomes available.
+      </p>
     </section>
   );
 }
