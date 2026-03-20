@@ -51,7 +51,7 @@ export default function App() {
     { id: 'alt-protocols', n: 'IV', t: 'Alternative Protocols' },
     { id: 'supportive', n: 'V', t: 'Supportive Therapies' },
     { id: 'metabolic', n: 'VI', t: 'Metabolic Therapy' },
-    { id: 'sacred-oil', n: 'VII', t: '\u0398\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1 — Sacred Healing Oil' },
+    { id: 'sacred-oil', n: 'VII', t: 'Phoenix Tears Oil Blend' },
     { id: 'protocol', n: 'VIII', t: 'Drug Protocol (Mebendazole Option)' },
     { id: 'supplies', n: 'IX', t: 'Supplies & Procurement' },
   ];
@@ -182,10 +182,10 @@ export default function App() {
           <NutritionProtocol />
         </Chapter>
 
-        <Chapter id="sacred-oil" number="VII" title={<span>\u0398\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1 <span className="text-gray-500 font-normal">— Sacred Healing Oil</span></span>} subtitle="Topical anti-cancer botanical compound for complementary use">
+        <Chapter id="sacred-oil" number="VII" title="Phoenix Tears Oil Blend" subtitle="Topical anti-cancer botanical compound for complementary use">
           <section>
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
-              <strong>\u0398\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1</strong> (Therape\u00EDa, from the Greek <em>\u03B8\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1</em> — "healing, service, care") is a custom-formulated sacred oil blend combining botanical compounds with documented anti-cancer, anti-inflammatory, and neuroprotective properties. Designed for topical application as a complementary therapy — incorporated into soaps, shampoos, lotions, salves, and direct scalp application.
+              <strong>Phoenix Tears Oil Blend</strong> is a custom-formulated botanical oil combining compounds with documented anti-cancer, anti-inflammatory, and neuroprotective properties. Designed for topical application as a complementary therapy — incorporated into soaps, shampoos, lotions, salves, and direct scalp application.
             </p>
 
             <h3 className="text-sm font-bold text-gray-900 mb-2">Composition</h3>
@@ -211,7 +211,7 @@ export default function App() {
             </p>
 
             <p className="text-sm text-gray-600 italic">
-              \u201C\u0398\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1 — to heal, to serve, to care. The oldest medicine is the earth itself.\u201D
+              The oldest medicine is the earth itself.
             </p>
           </section>
         </Chapter>
