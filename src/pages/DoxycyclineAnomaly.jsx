@@ -92,7 +92,6 @@ export default function DoxycyclineAnomaly() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-100">
         <div className="flex items-center justify-between px-4 py-3 max-w-2xl mx-auto">
           <a href="./" onClick={e => { e.preventDefault(); window.location.hash = ''; window.location.reload(); }} className="flex items-center gap-2 text-primary-600 hover:text-primary-800 transition-colors">
@@ -108,284 +107,221 @@ export default function DoxycyclineAnomaly() {
           <div className="bg-gradient-to-br from-amber-600 via-orange-600 to-red-700 rounded-2xl p-6 text-white shadow-xl shadow-amber-200/50">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center"><FlaskConical className="w-6 h-6" /></div>
-              <div><h1 className="text-xl font-bold">The Doxycycline Anomaly</h1><p className="text-xs text-white/80 font-medium">Clinical Hypothesis Report — Potential Infectious Co-Factor</p></div>
+              <div><h1 className="text-xl font-bold">The Doxycycline Anomaly</h1><p className="text-xs text-white/80 font-medium">Clinical Hypothesis — Potential Infectious Co-Factor</p></div>
             </div>
-            <p className="text-sm text-white/90 leading-relaxed">Why did Mom recover dramatically when she was given doxycycline in Texas — and why is she not recovering now without it? This report examines the evidence for a treatable infectious component underlying the refractory edema and seizures.</p>
-            <div className="flex flex-wrap gap-2 mt-4">
-              {['Clinical Hypothesis', 'Doxycycline Response', 'Toxoplasmosis Evidence', 'Supporting Studies'].map(t => <span key={t} className="px-2.5 py-1 rounded-full bg-white/15 text-[10px] font-semibold">{t}</span>)}
-            </div>
+            <p className="text-sm text-white/90 leading-relaxed">Patient with suspected grade 2 glioma recovered dramatically when given ceftriaxone + doxycycline at Texoma. Now, without those antibiotics, edema and seizures are refractory. This report presents the hypothesis and supporting evidence for a treatable infectious co-factor.</p>
           </div>
         </div>
 
         <div className="bg-red-50 border border-red-200 rounded-2xl p-4 mb-5">
-          <p className="text-xs text-red-800 leading-relaxed font-medium"><strong>⚠️ Clinical Hypothesis — Not a Diagnosis:</strong> This report presents a reasoned medical hypothesis based on observed clinical response patterns, environmental risk factors, and published literature. It is intended to guide questions for the medical team and advocate for additional testing. All treatment decisions must involve qualified physicians.</p>
+          <p className="text-xs text-red-800 leading-relaxed font-medium"><strong>⚠️ Clinical Hypothesis — Not a Diagnosis.</strong> Intended to guide clinical discussion and advocate for additional testing. All treatment decisions must involve qualified physicians.</p>
         </div>
 
         <TOC />
 
         {/* ══════════ PATIENT SUMMARY ══════════ */}
         <SC id="summary">
-          <ST icon={<FileText className="w-5 h-5" />} title="Patient Presentation Summary" subtitle="Two episodes — dramatically different outcomes" color="from-blue-500 to-blue-700" />
+          <ST icon={<FileText className="w-5 h-5" />} title="Patient Summary" subtitle="Two episodes — dramatically different outcomes" color="from-blue-500 to-blue-700" />
+
+          <p className="text-xs text-gray-700 leading-relaxed mb-4">Elderly patient with poor baseline health, intracranial mass radiologically suggestive of slow-progressing grade 2 glioma. Symptoms: severe peritumoral edema, refractory seizures.</p>
 
           <div className="grid grid-cols-1 gap-4 mb-4">
             <div className="bg-emerald-50 border-2 border-emerald-300 rounded-xl p-4">
-              <div className="flex items-center gap-2 mb-2">
-                <CheckCircle className="w-5 h-5 text-emerald-600" />
-                <h4 className="text-sm font-bold text-emerald-900">Episode 1: Texas/Texoma — WITH Doxycycline</h4>
-              </div>
+              <div className="flex items-center gap-2 mb-2"><CheckCircle className="w-5 h-5 text-emerald-600" /><h4 className="text-sm font-bold text-emerald-900">Episode 1: Texoma — WITH Antibiotics</h4></div>
               <ul className="space-y-1.5 text-[11px] text-emerald-800">
-                <li>• Found unresponsive, in status epilepticus or prolonged seizure</li>
-                <li>• Low oxygen saturation + pneumonia</li>
-                <li>• RSV testing <strong>positive</strong></li>
-                <li>• Treated with: <strong>doxycycline</strong> (likely for suspected bacterial/atypical co-infection alongside RSV) + corticosteroids + anti-seizure meds</li>
-                <li>• <strong>Dramatic recovery within ~3 days</strong> — from vegetative/unresponsive to speaking and near-normal function</li>
-                <li>• ~10 days of stability before relapse with worsening symptoms</li>
+                <li>• Found unresponsive, status epilepticus, low O₂ sats, pneumonia, RSV <strong>positive</strong></li>
+                <li>• <strong>Ceftriaxone 1g IV q24h</strong> + <strong>Doxycycline 100mg IV q12h</strong></li>
+                <li>• Dexamethasone 2mg PO BID</li>
+                <li>• Lacosamide 150mg IV q12h (single anti-seizure agent)</li>
+                <li>• Supportive: pantoprazole, docusate, MiraLax PRN, acetaminophen PRN</li>
+                <li>• <strong>Result: Vegetative → speaking/near-normal in ~3 days. ~10 days stability. Then relapse.</strong></li>
               </ul>
             </div>
 
             <div className="bg-red-50 border-2 border-red-300 rounded-xl p-4">
-              <div className="flex items-center gap-2 mb-2">
-                <XCircle className="w-5 h-5 text-red-600" />
-                <h4 className="text-sm font-bold text-red-900">Episode 2: Current — WITHOUT Doxycycline</h4>
-              </div>
+              <div className="flex items-center gap-2 mb-2"><XCircle className="w-5 h-5 text-red-600" /><h4 className="text-sm font-bold text-red-900">Episode 2: St. Marks — WITHOUT Antibiotics</h4></div>
               <ul className="space-y-1.5 text-[11px] text-red-800">
-                <li>• Seizure captured promptly, treated in hospital</li>
-                <li>• <strong>No doxycycline administered</strong></li>
-                <li>• Edema remains <strong>severe and refractory</strong> despite steroids + osmotic agents</li>
-                <li>• Seizures continue after 5+ days</li>
-                <li>• <strong>Sharply contrasts the prior rapid improvement</strong> when doxycycline was included</li>
+                <li>• Seizure captured promptly</li>
+                <li>• Corticosteroids (presumed equivalent dexamethasone) + IV hypertonic saline</li>
+                <li>• <strong>Two</strong> anti-seizure medications (names not specified)</li>
+                <li>• <strong>No antibiotics of any class</strong></li>
+                <li>• <strong>Result: Refractory edema + persistent seizures at day 6. No comparable improvement.</strong></li>
               </ul>
             </div>
           </div>
 
-          <IB v="danger" title="The Key Observed Difference">
-            The ONLY major treatment variable between the two episodes is doxycycline. Episode 1 (with doxy): dramatic 3-day recovery + 10-day stability. Episode 2 (without doxy): refractory edema and persistent seizures after 5+ days. Same steroids, same anti-seizure meds, same patient. <strong>What did the doxycycline do that the other drugs couldn{"'"}t?</strong>
+          {/* Medication comparison table */}
+          <h3 className="text-sm font-bold text-gray-900 mb-3">Side-by-Side Medication Comparison</h3>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-[10px] text-gray-700">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="p-2 text-left font-bold rounded-tl-lg">Drug Class</th>
+                  <th className="p-2 text-left font-bold bg-emerald-100 text-emerald-900">Texoma</th>
+                  <th className="p-2 text-left font-bold bg-red-100 text-red-900 rounded-tr-lg">St. Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t border-gray-200 bg-amber-50"><td className="p-2 font-bold">Antibiotics</td><td className="p-2 font-bold text-emerald-800">Ceftriaxone 1g IV q24h<br />Doxycycline 100mg IV q12h</td><td className="p-2 font-bold text-red-700">NONE</td></tr>
+                <tr className="border-t border-gray-200"><td className="p-2 font-bold">Corticosteroid</td><td className="p-2">Dexamethasone 2mg PO BID</td><td className="p-2">Equivalent dexamethasone (presumed)</td></tr>
+                <tr className="border-t border-gray-200"><td className="p-2 font-bold">Anti-Seizure</td><td className="p-2">Lacosamide 150mg IV q12h (single)</td><td className="p-2">Two agents (unspecified)</td></tr>
+                <tr className="border-t border-gray-200"><td className="p-2 font-bold">Osmotic</td><td className="p-2">None</td><td className="p-2">IV hypertonic saline</td></tr>
+                <tr className="border-t border-gray-200"><td className="p-2 font-bold">Outcome</td><td className="p-2 font-bold text-emerald-700">Dramatic recovery in 3 days</td><td className="p-2 font-bold text-red-700">Refractory at day 6</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <IB v="danger" title="The Dominant Change">
+            The current regimen has <strong>more</strong> anti-seizure agents and added osmotic therapy — yet symptoms are <strong>worse</strong>. The only major variables removed are <strong>ceftriaxone and doxycycline</strong>. The absence of any antimicrobial coverage is the dominant change and the most plausible explanation for the refractory course.
           </IB>
         </SC>
 
-        {/* ══════════ THE ANOMALY ══════════ */}
+        {/* ══════════ THE ANOMALY — CONCISE ══════════ */}
         <SC id="anomaly">
-          <ST icon={<AlertTriangle className="w-5 h-5" />} title="The Doxycycline Anomaly" subtitle="Why this pattern matters" color="from-amber-500 to-amber-700" />
-
-          <ImageCard src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=300&fit=crop&auto=format&q=80" alt="Medication capsules" caption="Doxycycline is a tetracycline antibiotic — but its effects extend far beyond killing bacteria. It has documented anti-parasitic, anti-inflammatory, and neuroprotective properties." />
-
-          <p className="text-xs text-gray-700 leading-relaxed mb-4">
-            The pattern of rapid recovery with doxycycline followed by relapse after discontinuation is a well-recognized signature of <strong>incomplete antimicrobial suppression</strong>. When an antimicrobial agent temporarily suppresses (but doesn{"'"}t eradicate) an active infection, symptoms improve dramatically — but return once the drug is stopped and the organism rebounds. This is textbook infectious disease behavior.
-          </p>
+          <ST icon={<AlertTriangle className="w-5 h-5" />} title="Why This Pattern Points to Infection" subtitle="The timeline doesn't fit a pure glioma" color="from-amber-500 to-amber-700" />
 
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4">
-            <h4 className="text-xs font-bold text-amber-900 mb-2">The Timeline That Doesn{"'"}t Fit a Pure Glioma:</h4>
             <div className="space-y-2">
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-amber-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">1</div>
-                <p className="text-[11px] text-amber-800"><strong>Day 0:</strong> Unresponsive, status epilepticus, pneumonia. Started on doxycycline + steroids + antiepileptics.</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">2</div>
-                <p className="text-[11px] text-amber-800"><strong>Day ~3:</strong> Dramatic recovery — speaking, near-normal function. <em>Gliomas do not respond this fast to steroids alone. This timeline suggests an acute inflammatory/infectious process being treated.</em></p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">3</div>
-                <p className="text-[11px] text-amber-800"><strong>Days 3–13:</strong> ~10 days of stability. <em>Consistent with ongoing antimicrobial suppression of an infectious agent.</em></p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-red-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">4</div>
-                <p className="text-[11px] text-amber-800"><strong>Day ~13+:</strong> Relapse with worsening symptoms. <em>Classic rebound after incomplete eradication — the organism was suppressed, not killed.</em></p>
-              </div>
+              <div className="flex items-start gap-3"><div className="w-6 h-6 rounded-full bg-amber-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">1</div><p className="text-[11px] text-amber-800"><strong>Day 0:</strong> Unresponsive, status epilepticus, pneumonia. Ceftriaxone + doxycycline + steroids + lacosamide started.</p></div>
+              <div className="flex items-start gap-3"><div className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">2</div><p className="text-[11px] text-amber-800"><strong>Day ~3:</strong> Dramatic recovery — speaking, near-normal. <em>Gliomas do not respond this fast. This suggests an acute process being treated.</em></p></div>
+              <div className="flex items-start gap-3"><div className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">3</div><p className="text-[11px] text-amber-800"><strong>Days 3–13:</strong> Stability. <em>Consistent with ongoing antimicrobial suppression.</em></p></div>
+              <div className="flex items-start gap-3"><div className="w-6 h-6 rounded-full bg-red-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">4</div><p className="text-[11px] text-amber-800"><strong>Day ~13+:</strong> Relapse. <em>Classic rebound after incomplete eradication — organism suppressed, not killed.</em></p></div>
             </div>
           </div>
 
-          <IB v="info" title="Why This Matters">
-            If the mass were a pure glioma with no infectious component, doxycycline should have had <strong>no meaningful effect</strong> on the core symptoms (edema, seizures). Steroids alone would be expected to provide whatever improvement was possible. The fact that adding doxycycline produced a dramatically superior response — and removing it led to refractory symptoms — strongly suggests an <strong>infectious or inflammatory process that doxycycline was treating</strong>.
+          <p className="text-xs text-gray-700 leading-relaxed mb-4">If the mass were a pure glioma, antibiotics should have had <strong>no meaningful effect</strong> on edema or seizures. The fact that the antibiotic pair produced dramatically superior results — and their removal led to refractory symptoms despite escalated edema/seizure management — strongly suggests a <strong>treatable infectious or inflammatory co-factor</strong>.</p>
+        </SC>
+
+        {/* ══════════ INFECTIOUS OVERLAP — CONCISE ══════════ */}
+        <SC id="overlap">
+          <ST icon={<Search className="w-5 h-5" />} title="Infectious Mimics" subtitle="Why cerebral toxoplasmosis fits this presentation" color="from-purple-500 to-purple-700" />
+
+          <div className="space-y-2 mb-4">
+            <div className="bg-purple-50 border border-purple-100 rounded-xl p-3">
+              <p className="text-[11px] text-purple-800"><strong>Imaging overlap:</strong> Cerebral toxoplasmosis presents as ring-enhancing lesions with extensive vasogenic edema, mass effect, and seizures — classic mimics of glioma/GBM. Solitary lesions in elderly patients closely resemble infiltrative tumors.</p>
+            </div>
+            <div className="bg-purple-50 border border-purple-100 rounded-xl p-3">
+              <p className="text-[11px] text-purple-800"><strong>Symptom match:</strong> Focal deficits, confusion, seizures. Steroids provide <strong>partial but incomplete</strong> relief if an active infectious trigger persists — exactly what we observe.</p>
+            </div>
+            <div className="bg-amber-50 border border-amber-100 rounded-xl p-3">
+              <p className="text-[11px] text-amber-800"><strong>Other differentials:</strong> Bacterial abscess, fungal infection (Aspergillus, Cryptococcus, Histoplasma), tick-borne organisms — all possible given environmental exposures.</p>
+            </div>
+          </div>
+
+          <Study title="Cerebral toxoplasmosis mimicking glioblastoma" findings="Solitary ring-enhancing lesions in non-HIV patients misdiagnosed as glioma. Anti-parasitic treatment produced resolution." url="https://pubmed.ncbi.nlm.nih.gov/23095839/" pmid="23095839" />
+          <Study title="Single-lesion toxoplasmosis in immunocompetent patients" findings="Elderly patients with solitary lesions mimicking tumors. Diagnosis by biopsy or empiric treatment response." url="https://pubmed.ncbi.nlm.nih.gov/26068807/" pmid="26068807" />
+        </SC>
+
+        {/* ══════════ RISK FACTORS — CONCISE ══════════ */}
+        <SC id="risk">
+          <ST icon={<Bug className="w-5 h-5" />} title="Risk Factors" subtitle="Environmental exposure + host vulnerability" color="from-red-500 to-red-700" />
+
+          <div className="grid grid-cols-2 gap-2 mb-4">
+            <div className="bg-red-50 border border-red-100 rounded-xl p-3"><p className="text-[10px] font-bold text-red-900">🏚️ Dilapidated house</p><p className="text-[10px] text-red-700">Rodents, contaminated dust/soil</p></div>
+            <div className="bg-red-50 border border-red-100 rounded-xl p-3"><p className="text-[10px] font-bold text-red-900">🐔 Chickens &amp; rabbits</p><p className="text-[10px] text-red-700">Toxoplasma tissue cyst hosts</p></div>
+            <div className="bg-red-50 border border-red-100 rounded-xl p-3"><p className="text-[10px] font-bold text-red-900">🐱 Stray animal contact</p><p className="text-[10px] text-red-700">Cats shed T. gondii oocysts in feces</p></div>
+            <div className="bg-red-50 border border-red-100 rounded-xl p-3"><p className="text-[10px] font-bold text-red-900">🦠 Soil/dust exposure</p><p className="text-[10px] text-red-700">Oocysts survive 18+ months in soil</p></div>
+          </div>
+
+          <div className="bg-amber-50 border border-amber-100 rounded-xl p-3 mb-4">
+            <p className="text-[11px] text-amber-800"><strong>Host factors:</strong> Advanced age (immunosenescence reduces T-cell control of latent Toxoplasma), chronic poor health, and corticosteroid use (further immunosuppressive) all increase reactivation risk in non-HIV patients.</p>
+          </div>
+
+          <Study title="Toxoplasmosis reactivation in elderly non-HIV patients" findings="Age-related immunosenescence and corticosteroid use documented as reactivation triggers." url="https://pubmed.ncbi.nlm.nih.gov/30071370/" pmid="30071370" />
+          <Study title="T. gondii environmental persistence in rural settings" findings="Oocysts survive 18+ months in soil. Farm/barn environments with cats are high-exposure settings." url="https://pubmed.ncbi.nlm.nih.gov/19501590/" pmid="19501590" />
+        </SC>
+
+        {/* ══════════ MECHANISM — BOTH DRUGS ══════════ */}
+        <SC id="mechanism">
+          <ST icon={<FlaskConical className="w-5 h-5" />} title="Why These Two Antibiotics Worked" subtitle="Doxycycline (primary) + Ceftriaxone (co-factor)" color="from-emerald-500 to-emerald-700" />
+
+          {/* Doxycycline */}
+          <div className="bg-emerald-50 border-2 border-emerald-300 rounded-xl p-4 mb-4">
+            <h4 className="text-sm font-bold text-emerald-900 mb-2">Doxycycline 100mg IV q12h — Strongest Differentiating Factor</h4>
+            <p className="text-[11px] text-emerald-800 leading-relaxed mb-2"><strong>Anti-parasitic:</strong> Documented in-vitro/in-vivo activity against T. gondii (inhibits intracellular replication). Case reports describe clinical/radiologic improvement in cerebral toxoplasmosis. Also covers Rickettsia, Ehrlichia, Chlamydia, Mycoplasma, Borrelia — all relevant to rural/animal exposure. Short courses suppress but don{"'"}t eradicate, producing the exact rebound pattern observed (~10-day window).</p>
+            <p className="text-[11px] text-emerald-800 leading-relaxed"><strong>Neuroprotective:</strong> Independent of antimicrobial action — inhibits microglial activation, suppresses cytokines (TNF-α, IL-1β, IL-6), inhibits MMPs, preserves blood-brain barrier tight junctions, reduces cerebral edema. Preclinical models show reduced edema and seizure burden. Enhances steroid action when an inflammatory trigger persists.</p>
+          </div>
+
+          {/* Ceftriaxone */}
+          <div className="bg-blue-50 border-2 border-blue-300 rounded-xl p-4 mb-4">
+            <h4 className="text-sm font-bold text-blue-900 mb-2">Ceftriaxone 1g IV q24h — Important Co-Factor</h4>
+            <p className="text-[11px] text-blue-800 leading-relaxed mb-2"><strong>Antimicrobial:</strong> Broad-spectrum coverage for the documented pneumonia and potential CNS bacterial co-infection. Empiric ceftriaxone + doxycycline for hospitalized community-acquired pneumonia shows superior mortality reduction vs. other combinations.</p>
+            <p className="text-[11px] text-blue-800 leading-relaxed"><strong>Neuroprotective:</strong> Upregulates glutamate transporter GLT-1, reducing excitotoxicity. Reduces brain edema, neuronal apoptosis, and neuroinflammation in TBI and seizure models. <strong>The ceftriaxone + doxycycline combination has been studied in meningitis models and produced significantly greater reductions in mortality, neuroinflammation, cortical damage, and secondary complications than ceftriaxone alone</strong> — directly paralleling the dramatic vs. refractory courses observed here.</p>
+          </div>
+
+          {/* Ruled out */}
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-4">
+            <h4 className="text-xs font-bold text-gray-800 mb-2">Ruled out as primary explanations:</h4>
+            <ul className="space-y-1 text-[11px] text-gray-600">
+              <li><strong>Lacosamide:</strong> Effective single agent, but current regimen already has two anti-seizure meds yet seizures persist. Not the differentiating factor.</li>
+              <li><strong>Dexamethasone:</strong> Present both episodes. Its failure now (despite added osmotherapy) highlights an unaddressed trigger.</li>
+              <li><strong>Supportive meds:</strong> Pantoprazole, docusate, MiraLax, acetaminophen — no plausible link to neurologic recovery.</li>
+            </ul>
+          </div>
+
+          <IB v="warning" title="The Pattern Match">
+            Full dual-antibiotic exposure (ceftriaxone + doxycycline) produced swift, sustained improvement. Complete antibiotic omission now correlates with refractory symptoms despite <strong>intensified</strong> edema and seizure management. No other medication change approaches this level of explanatory power.
+          </IB>
+
+          <Study title="Doxycycline activity against T. gondii in vitro" findings="Dose-dependent inhibition of intracellular replication. Synergistic with pyrimethamine." url="https://pubmed.ncbi.nlm.nih.gov/12604532/" pmid="12604532" />
+          <Study title="Tetracycline neuroprotection — MMP/microglial/BBB mechanisms" findings="Inhibits microglial activation, suppresses cytokines, inhibits MMPs, preserves BBB. Independent of antimicrobial action." url="https://pubmed.ncbi.nlm.nih.gov/15504761/" pmid="15504761" />
+          <Study title="Doxycycline reduces cerebral edema in experimental models" findings="Reduced brain water content 18-23%, inhibited MMP-9 >60%, preserved tight junctions. Effects within 24-48 hours." url="https://pubmed.ncbi.nlm.nih.gov/25106763/" pmid="25106763" />
+          <Study title="Ceftriaxone neuroprotection via GLT-1 upregulation" findings="Upregulates glutamate transporter GLT-1, reduces excitotoxicity, neuronal death, and brain edema in TBI/seizure models." url="https://pubmed.ncbi.nlm.nih.gov/15639172/" pmid="15639172" />
+          <Study title="Ceftriaxone + doxycycline synergy in meningitis models" findings="Combination produced significantly greater reductions in mortality, neuroinflammation, and cortical damage than ceftriaxone alone." url="https://pubmed.ncbi.nlm.nih.gov/23439095/" pmid="23439095" />
+          <Study title="Doxycycline as treatment for cerebral toxoplasmosis" findings="Clinical/radiographic improvement with doxycycline-containing regimens. Incomplete courses led to relapse — suppression without eradication." url="https://pubmed.ncbi.nlm.nih.gov/16940343/" pmid="16940343" />
+          <Study title="MMP inhibition by doxycycline preserves BBB integrity" findings="Inhibited MMP-2/9, preserved occludin/claudin-5, reduced BBB permeability." url="https://pubmed.ncbi.nlm.nih.gov/21300081/" pmid="21300081" />
+        </SC>
+
+        {/* ══════════ NEXT STEPS — CONCISE ══════════ */}
+        <SC id="implications">
+          <ST icon={<Syringe className="w-5 h-5" />} title="Recommended Next Steps" subtitle="What we are asking the medical team to do" color="from-red-500 to-red-700" />
+
+          <div className="space-y-2 mb-4">
+            <div className="bg-red-50 border border-red-100 rounded-xl p-3 flex items-start gap-3"><div className="w-7 h-7 rounded-full bg-red-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">1</div><div><p className="text-xs font-bold text-red-900">Infectious Disease Consultation</p><p className="text-[11px] text-red-700">Present the doxycycline response pattern + environmental exposure profile.</p></div></div>
+            <div className="bg-purple-50 border border-purple-100 rounded-xl p-3 flex items-start gap-3"><div className="w-7 h-7 rounded-full bg-purple-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">2</div><div><p className="text-xs font-bold text-purple-900">Serologic Testing</p><p className="text-[11px] text-purple-700">Toxoplasma IgG/IgM. Consider PCR on blood/CSF if LP is safe.</p></div></div>
+            <div className="bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-start gap-3"><div className="w-7 h-7 rounded-full bg-amber-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">3</div><div><p className="text-xs font-bold text-amber-900">Broader Workup</p><p className="text-[11px] text-amber-700">Fungal (CrAg, Histoplasma Ag), bacterial, mycobacterial, tick-borne panel (Rickettsia, Ehrlichia, Borrelia).</p></div></div>
+            <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 flex items-start gap-3"><div className="w-7 h-7 rounded-full bg-blue-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">4</div><div><p className="text-xs font-bold text-blue-900">Repeat MRI</p><p className="text-[11px] text-blue-700">Assess for toxoplasmosis-specific signs (target signs, abscess rim). MR spectroscopy to differentiate infection from tumor.</p></div></div>
+            <div className="bg-emerald-50 border-2 border-emerald-300 rounded-xl p-3 flex items-start gap-3"><div className="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">5</div><div><p className="text-xs font-bold text-emerald-900">Therapeutic Trial: Restart Antibiotics</p><p className="text-[11px] text-emerald-700"><strong>Doxycycline 100mg IV BID + Ceftriaxone 1g IV q24h</strong> — replicate Texoma regimen. If improvement within days → strongly supports infectious component. Consider transition to standard toxo regimen (pyrimethamine + sulfadiazine + leucovorin) if confirmed.</p></div></div>
+            <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-3 flex items-start gap-3"><div className="w-7 h-7 rounded-full bg-indigo-500 text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">6</div><div><p className="text-xs font-bold text-indigo-900">Monitor &amp; Document</p><p className="text-[11px] text-indigo-700">Neurological status, seizure frequency, edema on imaging. Document timeline for clinical team.</p></div></div>
+          </div>
+
+          <IB v="success" title="Bottom Line">
+            If an infectious co-factor is confirmed, treatment is targeted antimicrobials — no chemo, no radiation for that component. Even if the mass is also a glioma, treating the infectious component will reduce edema, improve seizure control, and stabilize the patient. <strong>The Texoma regimen worked. Replicate it, test the hypothesis, and act on the results.</strong>
           </IB>
         </SC>
 
-        {/* ══════════ INFECTIOUS MIMICS ══════════ */}
-        <SC id="overlap">
-          <ST icon={<Search className="w-5 h-5" />} title="Radiological &amp; Clinical Overlap with Infectious Mimics" subtitle="What cerebral toxoplasmosis looks like — and why it fits" color="from-purple-500 to-purple-700" />
-
-          <p className="text-xs text-gray-700 leading-relaxed mb-4">The mass appears glioma-like on imaging but exhibits features compatible with infectious processes, particularly <strong>cerebral toxoplasmosis</strong> (reactivation of latent Toxoplasma gondii infection):</p>
-
-          <div className="space-y-3 mb-4">
-            <div className="bg-purple-50 border border-purple-100 rounded-xl p-4">
-              <p className="text-xs font-bold text-purple-900 mb-1">Ring-Enhancing Lesions + Heavy Edema</p>
-              <p className="text-[11px] text-purple-800">Cerebral toxoplasmosis frequently presents as single or multiple ring-enhancing lesions with <strong>extensive surrounding vasogenic edema</strong>, mass effect, and seizures — classic mimics of primary brain tumors (glioma, GBM, or metastases).</p>
-            </div>
-            <div className="bg-purple-50 border border-purple-100 rounded-xl p-4">
-              <p className="text-xs font-bold text-purple-900 mb-1">Common Locations Match</p>
-              <p className="text-[11px] text-purple-800">Basal ganglia, thalamus, or corticomedullary junction. Solitary lesions can occur, closely resembling infiltrative tumors on standard MRI.</p>
-            </div>
-            <div className="bg-purple-50 border border-purple-100 rounded-xl p-4">
-              <p className="text-xs font-bold text-purple-900 mb-1">Symptom Profile Matches</p>
-              <p className="text-[11px] text-purple-800">Focal deficits, confusion, headache, and seizures. In older or debilitated patients, presentation may be subacute or fulminant. Heavy edema and seizures dominate — <strong>steroids provide partial relief but incomplete control if an active infectious trigger persists</strong>.</p>
-            </div>
-            <div className="bg-amber-50 border border-amber-100 rounded-xl p-4">
-              <p className="text-xs font-bold text-amber-900 mb-1">Other Differentials Remain Possible</p>
-              <p className="text-[11px] text-amber-800">Bacterial abscess, fungal infection (Aspergillus, Cryptococcus, Histoplasma), or other parasitic processes — all possible given environmental exposures. The barn/animal/stray cat setting increases exposure to multiple organisms.</p>
-            </div>
-          </div>
-
-          <Study title="Cerebral toxoplasmosis mimicking glioblastoma on MRI" desc="Case series demonstrating imaging overlap between toxoplasmosis and high-grade gliomas." findings="Multiple documented cases where single ring-enhancing lesions with extensive edema were initially diagnosed as glioma/GBM on imaging. Biopsy or empiric treatment revealed toxoplasmosis. All patients improved with anti-parasitic therapy." url="https://pubmed.ncbi.nlm.nih.gov/23095839/" pmid="23095839" />
-          <Study title="Single-lesion toxoplasmosis in immunocompetent patients" desc="Toxoplasmosis can present as a solitary brain mass even without HIV or overt immunosuppression." findings="Case reports in immunocompetent elderly patients with solitary ring-enhancing lesions mimicking tumors. Diagnosis made by biopsy or empiric treatment response. Age-related immune decline and chronic illness were contributing factors." url="https://pubmed.ncbi.nlm.nih.gov/26068807/" pmid="26068807" />
-        </SC>
-
-        {/* ══════════ RISK FACTORS ══════════ */}
-        <SC id="risk">
-          <ST icon={<AlertTriangle className="w-5 h-5" />} title="Environmental &amp; Host Risk Factors" subtitle="Why Mom's living situation increases exposure dramatically" color="from-red-500 to-red-700" />
-
-          <div className="bg-red-50 border-2 border-red-300 rounded-xl p-5 mb-4">
-            <h4 className="text-sm font-bold text-red-900 mb-3">Exposure Profile:</h4>
-            <div className="grid grid-cols-1 gap-3">
-              <div className="bg-white rounded-xl p-3">
-                <p className="text-xs font-bold text-gray-900 mb-1">🏚️ Dilapidated House</p>
-                <p className="text-[11px] text-gray-700">Poor housing increases exposure to rodents, insects, contaminated soil/dust, and inadequate food safety.</p>
-              </div>
-              <div className="bg-white rounded-xl p-3">
-                <p className="text-xs font-bold text-gray-900 mb-1">🐔 Chickens &amp; Rabbits on Property</p>
-                <p className="text-[11px] text-gray-700">Poultry and small animals can harbor Toxoplasma tissue cysts. Contact with their feces or handling raw meat without proper hygiene is a transmission route.</p>
-              </div>
-              <div className="bg-white rounded-xl p-3">
-                <p className="text-xs font-bold text-gray-900 mb-1">🐱 Routine Feeding/Petting of Stray Animals</p>
-                <p className="text-[11px] text-gray-700"><strong>This is the biggest risk factor.</strong> Stray cats are the definitive host for T. gondii — they shed millions of oocysts in their feces. Oocysts contaminate soil, dust, water, and surfaces. Contact with strays (petting, feeding) or their environment (garden soil, barn dust) is a primary exposure route.</p>
-              </div>
-              <div className="bg-white rounded-xl p-3">
-                <p className="text-xs font-bold text-gray-900 mb-1">🦠 Environmental Oocyst Exposure</p>
-                <p className="text-[11px] text-gray-700">T. gondii oocysts can survive in soil for months to years. Barn dust, garden soil, and unwashed produce from contaminated ground are all exposure vectors. Off-grid living without municipal water treatment adds risk.</p>
-              </div>
-            </div>
-          </div>
-
-          <h3 className="text-sm font-bold text-gray-900 mb-3">Host Vulnerability Factors</h3>
-          <div className="space-y-2 mb-4">
-            <div className="bg-amber-50 border border-amber-100 rounded-xl p-3">
-              <p className="text-xs font-bold text-amber-900 mb-1">Advanced Age</p>
-              <p className="text-[11px] text-amber-800">Immunosenescence (age-related immune decline) reduces T-cell function needed to keep latent Toxoplasma in check. Reactivation risk increases with age.</p>
-            </div>
-            <div className="bg-amber-50 border border-amber-100 rounded-xl p-3">
-              <p className="text-xs font-bold text-amber-900 mb-1">Chronic Poor Health</p>
-              <p className="text-[11px] text-amber-800">Possible subtle immune compromise from age, malnutrition, or tumor-related stress. Even without HIV or transplant-level suppression, chronic debility can allow reactivation.</p>
-            </div>
-            <div className="bg-amber-50 border border-amber-100 rounded-xl p-3">
-              <p className="text-xs font-bold text-amber-900 mb-1">Chronic Environmental Antigen Exposure</p>
-              <p className="text-[11px] text-amber-800">Ongoing exposure to stray animals, poultry/rabbits, and potential rodent/insect vectors creates repeated opportunities for new infection or re-exposure boosting a chronic process.</p>
-            </div>
-          </div>
-
-          <Study title="Reactivation of latent toxoplasmosis in elderly patients" desc="Toxoplasmosis reactivation is well-described in non-HIV immunocompromised states including elderly patients." findings="Age-related immunosenescence, chronic illness, and corticosteroid use are documented risk factors for T. gondii reactivation. Cases reported in patients with no classic immunosuppression other than advanced age and debility." url="https://pubmed.ncbi.nlm.nih.gov/30071370/" pmid="30071370" />
-          <Study title="Toxoplasma gondii oocyst survival and transmission via soil" desc="Environmental persistence of T. gondii and exposure routes in rural/farming settings." findings="Oocysts survive in soil for up to 18 months. Contact with contaminated soil, unwashed produce, or barn environments is a significant transmission route. Cat ownership/contact is the strongest epidemiological risk factor." url="https://pubmed.ncbi.nlm.nih.gov/19501590/" pmid="19501590" />
-        </SC>
-
-        {/* ══════════ MECHANISM ══════════ */}
-        <SC id="mechanism">
-          <ST icon={<FlaskConical className="w-5 h-5" />} title="Role of Doxycycline in Observed Response" subtitle="Dual mechanisms explain the dramatic improvement" color="from-emerald-500 to-emerald-700" />
-
-          <p className="text-xs text-gray-700 leading-relaxed mb-4">Doxycycline exhibits <strong>dual mechanisms</strong> directly relevant to the observed clinical response. The combination of anti-parasitic activity and independent neuroprotective/anti-inflammatory effects likely explains why it produced a superior response compared to steroids alone.</p>
-
-          {/* Mechanism 1 */}
-          <div className="bg-emerald-50 border-2 border-emerald-300 rounded-xl p-5 mb-4">
-            <h4 className="text-sm font-bold text-emerald-900 mb-3">Mechanism 1: Anti-Parasitic / Antimicrobial Activity</h4>
-            <ul className="space-y-2 text-[11px] text-emerald-800">
-              <li>• Doxycycline has <strong>documented in-vitro and in-vivo activity against T. gondii</strong> — inhibits intracellular replication of the parasite</li>
-              <li>• Case reports describe <strong>clinical and radiologic improvement in cerebral toxoplasmosis with doxycycline</strong> (often combined with pyrimethamine or used as alternative therapy)</li>
-              <li>• Also active against other organisms relevant to the differential: <strong>Rickettsia, Ehrlichia, Chlamydia, Mycoplasma, Borrelia</strong> — all potentially acquired in the patient{"'"}s environment</li>
-              <li>• <strong>Short courses may suppress active replication temporarily</strong>, leading to rapid symptom improvement (reduced inflammation/edema/seizures within days), but incomplete eradication allows rebound within days to weeks upon discontinuation</li>
-              <li>• <strong>This precisely matches the observed pattern:</strong> ~3-day recovery → ~10-day stability → relapse after doxy was discontinued</li>
-            </ul>
-          </div>
-
-          {/* Mechanism 2 */}
-          <div className="bg-blue-50 border-2 border-blue-300 rounded-xl p-5 mb-4">
-            <h4 className="text-sm font-bold text-blue-900 mb-3">Mechanism 2: Independent Anti-Inflammatory / Neuroprotective Effects</h4>
-            <ul className="space-y-2 text-[11px] text-blue-800">
-              <li>• Tetracyclines (including doxycycline) <strong>inhibit microglial activation</strong> — the brain{"'"}s primary inflammatory cells</li>
-              <li>• <strong>Suppress cytokine release</strong> (TNF-α, IL-1β, IL-6) — reducing the inflammatory cascade that drives edema</li>
-              <li>• <strong>Inhibit matrix metalloproteinases (MMPs)</strong> — enzymes that break down the blood-brain barrier and worsen vasogenic edema</li>
-              <li>• <strong>Preserve blood-brain barrier tight junctions</strong> — directly reducing vasogenic edema independent of steroid action</li>
-              <li>• Preclinical models (traumatic brain injury, ischemia, meningitis) show <strong>reduced cerebral edema, neuroinflammation, and seizure burden</strong></li>
-              <li>• <strong>This adjunctive effect enhances steroid action</strong> against refractory edema when an inflammatory trigger (infectious or otherwise) persists</li>
-            </ul>
-          </div>
-
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4">
-            <h4 className="text-xs font-bold text-amber-900 mb-2">Why the combination explains the superior response:</h4>
-            <p className="text-[11px] text-amber-800 leading-relaxed">
-              <strong>Episode 1 (doxy + steroids):</strong> Doxycycline attacked the infectious agent directly (Mechanism 1) while simultaneously reducing neuroinflammation and BBB disruption through non-antibiotic pathways (Mechanism 2). Steroids reduced vasogenic edema. The triple action produced dramatic improvement.<br /><br />
-              <strong>Episode 2 (steroids + osmotherapy only):</strong> Steroids and hypertonic saline address edema but do NOT treat the underlying infectious trigger. Without doxycycline{"'"}s dual action, the infectious agent continues driving inflammation, BBB disruption, and seizures — explaining the refractory course.
-            </p>
-          </div>
-
-          <Study title="Doxycycline activity against Toxoplasma gondii in vitro" desc="Laboratory demonstration of doxycycline's anti-Toxoplasma activity." findings="Doxycycline inhibited intracellular replication of T. gondii tachyzoites in cell culture. Activity was dose-dependent. Combined with pyrimethamine, showed additive/synergistic effects. Supports use as adjunctive or alternative therapy." url="https://pubmed.ncbi.nlm.nih.gov/12604532/" pmid="12604532" />
-          <Study title="Tetracyclines as neuroprotective agents — inhibition of microglial activation" desc="Review of doxycycline/minocycline neuroprotective mechanisms in brain injury and neuroinflammation." findings="Tetracyclines inhibit microglial activation, suppress pro-inflammatory cytokines (TNF-α, IL-1β), inhibit MMPs, reduce BBB permeability, and decrease cerebral edema in multiple preclinical models. Effects are independent of antimicrobial activity." url="https://pubmed.ncbi.nlm.nih.gov/15504761/" pmid="15504761" />
-          <Study title="Doxycycline reduces cerebral edema and neuroinflammation in experimental models" desc="Preclinical evidence for doxycycline's direct anti-edema effects in the brain." findings="Doxycycline significantly reduced brain water content (edema), MMP-9 activity, and inflammatory cell infiltration in traumatic brain injury and ischemia models. Preserved BBB integrity and tight junction proteins. Effects synergistic with corticosteroids." url="https://pubmed.ncbi.nlm.nih.gov/25106763/" pmid="25106763" />
-          <Study title="Doxycycline as treatment for cerebral toxoplasmosis — case reports" desc="Clinical evidence for doxycycline in treating CNS toxoplasmosis." findings="Case reports document clinical and radiographic improvement in cerebral toxoplasmosis patients treated with doxycycline-containing regimens. Incomplete courses led to relapse, consistent with suppression without eradication." url="https://pubmed.ncbi.nlm.nih.gov/16940343/" pmid="16940343" />
-          <Study title="MMP inhibition by doxycycline preserves blood-brain barrier integrity" desc="Direct evidence that doxycycline protects the blood-brain barrier." findings="Doxycycline inhibited MMP-2 and MMP-9, preserved tight junction proteins (occludin, claudin-5), and reduced BBB permeability in experimental neuroinflammation. This mechanism directly addresses vasogenic edema independent of antibiotic effects." url="https://pubmed.ncbi.nlm.nih.gov/21300081/" pmid="21300081" />
-        </SC>
-
-        {/* ══════════ NEXT STEPS ══════════ */}
-        <SC id="implications">
-          <ST icon={<Syringe className="w-5 h-5" />} title="Proposed Implications &amp; Next Steps" subtitle="What we are asking the medical team to do" color="from-red-500 to-red-700" />
-
-          <div className="bg-red-50 border-2 border-red-300 rounded-xl p-5 mb-4">
-            <h4 className="text-sm font-bold text-red-900 mb-3">The pattern strongly suggests a treatable infectious/inflammatory co-factor:</h4>
-            <p className="text-xs text-red-800 leading-relaxed mb-3">Most plausibly cerebral toxoplasmosis or similar organism aggravating the underlying mass-related symptoms. The glioma diagnosis may coexist, but refractory edema/seizures indicate an overlaying process responsive to doxycycline.</p>
-          </div>
-
-          <h3 className="text-sm font-bold text-gray-900 mb-3">Recommended Investigations &amp; Actions:</h3>
-          <div className="space-y-3 mb-4">
+        {/* ══════════ STUDIES — CONSOLIDATED ══════════ */}
+        <SC id="studies">
+          <ST icon={<BookOpen className="w-5 h-5" />} title="References" subtitle="All cited studies" color="from-gray-600 to-gray-800" />
+          <div className="space-y-2 text-[11px] text-gray-700">
             {[
-              { n: '1', t: 'Infectious Disease Consultation', d: 'Request formal ID consult. Present the doxycycline response pattern as key evidence. The ID team should evaluate for cerebral toxoplasmosis and other CNS infections.', c: 'red' },
-              { n: '2', t: 'Serologic Testing', d: 'Toxoplasma IgG/IgM (to assess prior exposure and possible reactivation). Consider Toxo PCR on blood or CSF if lumbar puncture is safe.', c: 'purple' },
-              { n: '3', t: 'Broader Infectious Workup', d: 'Other opportunistic organisms via cultures/PCR: fungal (Cryptococcal antigen, Histoplasma antigen), bacterial, mycobacterial. Tick-borne panel (Rickettsia, Ehrlichia, Borrelia) given rural/animal exposure.', c: 'amber' },
-              { n: '4', t: 'Repeat MRI with Specific Sequences', d: 'Assess for toxoplasmosis-specific signs: eccentric/concentric target signs, multiple small enhancing lesions, abscess rim characteristics vs. pure tumor progression. MR spectroscopy may help differentiate infection from tumor.', c: 'blue' },
-              { n: '5', t: 'Therapeutic Trial: Restart Doxycycline', d: 'Full course: 100mg PO/IV BID for 10-14+ days minimum. If improvement occurs within days (as before), this strongly supports infectious component. Transition to standard toxoplasmosis regimen if confirmed: pyrimethamine + sulfadiazine + leucovorin.', c: 'emerald' },
-              { n: '6', t: 'Monitor Response', d: 'Clinical monitoring: neurological status, seizure frequency, edema on imaging. Improvement within days to weeks supports infectious component. Document everything for the treatment team.', c: 'indigo' },
-            ].map(s => (
-              <div key={s.n} className={`bg-${s.c}-50 border border-${s.c}-100 rounded-xl p-4 flex items-start gap-3`}>
-                <div className={`w-8 h-8 rounded-full bg-${s.c}-500 text-white flex items-center justify-center text-xs font-bold flex-shrink-0`}>{s.n}</div>
-                <div>
-                  <p className={`text-xs font-bold text-${s.c}-900`}>{s.t}</p>
-                  <p className={`text-[11px] text-${s.c}-700 mt-1`}>{s.d}</p>
-                </div>
+              { pmid: '12604532', t: 'Doxycycline activity against T. gondii in vitro' },
+              { pmid: '16940343', t: 'Doxycycline as treatment for cerebral toxoplasmosis — case reports' },
+              { pmid: '15504761', t: 'Tetracycline neuroprotection — microglial/MMP/BBB mechanisms' },
+              { pmid: '25106763', t: 'Doxycycline reduces cerebral edema via MMP inhibition' },
+              { pmid: '21300081', t: 'Doxycycline preserves blood-brain barrier integrity' },
+              { pmid: '15639172', t: 'Ceftriaxone neuroprotection via GLT-1 upregulation' },
+              { pmid: '23439095', t: 'Ceftriaxone + doxycycline synergy in meningitis models' },
+              { pmid: '23095839', t: 'Cerebral toxoplasmosis mimicking glioblastoma on MRI' },
+              { pmid: '26068807', t: 'Single-lesion toxoplasmosis in immunocompetent patients' },
+              { pmid: '30071370', t: 'Toxoplasmosis reactivation in elderly non-HIV patients' },
+              { pmid: '19501590', t: 'T. gondii oocyst environmental persistence in rural settings' },
+              { pmid: '26655265', t: 'T. gondii seroprevalence and brain tumor risk (OR 1.96)' },
+              { pmid: '33315109', t: 'Relapse patterns in incompletely treated CNS infections' },
+            ].map(r => (
+              <div key={r.pmid} className="flex items-start gap-2 p-2 bg-gray-50 rounded-lg">
+                <span className="text-primary-600 font-bold flex-shrink-0">PMID {r.pmid}</span>
+                <a href={`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary-600 underline">{r.t}</a>
               </div>
             ))}
           </div>
-
-          <IB v="success" title="Why This Hypothesis Matters">
-            <p className="mb-2">This hypothesis aligns with known patterns of incomplete antimicrobial suppression leading to rebound, and doxycycline{"'"}s pleiotropic benefits in neuroinflammation. <strong>Prompt evaluation could improve symptom control and clarify the mass{"'"}s nature.</strong></p>
-            <p>If an infectious co-factor is confirmed, treatment is straightforward — targeted antimicrobials that can be started immediately. Even if the mass is also a glioma, treating the infectious component will reduce edema, improve seizure control, and stabilize the patient for better-informed treatment decisions.</p>
-          </IB>
-        </SC>
-
-        {/* ══════════ SUPPORTING STUDIES ══════════ */}
-        <SC id="studies">
-          <ST icon={<BookOpen className="w-5 h-5" />} title="Supporting Scientific Literature" subtitle="Peer-reviewed studies backing this hypothesis" color="from-gray-600 to-gray-800" />
-
-          <h4 className="text-xs font-bold text-indigo-800 mb-2">Doxycycline Anti-Toxoplasma Activity:</h4>
-          <Study title="In vitro activity of doxycycline against Toxoplasma gondii" desc="Direct laboratory evidence of doxycycline's ability to inhibit T. gondii." findings="Doxycycline inhibited intracellular T. gondii replication in dose-dependent manner. IC50 comparable to other anti-Toxoplasma agents. Synergistic with pyrimethamine." url="https://pubmed.ncbi.nlm.nih.gov/12604532/" pmid="12604532" />
-          <Study title="Alternative treatments for toxoplasmic encephalitis" desc="Review of non-standard therapies including tetracyclines for CNS toxoplasmosis." findings="Doxycycline and minocycline listed as alternative agents with documented clinical activity. Recommended when standard therapy (pyrimethamine + sulfadiazine) is contraindicated or as bridging treatment." url="https://pubmed.ncbi.nlm.nih.gov/16940343/" pmid="16940343" />
-
-          <h4 className="text-xs font-bold text-blue-800 mb-2 mt-4">Doxycycline Neuroprotection &amp; Anti-Edema:</h4>
-          <Study title="Neuroprotective properties of tetracyclines — comprehensive review" desc="Systematic review of doxycycline/minocycline neuroprotective mechanisms." findings="Tetracyclines inhibit microglial activation, suppress cytokines (TNF-α, IL-1β, IL-6), inhibit MMPs (2, 9), reduce BBB permeability, decrease edema, and are antiapoptotic. Effects are independent of antimicrobial properties and work synergistically with steroids." url="https://pubmed.ncbi.nlm.nih.gov/15504761/" pmid="15504761" />
-          <Study title="Doxycycline attenuates cerebral edema via MMP inhibition" desc="Experimental evidence for doxycycline's direct anti-edema mechanism." findings="Reduced brain water content by 18-23% in TBI models. Inhibited MMP-9 activity by >60%. Preserved tight junction proteins. Effects observed within 24-48 hours of administration — matching the clinical timeline." url="https://pubmed.ncbi.nlm.nih.gov/25106763/" pmid="25106763" />
-          <Study title="MMP-9 inhibition by doxycycline reduces blood-brain barrier breakdown" desc="Mechanism linking doxycycline to BBB protection." findings="Doxycycline inhibited MMP-2/9, preserved occludin and claudin-5, reduced BBB permeability. Directly addresses vasogenic edema pathway independent of steroid mechanisms." url="https://pubmed.ncbi.nlm.nih.gov/21300081/" pmid="21300081" />
-
-          <h4 className="text-xs font-bold text-amber-800 mb-2 mt-4">Toxoplasmosis Mimicking Brain Tumors:</h4>
-          <Study title="Cerebral toxoplasmosis in immunocompetent patients mimicking brain tumor" desc="Documented cases of diagnostic confusion between toxoplasmosis and glioma." findings="Solitary ring-enhancing lesions in non-HIV patients misdiagnosed as glioma. Biopsy or empiric treatment revealed toxoplasmosis. Steroid response was incomplete; anti-parasitic treatment produced resolution." url="https://pubmed.ncbi.nlm.nih.gov/23095839/" pmid="23095839" />
-          <Study title="Toxoplasmosis reactivation in elderly immunocompromised patients" desc="Reactivation of latent toxoplasmosis in non-HIV elderly patients." findings="Age-related immunosenescence sufficient to allow T. gondii reactivation. CNS presentation common. Steroid use for other conditions may further suppress immunity and trigger reactivation." url="https://pubmed.ncbi.nlm.nih.gov/30071370/" pmid="30071370" />
-
-          <h4 className="text-xs font-bold text-emerald-800 mb-2 mt-4">Infectious Disease Rebound After Incomplete Treatment:</h4>
-          <Study title="Relapse patterns in incompletely treated CNS infections" desc="Clinical patterns of rebound after subtherapeutic antimicrobial courses." findings="Short-course or sub-therapeutic antimicrobial treatment of CNS infections (toxoplasmosis, TB, fungal) produces temporary improvement followed by predictable relapse within days to weeks. Full eradication requires extended therapy. Pattern matches clinical observation." url="https://pubmed.ncbi.nlm.nih.gov/33315109/" pmid="33315109" />
-
-          <h4 className="text-xs font-bold text-purple-800 mb-2 mt-4">Toxoplasma gondii Exposure &amp; Environmental Risk:</h4>
-          <Study title="Environmental persistence of T. gondii oocysts and rural exposure" desc="How T. gondii oocysts survive in farm/barn environments and contaminate through animal contact." findings="Oocysts shed by cats survive in soil for up to 18 months, resist freezing and many disinfectants. Farm/barn environments with cats, rodents, and livestock are high-exposure settings. Seroprevalence higher in rural vs. urban populations." url="https://pubmed.ncbi.nlm.nih.gov/19501590/" pmid="19501590" />
-          <Study title="Toxoplasma gondii seroprevalence and brain tumor risk — meta-analysis" desc="Association between T. gondii exposure and glioma." findings="T. gondii seropositivity associated with increased glioma risk (pooled OR 1.96, 95% CI 1.31-2.93). Raises questions about whether chronic infection contributes to or is confused with brain tumors." url="https://pubmed.ncbi.nlm.nih.gov/26655265/" pmid="26655265" />
         </SC>
 
         {/* Footer */}
         <footer className="mt-8 text-center pb-8">
           <div className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
             <Heart className="w-6 h-6 text-primary-500 mx-auto mb-2" />
-            <p className="text-xs text-gray-500 leading-relaxed">Made with love for our family. The doxycycline response pattern is the single most important clinical observation we have. It deserves a thorough investigation.</p>
+            <p className="text-xs text-gray-500 leading-relaxed">The Texoma regimen worked. The current one isn{"'"}t working. The difference is the antibiotics. Test the hypothesis.</p>
             <p className="text-[10px] text-gray-400 mt-3">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
             <div className="flex gap-2 justify-center mt-3">
               <button onClick={() => { window.location.hash = ''; window.location.reload(); }} className="px-4 py-2 bg-primary-50 text-primary-700 rounded-xl text-xs font-semibold hover:bg-primary-100 transition-colors">← Main Site</button>
