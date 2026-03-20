@@ -13,12 +13,8 @@ import Cannabis from './sections/Cannabis';
 import Probiotics from './sections/Probiotics';
 import SleepApnea from './sections/SleepApnea';
 import NutritionProtocol from './sections/NutritionProtocol';
-import MedicalReports from './sections/MedicalReports';
-import ProposedPlan from './sections/ProposedPlan';
 import DrugProtocol from './sections/DrugProtocol';
 import ShoppingList from './sections/ShoppingList';
-import ActionPlan from './sections/ActionPlan';
-import SymptomDiary from './sections/SymptomDiary';
 
 /* ─── Collapsible Chapter ─── */
 function Chapter({ id, number, title, subtitle, children, defaultOpen = false }) {
@@ -54,13 +50,10 @@ export default function App() {
     { id: 'biopsy-section', n: 'III', t: 'Biopsy Considerations' },
     { id: 'alt-protocols', n: 'IV', t: 'Alternative Protocols' },
     { id: 'supportive', n: 'V', t: 'Supportive Therapies' },
-    { id: 'nutrition', n: 'VI', t: 'Nutrition Protocol' },
-    { id: 'medical', n: 'VII', t: 'Medical Records' },
-    { id: 'protocol', n: 'VIII', t: 'Treatment Protocol' },
+    { id: 'metabolic', n: 'VI', t: 'Metabolic Therapy' },
+    { id: 'sacred-oil', n: 'VII', t: '\u0398\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1 — Sacred Healing Oil' },
+    { id: 'protocol', n: 'VIII', t: 'Drug Protocol (Mebendazole Option)' },
     { id: 'supplies', n: 'IX', t: 'Supplies & Procurement' },
-    { id: 'diary', n: 'X', t: 'Medical Diary' },
-    { id: 'actionplan', n: 'XI', t: 'Action Plan' },
-    { id: 'care', n: 'XII', t: 'Proposed Care Protocol' },
   ];
 
   const scrollTo = (id) => {
@@ -185,15 +178,45 @@ export default function App() {
           </div>
         </Chapter>
 
-        <Chapter id="nutrition" number="VI" title="Nutrition Protocol" subtitle="Anti-cancer Mediterranean diet, meal planning, and metabolic strategy">
+        <Chapter id="metabolic" number="VI" title="Metabolic Therapy" subtitle="Anti-cancer dietary strategy, ketogenic principles, and metabolic targeting">
           <NutritionProtocol />
         </Chapter>
 
-        <Chapter id="medical" number="VII" title="Medical Records" subtitle="Hospital reports, imaging, and laboratory data — February 2026">
-          <MedicalReports />
+        <Chapter id="sacred-oil" number="VII" title={<span>\u0398\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1 <span className="text-gray-500 font-normal">— Sacred Healing Oil</span></span>} subtitle="Topical anti-cancer botanical compound for complementary use">
+          <section>
+            <p className="text-sm text-gray-700 leading-relaxed mb-4">
+              <strong>\u0398\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1</strong> (Therape\u00EDa, from the Greek <em>\u03B8\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1</em> — "healing, service, care") is a custom-formulated sacred oil blend combining botanical compounds with documented anti-cancer, anti-inflammatory, and neuroprotective properties. Designed for topical application as a complementary therapy — incorporated into soaps, shampoos, lotions, salves, and direct scalp application.
+            </p>
+
+            <h3 className="text-sm font-bold text-gray-900 mb-2">Composition</h3>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm border border-gray-300">
+                <thead><tr className="bg-gray-100 border-b border-gray-300"><th className="p-2.5 text-left font-semibold text-gray-700">Compound</th><th className="p-2.5 text-left font-semibold text-gray-700">Documented Anti-Cancer Properties</th></tr></thead>
+                <tbody className="text-gray-700">
+                  <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">CBD (Full Spectrum)</td><td className="p-2.5">Anti-proliferative, pro-apoptotic in GBM cell lines. Neuroprotective. Non-psychoactive.</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">THC Oil (Full Spectrum)</td><td className="p-2.5">Induces autophagy and apoptosis in glioma cells. Selective toxicity — spares healthy neurons. Anti-angiogenic.</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Rosemary (Carnosic acid)</td><td className="p-2.5">Inhibits glioma cell proliferation via PI3K/Akt pathway. Potent antioxidant. Enhances chemotherapy uptake. <a href="https://pubmed.ncbi.nlm.nih.gov/26205156/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 26205156</a></td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Frankincense (Boswellic acid)</td><td className="p-2.5">Induces apoptosis in glioblastoma cells. Reduces cerebral edema (used clinically as steroid adjunct). Anti-inflammatory via 5-LOX inhibition. <a href="https://pubmed.ncbi.nlm.nih.gov/21553931/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 21553931</a></td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Clove (Eugenol)</td><td className="p-2.5">Anti-proliferative against brain tumor cells. Induces apoptosis via ROS generation. Anti-inflammatory. <a href="https://pubmed.ncbi.nlm.nih.gov/22065645/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 22065645</a></td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Oregano (Carvacrol)</td><td className="p-2.5">Inhibits cancer cell growth via MAPK pathway. Anti-inflammatory. Antimicrobial. <a href="https://pubmed.ncbi.nlm.nih.gov/25963495/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 25963495</a></td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Thyme (Thymol)</td><td className="p-2.5">Anti-cancer activity in multiple cell lines. Pro-apoptotic. Synergistic with other essential oils. <a href="https://pubmed.ncbi.nlm.nih.gov/30934680/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 30934680</a></td></tr>
+                  <tr><td className="p-2.5 font-semibold">Cinnamon Bark (Cinnamaldehyde)</td><td className="p-2.5">Anti-tumor via NF-\u03BAB suppression. Anti-angiogenic. Reduces cancer cell migration. <a href="https://pubmed.ncbi.nlm.nih.gov/25583449/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 25583449</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="text-sm font-bold text-gray-900 mb-2">Applications</h3>
+            <p className="text-sm text-gray-700 leading-relaxed mb-4">
+              Formulated into carrier oil base (coconut, jojoba, or olive oil) for topical use. Applied as: scalp oil (direct proximity to tumor site), body lotion/salve, soap/shampoo additive, temple and neck application. Transdermal absorption of essential oil compounds is well-documented. This is a <strong>complementary</strong> approach — not a replacement for any primary therapy.
+            </p>
+
+            <p className="text-sm text-gray-600 italic">
+              \u201C\u0398\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1 — to heal, to serve, to care. The oldest medicine is the earth itself.\u201D
+            </p>
+          </section>
         </Chapter>
 
-        <Chapter id="protocol" number="VIII" title="Treatment Protocol" subtitle="12-week physician-monitored drug and supplement regimen">
+        <Chapter id="protocol" number="VIII" title="Drug Protocol (Mebendazole Option)" subtitle="12-week physician-monitored treatment plan — one of several options under consideration">
           <DrugProtocol />
         </Chapter>
 
@@ -201,27 +224,29 @@ export default function App() {
           <ShoppingList />
         </Chapter>
 
-        <Chapter id="diary" number="X" title="Medical Diary" subtitle="Daily symptom tracking and medication logging">
-          <SymptomDiary />
-        </Chapter>
-
-        <Chapter id="actionplan" number="XI" title="Action Plan" subtitle="12-step implementation roadmap with status tracking">
-          <ActionPlan />
-        </Chapter>
-
-        <Chapter id="care" number="XII" title="Proposed Care Protocol" subtitle="Comprehensive treatment plan integrating all modalities">
-          <ProposedPlan />
-        </Chapter>
-
         {/* ── Footer ── */}
-        <footer className="border-t border-gray-200 pt-6 pb-10 mt-10 text-center">
-          <p className="text-xs text-gray-400 leading-relaxed mb-2">This document is a continuously updated compilation of research, clinical data, and treatment protocols. All studies and sources are linked for independent verification. Alternative approaches are investigational.</p>
-          <p className="text-xs text-gray-400 font-mono">
-            Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
-          <div className="flex gap-3 justify-center mt-4">
-            <a href="#/biopsy-methodology" className="text-xs text-gray-500 hover:text-gray-900 border border-gray-300 rounded px-3 py-1.5">Biopsy Methodology</a>
-            <a href="#/doxycycline-anomaly" className="text-xs text-gray-500 hover:text-gray-900 border border-gray-300 rounded px-3 py-1.5">Doxycycline Anomaly</a>
+        <footer className="border-t border-gray-200 pt-8 pb-10 mt-10">
+          <div className="text-center mb-8">
+            <p className="text-xs text-gray-400 leading-relaxed mb-2">This document is a continuously updated compilation of research, clinical data, and treatment protocols. All studies and sources are linked for independent verification. Alternative approaches are investigational.</p>
+            <p className="text-xs text-gray-400 font-mono">
+              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+            <div className="flex gap-3 justify-center mt-4">
+              <a href="#/biopsy-methodology" className="text-xs text-gray-500 hover:text-gray-900 border border-gray-300 rounded px-3 py-1.5">Biopsy Methodology</a>
+              <a href="#/doxycycline-anomaly" className="text-xs text-gray-500 hover:text-gray-900 border border-gray-300 rounded px-3 py-1.5">Doxycycline Anomaly</a>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-200 pt-6">
+            <p className="text-sm text-gray-700 leading-relaxed text-center mb-3">
+              If you are a physician, oncologist, infectious disease specialist, neuropathologist, or researcher with insight into this case — second, third, or fourth opinions are deeply welcomed. This is an active, evolving case and any expertise you can offer may directly impact the outcome.
+            </p>
+            <div className="text-center">
+              <p className="text-sm text-gray-900 font-semibold">Contact: Josh Trembath</p>
+              <p className="text-sm text-gray-700">Phone: <a href="tel:3855904074" className="text-blue-700 hover:underline">(385) 590-4074</a></p>
+              <p className="text-sm text-gray-700">Email: <a href="mailto:jptrembath@gmail.com" className="text-blue-700 hover:underline">jptrembath@gmail.com</a></p>
+            </div>
+            <p className="text-xs text-gray-400 text-center mt-4 italic">She is a really good mom. We just love her a lot.</p>
           </div>
         </footer>
       </main>
