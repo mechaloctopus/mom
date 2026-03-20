@@ -161,7 +161,7 @@ export default function DoxycyclineAnomaly() {
 
           <div className="bg-gray-50 border border-gray-300 rounded p-5 mb-4">
             <h3 className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wide">Protocol</h3>
-            <p className="text-sm text-gray-700 leading-relaxed mb-3"><strong>Step 1 — Diagnostics (immediate):</strong> Infectious Disease consultation. Toxoplasma IgG/IgM serology. Broader opportunistic workup as clinically indicated (fungal antigens, tick-borne panel). PCR on blood or CSF if lumbar puncture is safe.</p>
+            <p className="text-sm text-gray-700 leading-relaxed mb-3"><strong>Step 1 — Diagnostics (immediate):</strong> Infectious Disease consultation. Toxoplasma IgG/IgM serology. Broader opportunistic workup as clinically indicated (fungal antigens, tick-borne panel). PCR on blood if indicated.</p>
             <p className="text-sm text-gray-700 leading-relaxed mb-3"><strong>Step 2 — Empiric antibiotic re-initiation (pending physician approval):</strong></p>
             <div className="font-mono text-xs bg-white border border-gray-200 rounded p-3 mb-3 text-gray-800">
               <p>Doxycycline 100 mg IV BID × 10–14 days</p>
