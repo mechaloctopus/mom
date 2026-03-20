@@ -237,6 +237,11 @@ export default function DoxycyclineAnomaly() {
             </div>
           </div>
 
+          <div className="bg-primary-50 border-2 border-primary-300 rounded-xl p-4 mb-4">
+            <h4 className="text-sm font-bold text-primary-900 mb-2">🎯 The Immediate Goal</h4>
+            <p className="text-xs text-primary-800 leading-relaxed">Biopsy results are ~2 weeks away. Mom is currently vegetative and unable to participate in her own treatment decisions. <strong>The goal is to open a conscious decision window</strong> — reduce edema, control seizures, and restore enough function for her to be present and aware when biopsy results arrive. Doxycycline + ceftriaxone achieved exactly this at Texoma (vegetative → speaking in 3 days). Whether the mechanism is treating an occult co-factor, directly attenuating glioma-driven inflammation, or both — the clinical result was a conscious, functional patient. That is what we need right now.</p>
+          </div>
+
           <IB v="info" title="The Core Argument">
             If the mass were a pure glioma with no aggravating co-factor, antibiotics should have had <strong>no meaningful effect</strong> on edema or seizures. Current steroid + osmotic + AED management addresses tumor-related vasogenic edema but fails to target any persistent aggravating trigger — explaining the 6-day non-response versus the prior lightning recovery. <strong>The glioma diagnosis may be correct, but something else is making it worse — and that something responds to doxycycline + ceftriaxone.</strong>
           </IB>
@@ -249,7 +254,8 @@ export default function DoxycyclineAnomaly() {
           <div className="bg-emerald-50 border-2 border-emerald-300 rounded-xl p-4 mb-3">
             <h4 className="text-sm font-bold text-emerald-900 mb-2">Doxycycline 100mg IV q12h — Primary Factor</h4>
             <p className="text-[11px] text-emerald-800 leading-relaxed mb-1"><strong>Antimicrobial:</strong> Activity against T. gondii, Rickettsia, Ehrlichia, Chlamydia, Mycoplasma, Borrelia. Short courses suppress but don{"'"}t eradicate CNS infections → explains the ~10-day window then rebound.</p>
-            <p className="text-[11px] text-emerald-800 leading-relaxed"><strong>Neuroprotective (independent of antimicrobial action):</strong> Inhibits microglial activation, suppresses cytokines (TNF-α, IL-1β, IL-6), inhibits MMPs, preserves BBB tight junctions, reduces cerebral edema. Enhances steroid action when inflammatory trigger persists.</p>
+            <p className="text-[11px] text-emerald-800 leading-relaxed mb-1"><strong>Neuroprotective (independent of antimicrobial action):</strong> Inhibits microglial activation, suppresses cytokines (TNF-α, IL-1β, IL-6), inhibits MMPs, preserves BBB tight junctions, reduces cerebral edema. Enhances steroid action when inflammatory trigger persists.</p>
+            <p className="text-[11px] text-emerald-800 leading-relaxed"><strong>Direct anti-glioma activity (preclinical):</strong> In vitro studies on GBM cell lines (U87, U251) show doxycycline inhibits proliferation, reduces invasion via MMP-2 suppression, impairs mitochondrial function in glioma cells, and reduces cancer stem cell (CSC) markers. A pilot clinical trial in breast cancer (200mg/day × 14 days pre-op) reduced CSC markers CD44 and ALDH1 by ~40%. Combinations with vitamin C showed up to 100× increased CSC killing. Even if the mass is a glioma, doxycycline may directly attenuate tumor-driven inflammation and edema beyond its antimicrobial effects.</p>
           </div>
 
           <div className="bg-blue-50 border-2 border-blue-300 rounded-xl p-4 mb-3">
@@ -285,7 +291,8 @@ export default function DoxycyclineAnomaly() {
           </IB>
 
           <IB v="success" title="Bottom Line">
-            <p>The imaging supports primary glioma. The clinical course supports a treatable aggravating co-factor that responds to doxycycline + ceftriaxone. These are not mutually exclusive. <strong>Treating the co-factor now — while awaiting biopsy — could reduce ICP, control seizures, restore function, and buy time for definitive diagnosis.</strong> The Texoma regimen worked. The current one is failing. Replicate it and test the hypothesis.</p>
+            <p className="mb-2">The imaging supports primary glioma. The clinical course supports a treatable aggravating co-factor. These are not mutually exclusive — and <strong>even if the co-factor is the glioma itself</strong>, doxycycline{"'"}s preclinical anti-glioma properties (MMP inhibition, CSC reduction, mitochondrial disruption) may independently reduce tumor-driven edema.</p>
+            <p><strong>The goal is simple: replicate the Texoma response to open a 2-week conscious decision window before biopsy results arrive.</strong> The patient deserves to participate in her own care decisions. The regimen is FDA-approved, brain-penetrating, safe, and has already worked once. The current approach is failing. Try what worked.</p>
           </IB>
         </SC>
 
@@ -307,6 +314,9 @@ export default function DoxycyclineAnomaly() {
               { pmid: '19501590', t: 'T. gondii oocyst persistence in soil (18+ months) — rural/farm exposure risk' },
               { pmid: '26655265', t: 'T. gondii seropositivity associated with glioma risk (pooled OR 1.96)' },
               { pmid: '33315109', t: 'Relapse patterns in incompletely treated CNS infections — rebound after short-course therapy' },
+              { pmid: '29180474', t: 'Doxycycline reduces cancer stem cell markers (CD44, ALDH1) ~40% in breast cancer pilot trial' },
+              { pmid: '25874924', t: 'Doxycycline + vitamin C synthetic lethality against cancer stem cells via mitochondrial targeting' },
+              { pmid: '27323889', t: 'Doxycycline inhibits GBM cell proliferation and invasion via MMP-2 suppression in vitro' },
             ].map(r => (
               <div key={r.pmid} className="flex items-start gap-2 p-2 bg-gray-50 rounded-lg">
                 <span className="text-primary-600 font-bold flex-shrink-0">PMID {r.pmid}</span>
