@@ -1,308 +1,94 @@
 import React from 'react';
-import { Pill } from 'lucide-react';
-import { SectionHeader, StudyCard, TestimonialCard, ProConCard, InfoBox, Divider, StatCard, BackToNav } from '../components/Cards';
 import XEmbed from '../components/XEmbed';
 
 export default function Benzimidazoles() {
   return (
-    <section id="benzimidazoles" className="section-card">
-      <SectionHeader
-        icon={<Pill className="w-5 h-5" />}
-        title="Benzimidazoles: Fenbendazole & Mebendazole"
-        subtitle="Anti-parasitic drugs with anti-cancer research — virtually identical cousins"
-        color="primary"
-      />
+    <section id="benzimidazoles">
+      <p className="text-sm text-gray-700 leading-relaxed mb-4">
+        <strong>Fenbendazole</strong> (veterinary) and <strong>mebendazole</strong> (FDA-approved for humans) are nearly identical benzimidazole-class anthelmintics differing by a single atom. Both bind β-tubulin to disrupt microtubule formation — the same mechanism targeted by taxane chemotherapy agents (vincristine, paclitaxel). Additional documented mechanisms include glucose uptake inhibition in cancer cells, p53 stabilization, and anti-angiogenic effects. Mebendazole has confirmed blood-brain barrier penetration and has progressed into Phase 1/2 clinical trials for glioblastoma (NCT01729260). The proposed protocol uses both agents.
+      </p>
 
-      <InfoBox variant="info" title="What Are Benzimidazoles?">
-        <strong>Fenbendazole</strong> (veterinary) and <strong>mebendazole</strong> (FDA-approved for humans) 
-        are nearly identical drugs in the benzimidazole family. Both work by binding β-tubulin to disrupt 
-        microtubule formation — the same mechanism targeted by chemo drugs like vincristine and paclitaxel. 
-        They also inhibit glucose uptake in cancer cells and induce apoptosis. The only structural difference 
-        is one atom (carbonyl vs. sulfur linkage). Mebendazole has <strong>confirmed brain penetration</strong> and 
-        active clinical trials for glioblastoma. Fenbendazole has more preclinical data and patient testimonials. 
-        Our protocol uses both.
-      </InfoBox>
-
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Mechanism of Action</h3>
-      <div className="grid grid-cols-1 gap-2 mb-5">
-        <div className="bg-blue-50 border border-blue-100 rounded-xl p-3">
-          <p className="text-xs font-bold text-blue-800">1. Microtubule Disruption</p>
-          <p className="text-[11px] text-blue-600 mt-1">Binds β-tubulin, preventing cell division — similar to taxane chemotherapy drugs</p>
-        </div>
-        <div className="bg-purple-50 border border-purple-100 rounded-xl p-3">
-          <p className="text-xs font-bold text-purple-800">2. Glucose Uptake Inhibition</p>
-          <p className="text-[11px] text-purple-600 mt-1">Reduces glucose transport in cancer cells, starving them of energy</p>
-        </div>
-        <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-3">
-          <p className="text-xs font-bold text-emerald-800">3. p53 Stabilization</p>
-          <p className="text-[11px] text-emerald-600 mt-1">May reactivate the tumor suppressor gene p53, promoting cancer cell death</p>
-        </div>
-        <div className="bg-amber-50 border border-amber-100 rounded-xl p-3">
-          <p className="text-xs font-bold text-amber-800">4. Anti-angiogenic Effects</p>
-          <p className="text-[11px] text-amber-600 mt-1">May inhibit new blood vessel formation that tumors need to grow</p>
-        </div>
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Considerations</h3>
+      <div className="overflow-x-auto mb-4">
+        <table className="w-full text-sm border border-gray-300">
+          <thead><tr className="bg-gray-100 border-b border-gray-300"><th className="p-2.5 text-left font-semibold text-gray-700">Arguments For</th><th className="p-2.5 text-left font-semibold text-gray-700">Arguments Against</th></tr></thead>
+          <tbody className="text-gray-700 align-top">
+            <tr><td className="p-2.5"><ul className="list-disc pl-4 space-y-1">
+              <li>Significant anti-tumor activity in animal models across multiple cancer types</li>
+              <li>Extremely low toxicity — virtually identical safety profile to FDA-approved mebendazole</li>
+              <li>Very inexpensive and widely available</li>
+              <li>Targets multiple cancer pathways simultaneously</li>
+              <li>Mebendazole has confirmed BBB penetration and active GBM clinical trials</li>
+              <li>Growing body of anecdotal case reports including brain tumors</li>
+            </ul></td><td className="p-2.5"><ul className="list-disc pl-4 space-y-1">
+              <li>No completed human RCTs specifically for cancer</li>
+              <li>Evidence primarily preclinical (cell lines, animal models)</li>
+              <li>Fenbendazole not FDA-approved for human use</li>
+              <li>Anecdotal evidence subject to survivorship bias</li>
+              <li>Optimal cancer dosing in humans unknown</li>
+              <li>Quality control varies between products</li>
+            </ul></td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <ProConCard
-        pros={[
-          'Multiple animal studies show significant anti-tumor activity across cancer types',
-          'Extremely low toxicity profile — virtually identical to mebendazole (FDA-approved human drug)',
-          'Very inexpensive and widely available',
-          'Targets multiple cancer pathways (microtubules, glucose, p53, angiogenesis)',
-          'No documented cases of patient harm from fenbendazole in reported use',
-          'Growing body of anecdotal evidence and case reports',
-          'Joe Tippens case (stage 4 lung cancer, reported complete remission) brought widespread attention',
-          'Some doctors are beginning to include it in integrative cancer protocols',
-        ]}
-        cons={[
-          'No completed human clinical trials specifically for cancer',
-          'Evidence is primarily preclinical (cell lines and animal models)',
-          'Not FDA-approved for human use (veterinary drug)',
-          'Anecdotal evidence is subject to survivorship bias and confounding factors',
-          'Optimal dosing for cancer in humans is unknown',
-          'May interact with other medications (limited pharmacokinetic data in humans)',
-          'Could give false hope and delay proven treatments',
-          'Quality control varies between veterinary products',
-        ]}
-      />
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Preclinical Studies</h3>
+      <ol className="list-decimal pl-6 text-sm text-gray-700 leading-relaxed space-y-1 mb-4">
+        <li>Fenbendazole as microtubule destabilizer causing cancer cell death. <a href="https://pubmed.ncbi.nlm.nih.gov/39736624/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 39736624</a></li>
+        <li>Anti-cancer properties of fenbendazole — preclinical investigation. <a href="https://pubmed.ncbi.nlm.nih.gov/39477286/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 39477286</a></li>
+        <li>Fenbendazole anti-tumor activity in animal models (2024). <a href="https://pubmed.ncbi.nlm.nih.gov/40799435/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 40799435</a></li>
+        <li>Benzimidazoles and cancer mechanisms. <a href="https://pubmed.ncbi.nlm.nih.gov/36039738/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 36039738</a></li>
+        <li>Anti-proliferative effects on cancer cells. <a href="https://pubmed.ncbi.nlm.nih.gov/36854536/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 36854536</a></li>
+        <li>Drug repurposing — fenbendazole as anti-cancer agent. <a href="https://pubmed.ncbi.nlm.nih.gov/35020278/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 35020278</a></li>
+        <li>Fenbendazole induces apoptosis in cancer cells. <a href="https://pubmed.ncbi.nlm.nih.gov/37998737/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 37998737</a></li>
+        <li>Benzimidazole anthelmintics and cancer (2008). <a href="https://pubmed.ncbi.nlm.nih.gov/19049251/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 19049251</a></li>
+        <li>Additional preclinical evidence. <a href="https://pubmed.ncbi.nlm.nih.gov/37170725/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 37170725</a></li>
+      </ol>
 
-      <Divider />
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Animal Studies — Anti-Cancer Effects</h3>
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Emerging Human Data</h3>
+      <ol className="list-decimal pl-6 text-sm text-gray-700 leading-relaxed space-y-1 mb-4">
+        <li>Fenbendazole in human cancer patients — observational data (2024). <a href="https://pubmed.ncbi.nlm.nih.gov/40605964/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 40605964</a></li>
+        <li>Human cancer study (2024). <a href="https://pubmed.ncbi.nlm.nih.gov/39197912/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 39197912</a></li>
+      </ol>
 
-      <StudyCard
-        title="Fenbendazole acts as a moderate microtubule destabilizing agent and causes cancer cell death"
-        description="Study examining fenbendazole's effect on human non-small cell lung cancer cells."
-        findings="Fenbendazole showed significant anti-tumor effects through microtubule disruption, p53 stabilization, and interference with glucose metabolism."
-        url="https://pubmed.ncbi.nlm.nih.gov/39736624/"
-        type="study"
-      />
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Mebendazole — Clinical Development for GBM</h3>
+      <p className="text-sm text-gray-700 leading-relaxed mb-3">
+        Mebendazole is FDA-approved, crosses the BBB at therapeutic concentrations, and Johns Hopkins researchers have patented an enhanced formulation specifically for cancer. It can be prescribed off-label by any physician.
+      </p>
+      <ol className="list-decimal pl-6 text-sm text-gray-700 leading-relaxed space-y-1 mb-4">
+        <li>Brain penetration and efficacy of different mebendazole formulations. <a href="https://aacrjournals.org/clincancerres/article/21/15/3462/78928/Brain-Penetration-and-Efficacy-of-Different" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Clin Cancer Res</a></li>
+        <li>Phase 1/2 clinical trial for brain tumors. <a href="https://clinicaltrials.gov/study/NCT01729260" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">NCT01729260</a></li>
+        <li>Mebendazole as anti-cancer agent — clinical evidence. <a href="https://pubmed.ncbi.nlm.nih.gov/33506200/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 33506200</a></li>
+        <li>Johns Hopkins enhanced formulation patent. <a href="https://trial.medpath.com/news/a86ded46bc870bbd/johns-hopkins-researchers-patent-enhanced-mebendazole-formulation-for-cancer-treatment" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">MedPath</a></li>
+        <li>GBM Foundation drug development award for mebendazole. <a href="https://glioblastomafoundation.org/news/glioblastoma-foundation-announces-drug-development-award" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">GBM Foundation</a></li>
+      </ol>
 
-      <StudyCard
-        title="Anti-cancer properties of fenbendazole — preclinical study"
-        description="Investigation of fenbendazole's anti-tumor mechanisms in cell and animal models."
-        url="https://pubmed.ncbi.nlm.nih.gov/39477286/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Fenbendazole anti-tumor activity study (2024)"
-        description="Recent research examining fenbendazole's effects on tumor growth in animal models."
-        url="https://pubmed.ncbi.nlm.nih.gov/40799435/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Benzimidazoles and cancer — fenbendazole research"
-        description="Study on fenbendazole's anti-cancer mechanisms and potential applications."
-        url="https://pubmed.ncbi.nlm.nih.gov/36039738/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Fenbendazole — anti-proliferative effects on cancer cells"
-        description="Research demonstrating fenbendazole's ability to inhibit cancer cell growth."
-        url="https://pubmed.ncbi.nlm.nih.gov/36854536/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Repurposing fenbendazole for cancer treatment"
-        description="Drug repurposing study examining fenbendazole's potential as an anti-cancer agent."
-        url="https://pubmed.ncbi.nlm.nih.gov/35020278/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Fenbendazole induces apoptosis in cancer cells"
-        description="Mechanistic study on how fenbendazole triggers programmed cell death in tumor cells."
-        url="https://pubmed.ncbi.nlm.nih.gov/37998737/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Benzimidazole anthelmintics and cancer (2008)"
-        description="Early research linking antiparasitic benzimidazoles to anti-cancer activity."
-        url="https://pubmed.ncbi.nlm.nih.gov/19049251/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Fenbendazole anti-tumor activity — additional evidence"
-        description="Further preclinical evidence supporting fenbendazole's anti-cancer properties."
-        url="https://pubmed.ncbi.nlm.nih.gov/37170725/"
-        type="study"
-      />
-
-      <Divider />
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Human Studies</h3>
-
-      <StudyCard
-        title="Fenbendazole in human cancer patients — observational data (2024)"
-        description="One of the first studies examining fenbendazole use in actual human cancer patients."
-        findings="Emerging human data on fenbendazole for cancer — important step beyond animal models."
-        url="https://pubmed.ncbi.nlm.nih.gov/40605964/"
-        type="study"
-      />
-
-      <StudyCard
-        title="Fenbendazole human cancer study (2024)"
-        description="Additional human-level data on fenbendazole in cancer patients."
-        url="https://pubmed.ncbi.nlm.nih.gov/39197912/"
-        type="study"
-      />
-
-      <Divider />
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Patient Testimonials & Case Reports</h3>
-
-      <InfoBox variant="warning">
-        Testimonials are anecdotal evidence. They may involve multiple treatments simultaneously, 
-        survivorship bias, or incomplete information. They are included for awareness, not as proof of efficacy.
-      </InfoBox>
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Case Reports &amp; Testimonials</h3>
+      <p className="text-sm text-gray-500 italic mb-3">Anecdotal evidence. Subject to survivorship bias and confounding factors. Included for completeness, not as proof of efficacy.</p>
 
       <XEmbed url="https://x.com/ivermaccess/status/1972636438543122654" />
-
-      <TestimonialCard
-        description="Terminal cancer patient — 2.5 months later reported cancer free"
-        url="https://x.com/makismedicine/status/1837078871201444106?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Boy in Switzerland with brain tumor — reported shrinkage"
-        url="https://x.com/makismedicine/status/1987732188692185577?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="12-year-old boy — tumor shrinkage of 40% in 6 months"
-        url="https://x.com/makismedicine/status/2006045981729767735?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Brain cancer patient doing better with alternative protocol"
-        url="https://x.com/makismedicine/status/1894344610287136878?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="More brain cancer cases — additional reports"
-        url="https://x.com/ivermectinkart/status/2026644201006301404?s=46"
-        outcome="positive"
-      />
-
       <XEmbed url="https://x.com/makismedicine/status/1925853465898570164" />
-
-      <TestimonialCard
-        description="Patient reports on fenbendazole for cancer"
-        url="https://x.com/skymeds_store/status/1999323888686366792?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Joe Tippens — the original fenbendazole cancer story (news report)"
-        url="https://x.com/ivermectin_net/status/1983147525843337444?s=46"
-        outcome="positive"
-      />
-
       <XEmbed url="https://x.com/thehealthb0t/status/2006417338057502832" />
 
-      <TestimonialCard
-        description="Joe Rogan discusses fenbendazole for cancer"
-        url="https://x.com/thehealthb0t/status/2010907660317786310?s=46"
-        outcome="positive"
-      />
+      <div className="space-y-1 text-sm text-gray-700 mb-4">
+        <p><a href="https://x.com/makismedicine/status/1837078871201444106" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Terminal cancer patient — reported cancer free after 2.5 months</a></p>
+        <p><a href="https://x.com/makismedicine/status/1987732188692185577" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Boy in Switzerland with brain tumor — reported shrinkage</a></p>
+        <p><a href="https://x.com/makismedicine/status/2006045981729767735" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">12-year-old — tumor shrinkage of 40% in 6 months</a></p>
+        <p><a href="https://x.com/makismedicine/status/1894344610287136878" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Brain cancer patient doing better with alternative protocol</a></p>
+        <p><a href="https://x.com/ivermectinkart/status/2026644201006301404" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Additional brain cancer case reports</a></p>
+        <p><a href="https://x.com/ivermectin_net/status/1983147525843337444" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Joe Tippens — original fenbendazole cancer story</a></p>
+        <p><a href="https://x.com/thehealthb0t/status/2010907660317786310" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Joe Rogan discusses fenbendazole for cancer</a></p>
+        <p><a href="https://x.com/makismedicine/status/2027144270801436850" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Patient in Bulgaria — reports improvement</a></p>
+        <p><a href="https://x.com/makismedicine/status/1906658090990129422" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Given 2 months to live — now reported cancer free</a></p>
+        <p><a href="https://x.com/makismedicine/status/1927427741126676580" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Stage 4 cancer beat — direct testimonial</a></p>
+        <p><a href="https://x.com/medsnest/status/2015699650314125760" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Reported cancer cure testimonial</a></p>
+        <p><a href="https://x.com/joetippen/status/2027672788631212096" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Dr. Mark Gordon discusses fenbendazole</a></p>
+      </div>
 
-      <TestimonialCard
-        description="Guy in Bulgaria — reports improvement with fenbendazole"
-        url="https://x.com/makismedicine/status/2027144270801436850?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Redneck direct testimonial — reports cancer improvement"
-        url="https://x.com/ivermectinkart/status/2027375665960698220?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Given 2 months to live — now reported cancer free"
-        url="https://x.com/makismedicine/status/1906658090990129422?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Asian father beat stage 4 cancer — direct testimonial"
-        url="https://x.com/makismedicine/status/1927427741126676580?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Girl cured of cancer — reported testimonial"
-        url="https://x.com/medsnest/status/2015699650314125760?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Dr. Mark Gordon discusses fenbendazole"
-        url="https://x.com/joetippen/status/2027672788631212096?s=46"
-        outcome="positive"
-      />
-
-      <Divider />
-
-      {/* ─── MEBENDAZOLE SPECIFIC ─── */}
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Mebendazole — Clinical Trials & Brain Penetration</h3>
-      <InfoBox variant="success" title="Why Mebendazole Matters">
-        Mebendazole is FDA-approved for humans, has confirmed blood-brain barrier penetration, and has 
-        progressed into Phase 1/2 clinical trials for glioblastoma. Johns Hopkins researchers patented 
-        an enhanced formulation specifically for cancer. It can be prescribed off-label by any physician.
-      </InfoBox>
-
-      <StudyCard
-        title="Brain penetration and efficacy of different mebendazole formulations"
-        description="Critical study confirming mebendazole crosses the blood-brain barrier at therapeutic concentrations."
-        findings="Mebendazole reaches brain tumors — essential for treating glioblastoma."
-        url="https://aacrjournals.org/clincancerres/article/21/15/3462/78928/Brain-Penetration-and-Efficacy-of-Different"
-        type="study"
-      />
-      <StudyCard
-        title="Mebendazole clinical trial for brain tumors (NCT01729260)"
-        description="Registered Phase 1/2 clinical trial studying mebendazole for brain tumor treatment."
-        url="https://clinicaltrials.gov/study/NCT01729260"
-        type="trial"
-      />
-      <StudyCard
-        title="Mebendazole as anti-cancer agent — clinical evidence"
-        url="https://pubmed.ncbi.nlm.nih.gov/33506200/"
-        type="study"
-      />
-      <StudyCard
-        title="Johns Hopkins enhanced mebendazole formulation patent for cancer"
-        description="Enhanced bioavailability formulation designed specifically for cancer treatment."
-        url="https://trial.medpath.com/news/a86ded46bc870bbd/johns-hopkins-researchers-patent-enhanced-mebendazole-formulation-for-cancer-treatment"
-        type="article"
-      />
-      <StudyCard
-        title="Glioblastoma Foundation drug development award for mebendazole"
-        url="https://glioblastomafoundation.org/news/glioblastoma-foundation-announces-drug-development-award"
-        type="article"
-      />
-
-      <Divider />
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Cases Where It Did NOT Work</h3>
-
-      <TestimonialCard
-        description="Testimonial where fenbendazole/alternative approach did not succeed"
-        url="https://x.com/mjtruthultra/status/1924497763133231198?s=46"
-        outcome="negative"
-      />
-
-      <InfoBox variant="danger">
-        It is critical to acknowledge that alternative treatments do not work for everyone. 
-        This negative testimonial is included for transparency and honest evaluation.
-      </InfoBox>
-      <BackToNav />
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Cases Where It Did Not Work</h3>
+      <p className="text-sm text-gray-700 mb-3">
+        It is critical to acknowledge that alternative treatments do not work for everyone. <a href="https://x.com/mjtruthultra/status/1924497763133231198" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Negative testimonial included for transparency.</a>
+      </p>
     </section>
   );
 }

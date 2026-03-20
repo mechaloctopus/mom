@@ -1,109 +1,52 @@
 import React from 'react';
-import { Shield } from 'lucide-react';
-import { SectionHeader, TestimonialCard, ProConCard, InfoBox, Divider, BackToNav } from '../components/Cards';
 import XEmbed from '../components/XEmbed';
 
 export default function Combination() {
   return (
-    <section id="combination" className="section-card">
-      <SectionHeader
-        icon={<Shield className="w-5 h-5" />}
-        title="Combination Therapy"
-        subtitle="Fenbendazole + Ivermectin and multi-agent protocols"
-        color="primary"
-      />
+    <section id="combination">
+      <p className="text-sm text-gray-700 leading-relaxed mb-4">
+        The rationale for combining fenbendazole/mebendazole with ivermectin is that they target <strong>different pathways</strong>: benzimidazoles disrupt microtubules and glucose uptake while ivermectin targets Akt/mTOR, WNT, and mitochondrial function. The combination may create synergistic anti-tumor effects through multiple simultaneous mechanisms. Both drugs have individually established safety profiles. No combination protocol has been validated in clinical trials — these are community-derived protocols based on anecdotal experience.
+      </p>
 
-      <InfoBox variant="info" title="Rationale for Combination">
-        Many patients using alternative anti-cancer protocols combine fenbendazole (or mebendazole) with 
-        ivermectin. The rationale is that these drugs target <strong>different pathways</strong>: benzimidazoles 
-        primarily disrupt microtubules and glucose uptake, while ivermectin targets Akt/mTOR, WNT, and 
-        mitochondrial function. Combining them may create synergistic effects against cancer cells through 
-        multiple simultaneous mechanisms.
-      </InfoBox>
+      <p className="text-sm text-gray-700 leading-relaxed mb-4">
+        Community-shared protocol available: <a href="https://x.com/ivermectinkart/status/2022739869592883431" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">proposed dosing schedule with cycling patterns and supporting supplements</a>. Anyone considering these combinations should work with a physician and monitor liver function, blood counts, and overall health.
+      </p>
 
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Proposed Combination Protocol</h3>
-      <div className="bg-gradient-to-br from-indigo-50 to-blue-50 border border-indigo-100 rounded-xl p-4 mb-4">
-        <a href="https://x.com/ivermectinkart/status/2022739869592883431?s=46" target="_blank" rel="noopener noreferrer"
-          className="block">
-          <p className="text-xs font-bold text-indigo-800 mb-2">Community-Shared Protocol</p>
-          <p className="text-[11px] text-indigo-600 leading-relaxed">
-            A proposed protocol combining fenbendazole and ivermectin has been shared within the alternative 
-            cancer treatment community. This protocol typically includes dosing schedules, cycling patterns, 
-            and supporting supplements (vitamin E, curcumin, CBD oil).
-          </p>
-          <p className="text-xs text-primary-500 font-medium mt-2">View proposed protocol →</p>
-        </a>
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Considerations</h3>
+      <div className="overflow-x-auto mb-4">
+        <table className="w-full text-sm border border-gray-300">
+          <thead><tr className="bg-gray-100 border-b border-gray-300"><th className="p-2.5 text-left font-semibold text-gray-700">For</th><th className="p-2.5 text-left font-semibold text-gray-700">Against</th></tr></thead>
+          <tbody className="text-gray-700 align-top">
+            <tr><td className="p-2.5"><ul className="list-disc pl-4 space-y-1">
+              <li>Multiple mechanisms targeting cancer from different angles</li>
+              <li>Both drugs individually well-established for safety</li>
+              <li>Growing number of reported positive outcomes</li>
+              <li>Some integrative oncologists recommending combinations</li>
+              <li>Inexpensive compared to conventional chemotherapy</li>
+            </ul></td><td className="p-2.5"><ul className="list-disc pl-4 space-y-1">
+              <li>No clinical trial data on the combination</li>
+              <li>Drug-drug interactions not well-studied</li>
+              <li>Combined hepatic burden unknown</li>
+              <li>No standardized dosing protocol</li>
+              <li>Risk of false confidence delaying proven treatments</li>
+            </ul></td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <InfoBox variant="danger" title="Critical Warning">
-        No combination protocol has been validated in clinical trials. These are community-derived protocols 
-        based on anecdotal experience. Anyone considering these combinations should work with a knowledgeable 
-        physician and monitor liver function, blood counts, and overall health closely.
-      </InfoBox>
-
-      <ProConCard
-        pros={[
-          'Multiple mechanisms of action targeting cancer from different angles simultaneously',
-          'Both drugs have well-established safety profiles individually',
-          'Growing number of reported positive outcomes with combination use',
-          'Some doctors specializing in integrative oncology are recommending combinations',
-          'Relatively inexpensive compared to conventional chemotherapy',
-          'Community protocols provide starting frameworks for discussion with physicians',
-          'Peter McCullough MD and other physicians publicly discussing these protocols',
-        ]}
-        cons={[
-          'No clinical trial data on the combination — completely experimental',
-          'Drug-drug interactions between fenbendazole and ivermectin are not well-studied',
-          'Combined liver burden is unknown — both are hepatically metabolized',
-          'No standardized dosing protocol — varies widely between sources',
-          'Risk of false confidence leading to delay of proven treatments',
-          'Community protocols may not account for individual medical situations',
-          'Monitoring requirements are not well-defined',
-        ]}
-      />
-
-      <Divider />
-      <h3 className="text-sm font-bold text-gray-900 mb-3">Combination Testimonials</h3>
-
-      <InfoBox variant="warning">
-        Many testimonials below involve patients using fenbendazole + ivermectin together, 
-        sometimes with additional supplements. Attribution to any single agent is not possible.
-      </InfoBox>
+      <h3 className="text-sm font-bold text-gray-900 mb-2">Case Reports &amp; Testimonials</h3>
+      <p className="text-sm text-gray-500 italic mb-3">Many involve multiple agents simultaneously. Attribution to any single agent is not possible.</p>
 
       <XEmbed url="https://x.com/p_mcculloughmd/status/1957602996323246197" />
-
-      <TestimonialCard
-        description="Mel Gibson's 3 friends — reported positive outcomes with alternative cancer protocols"
-        url="https://x.com/makismedicine/status/1877545575098261801?s=46"
-        outcome="positive"
-      />
-
       <XEmbed url="https://x.com/makismedicine/status/1918958115808285004" />
 
-      <TestimonialCard
-        description="69-year-old stage 4 lung cancer — improved in 2 months"
-        url="https://x.com/makismedicine/status/1932387904359481596?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Breast cancer remission in 4 months"
-        url="https://x.com/makismedicine/status/2020999584114458856?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Stage 3 lymphoma (terminal) — patient recovered"
-        url="https://x.com/makismedicine/status/2021298006268707028?s=46"
-        outcome="positive"
-      />
-
-      <TestimonialCard
-        description="Additional positive case reports"
-        url="https://x.com/makismedicine/status/2002085325963927729?s=46"
-        outcome="positive"
-      />
-      <BackToNav />
+      <div className="space-y-1 text-sm text-gray-700 mb-4">
+        <p><a href="https://x.com/makismedicine/status/1877545575098261801" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Mel Gibson{"'"}s 3 friends — reported positive outcomes with alternative protocols</a></p>
+        <p><a href="https://x.com/makismedicine/status/1932387904359481596" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">69-year-old stage 4 lung cancer — improved in 2 months</a></p>
+        <p><a href="https://x.com/makismedicine/status/2020999584114458856" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Breast cancer remission in 4 months</a></p>
+        <p><a href="https://x.com/makismedicine/status/2021298006268707028" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Stage 3 lymphoma (terminal) — patient recovered</a></p>
+        <p><a href="https://x.com/makismedicine/status/2002085325963927729" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Additional positive case reports</a></p>
+      </div>
     </section>
   );
 }
