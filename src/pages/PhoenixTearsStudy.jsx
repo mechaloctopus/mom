@@ -207,9 +207,44 @@ export default function PhoenixTearsStudy() {
           </p>
         </section>
 
-        {/* ══════════ 7. TOXIC LIMITS ══════════ */}
+        {/* ══════════ 7. PHARMACOKINETICS ══════════ */}
         <section className="mb-10">
-          <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">7. Therapeutic Index — Daily Doses vs. Toxic Limits</h2>
+          <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">7. Pharmacokinetics — Approximate Half-Lives and Exposure Window</h2>
+          <p className="text-sm text-gray-700 leading-relaxed mb-3">
+            Half-life data for this formulation must be interpreted cautiously. Most published pharmacokinetic values come from <strong>oral, inhaled, or intravenous exposure</strong>, whereas Phoenix Tears is designed for <strong>topical DMSO-enhanced transdermal delivery</strong>. That means the numbers below are best understood as reference ranges for systemic persistence, not exact predictions of topical exposure. For whole essential oils, half-life is often better described by the major active constituent than by the oil as a single uniform drug.
+          </p>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-sm border border-gray-300">
+              <thead><tr className="bg-gray-100 border-b border-gray-300">
+                <th className="p-2.5 text-left font-semibold text-gray-700">Compound</th>
+                <th className="p-2.5 text-left font-semibold text-gray-700">Approx. systemic half-life</th>
+                <th className="p-2.5 text-left font-semibold text-gray-700">Interpretation for Phoenix Tears</th>
+                <th className="p-2.5 text-left font-semibold text-gray-700">Notes / caveats</th>
+              </tr></thead>
+              <tbody className="text-gray-700 text-xs">
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">DMSO</td><td className="p-2.5 font-mono">~9-16 hours</td><td className="p-2.5">Carrier and enhancer likely persists long enough to support at least twice-daily delivery.</td><td className="p-2.5">Rapid tissue distribution; metabolized partly to dimethyl sulfone and dimethyl sulfide. Garlic-like odor reflects elimination metabolite.<Ref n={4} /></td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Fenbendazole</td><td className="p-2.5 font-mono">~5-15 hours (species-dependent)</td><td className="p-2.5">Supports sustained tissue exposure over the day, especially with repeated application.</td><td className="p-2.5">Human topical PK is not established; published values are largely veterinary oral data. Active sulfoxide/sulfone metabolites may extend functional exposure.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Ivermectin</td><td className="p-2.5 font-mono">~12-36 hours</td><td className="p-2.5">Long persistence is one reason once-daily or twice-daily schedules may ultimately be sufficient with DMSO enhancement.</td><td className="p-2.5">Topical dermal reservoirs can prolong effective exposure further. Human oral values vary with formulation and fat intake.<Ref n={1} /><Ref n={14} /></td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">CBD</td><td className="p-2.5 font-mono">~18-32 hours</td><td className="p-2.5">Likely one of the longest-persisting lipophilic components in the formula.</td><td className="p-2.5">Topical and transdermal CBD can show slower absorption and prolonged local tissue residence versus oral dosing.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">THC</td><td className="p-2.5 font-mono">~20-30 hours terminal phase</td><td className="p-2.5">If included, likely contributes prolonged background cannabinoid exposure.</td><td className="p-2.5">Highly lipophilic; distribution phase is faster than terminal elimination. Psychoactive effects do not track perfectly with plasma half-life.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Frankincense / boswellic acids</td><td className="p-2.5 font-mono">~6 hours</td><td className="p-2.5">Moderate persistence; repeated dosing may support anti-edema continuity.</td><td className="p-2.5">Data are mostly from boswellic-acid preparations rather than whole frankincense oil.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Rosemary / carnosic acid</td><td className="p-2.5 font-mono">~2-4 hours</td><td className="p-2.5">Shorter systemic window, but tissue antioxidant effects may outlast plasma clearance.</td><td className="p-2.5">Whole-oil topical PK is not well standardized; values are inferred from constituent behavior.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Clove / eugenol</td><td className="p-2.5 font-mono">~10-18 hours</td><td className="p-2.5">One of the longer-lasting essential-oil constituents in the blend.</td><td className="p-2.5">Dermal absorption is efficient; mucosal and concentrated exposure are more toxic than dilute dermal use.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Oregano / carvacrol</td><td className="p-2.5 font-mono">~1-3 hours</td><td className="p-2.5">Short systemic half-life but may still be valuable for pulse anti-inflammatory and anti-proliferative signaling.</td><td className="p-2.5">Topical tissue persistence may exceed plasma half-life.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Thyme / thymol</td><td className="p-2.5 font-mono">~1-2 hours</td><td className="p-2.5">Short half-life supports its role as an adjunct rather than a backbone exposure driver.</td><td className="p-2.5">Included at trace level within the oregano-associated fraction in this formula.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Cinnamon / cinnamaldehyde</td><td className="p-2.5 font-mono">~1-2 hours</td><td className="p-2.5">Short-lived, high-activity signaling compound used at very low concentration.</td><td className="p-2.5">Dermal safety, not persistence, is the real dosing constraint here.</td></tr>
+                <tr><td className="p-2.5 font-semibold">Holy basil / eugenol-ursolic fraction</td><td className="p-2.5 font-mono">~4-12 hours (constituent-dependent)</td><td className="p-2.5">Intermediate persistence, primarily serving anti-inflammatory and neuroprotective support.</td><td className="p-2.5">Whole-oil human half-life is not well defined; values depend on the chemotype.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            <strong>Practical implication:</strong> the pharmacokinetic profile of this formulation does <strong>not</strong> require that every component have the same half-life. The longer-persisting backbone agents — DMSO, ivermectin, CBD, and possibly fenbendazole metabolites — may create a sustained tissue reservoir, while shorter-lived essential-oil constituents act as repeated signaling pulses. This is one of the main scientific reasons to test whether <strong>4x/day is necessary</strong> or whether <strong>2x/day or even 1x/day</strong> achieves comparable tissue exposure when DMSO is used.
+          </p>
+        </section>
+
+        {/* ══════════ 8. TOXIC LIMITS ══════════ */}
+        <section className="mb-10">
+          <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">8. Therapeutic Index — Daily Doses vs. Toxic Limits</h2>
           <div className="overflow-x-auto mb-4">
             <table className="w-full text-sm border border-gray-300">
               <thead><tr className="bg-gray-100 border-b border-gray-300">
@@ -219,19 +254,33 @@ export default function PhoenixTearsStudy() {
                 <th className="p-2.5 text-left font-semibold text-gray-700">Known Toxic Threshold</th>
               </tr></thead>
               <tbody className="text-gray-700 text-xs">
-                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Fenbendazole</td><td className="p-2.5 font-mono">220 mg (2.85 mg/kg)</td><td className="p-2.5">222-444 mg/day (Makis protocol)</td><td className="p-2.5">LD50 {">"}10,000 mg/kg in rats (extremely low toxicity)</td></tr>
-                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Ivermectin</td><td className="p-2.5 font-mono">16 mg (0.207 mg/kg)</td><td className="p-2.5">0.2 mg/kg (FDA-approved single oral dose)</td><td className="p-2.5">LD50 ~25 mg/kg in mice. Human toxicity reported at {">"}10x therapeutic dose.</td></tr>
-                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">CBD</td><td className="p-2.5 font-mono">80 mg (1.035 mg/kg)</td><td className="p-2.5">Up to 1,500 mg/day in clinical trials</td><td className="p-2.5">No established lethal dose. Hepatotoxicity at very high chronic doses.</td></tr>
-                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">DMSO (topical)</td><td className="p-2.5 font-mono">per formulation</td><td className="p-2.5">Up to 70-90% topical solutions used clinically</td><td className="p-2.5">Chronic high-dose: reversible lens changes. Garlic odor universal.</td></tr>
-                <tr><td className="p-2.5 font-semibold">Total essential oils</td><td className="p-2.5 font-mono">46.2 mg</td><td className="p-2.5">1.25% dilution (Tisserand safe limits)</td><td className="p-2.5">Individual oils have specific dermal limits; all within range.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Fenbendazole</td><td className="p-2.5 font-mono">220 mg (2.85 mg/kg)</td><td className="p-2.5">Common repurposed anti-cancer oral range ~222-444 mg/day</td><td className="p-2.5">Veterinary LD50 {">"}10,000 mg/kg orally. Main concern is chronic hepatic strain rather than acute overdose.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Ivermectin</td><td className="p-2.5 font-mono">16 mg (0.207 mg/kg)</td><td className="p-2.5">FDA antiparasitic dose ~0.15-0.2 mg/kg orally; topical 1% dermatologic products are established</td><td className="p-2.5">Neurotoxicity risk rises as systemic exposure moves several-fold above standard therapeutic dose, especially with P-gp impairment or interacting drugs.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">CBD</td><td className="p-2.5 font-mono">80 mg (1.035 mg/kg)</td><td className="p-2.5">Human studies commonly use 100-1,500 mg/day orally</td><td className="p-2.5">No formal lethal dose in humans; dose-limiting issues are sedation, diarrhea, and transaminase elevation, especially with valproate.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">THC</td><td className="p-2.5 font-mono">Variable</td><td className="p-2.5">Often limited by cognition, anxiety, tachycardia, and psychoactivity rather than organ toxicity</td><td className="p-2.5">Functional toxicity is patient-specific; psychotropic threshold may be reached well before systemic toxic threshold.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">DMSO (topical)</td><td className="p-2.5 font-mono">Per formulation</td><td className="p-2.5">Topical medical use commonly spans ~50-90% solutions depending on indication</td><td className="p-2.5">Key hazard is contaminant transport. Chronic heavy exposure has been associated with reversible lens changes and skin irritation rather than classic dose-dependent organ toxicity.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Frankincense</td><td className="p-2.5 font-mono">10.4 mg total/day</td><td className="p-2.5">Generally tolerated well in dilute topical preparations; practical topical ceiling often several percent</td><td className="p-2.5">Primary limits are skin irritation and sensitization, not systemic toxicity at this dose.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Rosemary oil</td><td className="p-2.5 font-mono">10.8 mg total/day</td><td className="p-2.5">Topical use commonly tolerated up to ~3% in adults</td><td className="p-2.5">Avoid concentrated exposure in seizure-prone patients; whole-oil dose here remains far below common dermal limits.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Clove oil</td><td className="p-2.5 font-mono">8.4 mg total/day</td><td className="p-2.5">Conservative dermal ceiling ~0.5% or less in repeated-use preparations</td><td className="p-2.5">Eugenol can be caustic and hepatotoxic at high exposure; concentrate is the danger, not this diluted dose.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Oregano oil</td><td className="p-2.5 font-mono">7.6 mg total/day</td><td className="p-2.5">Repeated dermal use is typically kept low (~0.5-1% max, often lower)</td><td className="p-2.5">Carvacrol-rich oils are strong irritants; DMSO co-delivery makes conservative dosing especially important.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Thyme / thymol fraction</td><td className="p-2.5 font-mono">Trace</td><td className="p-2.5">Usually kept well below 1% in repeated topical products</td><td className="p-2.5">Irritant/sensitizer at higher concentrations.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Cinnamon bark oil</td><td className="p-2.5 font-mono">1.84 mg total/day</td><td className="p-2.5">Very low dermal maximum: ~0.05-0.07%</td><td className="p-2.5">One of the most irritating oils in the blend; skin burn risk rises rapidly above accepted dermal limits.</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Holy basil oil</td><td className="p-2.5 font-mono">7.2 mg total/day</td><td className="p-2.5">Conservative repeated-use ceiling often ~1%</td><td className="p-2.5">Primary concern is sensitization rather than systemic toxicity.</td></tr>
+                <tr><td className="p-2.5 font-semibold">Total essential oils</td><td className="p-2.5 font-mono">46.2 mg</td><td className="p-2.5">Blend total = 1.25% dilution</td><td className="p-2.5">Overall blend sits below common repeated-use dermal ceilings, but DMSO warrants extra caution because it may increase penetration beyond ordinary aromatherapy assumptions.</td></tr>
               </tbody>
             </table>
           </div>
+          <div className="border border-amber-200 bg-amber-50 rounded p-4 mb-3">
+            <p className="text-sm font-semibold text-amber-900 mb-1">How to read the toxicology table</p>
+            <p className="text-sm text-amber-800 leading-relaxed">
+              For several compounds in Phoenix Tears, especially the essential oils, the most relevant "toxic limit" is <strong>dermal irritation / sensitization threshold</strong>, not a classical lethal dose. For the systemic agents — ivermectin, fenbendazole, CBD, and DMSO — the practical safety question is whether repeated DMSO-enhanced delivery could push tissue exposure toward the range where <strong>hepatic, neurologic, or drug-interaction toxicity</strong> becomes clinically meaningful. That is why this proposal uses conservative doses and mandates serial lab monitoring.
+            </p>
+          </div>
         </section>
 
-        {/* ══════════ 8. CONTRAINDICATIONS ══════════ */}
+        {/* ══════════ 9. CONTRAINDICATIONS ══════════ */}
         <section className="mb-10">
-          <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">8. Contraindications &amp; Drug Interactions</h2>
+          <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">9. Contraindications &amp; Drug Interactions</h2>
           <div className="overflow-x-auto mb-4">
             <table className="w-full text-sm border border-gray-300">
               <thead><tr className="bg-gray-100 border-b border-gray-300">
@@ -250,9 +299,9 @@ export default function PhoenixTearsStudy() {
           </div>
         </section>
 
-        {/* ══════════ 9. SUPPORTIVE PROTOCOL ══════════ */}
+        {/* ══════════ 10. SUPPORTIVE PROTOCOL ══════════ */}
         <section className="mb-10">
-          <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">9. Supportive Protocol — Metabolic &amp; Organ Protection</h2>
+          <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">10. Supportive Protocol — Metabolic &amp; Organ Protection</h2>
           <p className="text-sm text-gray-700 leading-relaxed mb-3">All study subjects must adhere to the following supportive protocol throughout the study period. These measures are designed to optimize the metabolic environment, protect organs from compound processing burden, and support elimination of necrotic tissue.</p>
 
           <ul className="list-disc pl-6 text-sm text-gray-700 leading-relaxed space-y-2 mb-4">
@@ -268,9 +317,9 @@ export default function PhoenixTearsStudy() {
           </ul>
         </section>
 
-        {/* ══════════ 10. MONITORING ══════════ */}
+        {/* ══════════ 11. MONITORING ══════════ */}
         <section className="mb-10">
-          <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">10. Monitoring Schedule</h2>
+          <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">11. Monitoring Schedule</h2>
           <div className="overflow-x-auto mb-4">
             <table className="w-full text-sm border border-gray-300">
               <thead><tr className="bg-gray-100 border-b border-gray-300">
