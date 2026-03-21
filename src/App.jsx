@@ -182,10 +182,10 @@ export default function App() {
           <NutritionProtocol />
         </Chapter>
 
-        <Chapter id="phoenix-tears" number="VII" title="Phoenix Tears Oil Blend" subtitle="Proposed veterinary study formulation — topical anti-cancer botanical compound (170 lb mammal)">
+        <Chapter id="phoenix-tears" number="VII" title="Phoenix Tears Oil Blend" subtitle="Proposed university study formulation — modified Makis protocol with DMSO-compatible topical delivery">
           <section>
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
-              <strong>Phoenix Tears Oil Blend</strong> is a proposed formulation for a veterinary medical study combining botanical essential oils with documented anti-cancer properties, CBD isolate, and repurposed antiparasitic compounds in a high-polyphenol olive oil carrier base. Designed for topical application at 1 mL (one full dropper) 4 times daily to maintain constant transdermal compound delivery. Target subject: 170 lb mammal.
+              <strong>Phoenix Tears Oil Blend</strong> is a proposed formulation for a university research study modifying the Makis antiparasitic cancer protocol for topical transdermal delivery via DMSO-compatible carrier base. The formulation combines pharmaceutical-grade antiparasitic compounds, full-spectrum CBD, and botanical essential oils with documented anti-cancer properties in a high-polyphenol olive oil carrier. Dosing: 1 mL (one full dropper) applied topically 4 times daily at ~6-hour intervals. Reference subject: 170 lb (77.3 kg) adult.
             </p>
 
             <h3 className="text-sm font-bold text-gray-900 mb-2">Master Formula — 1 Liter Batch</h3>
@@ -195,75 +195,106 @@ export default function App() {
                   <th className="p-2 text-left font-semibold text-gray-700">Ingredient</th>
                   <th className="p-2 text-left font-semibold text-gray-700">Amount / 1L</th>
                   <th className="p-2 text-left font-semibold text-gray-700">Per Dropper (1 mL)</th>
-                  <th className="p-2 text-left font-semibold text-gray-700">Daily (4 doses)</th>
-                  <th className="p-2 text-left font-semibold text-gray-700">Safety Basis</th>
+                  <th className="p-2 text-left font-semibold text-gray-700">Daily (4 mL)</th>
                 </tr></thead>
                 <tbody className="text-gray-700 text-xs">
-                  <tr className="border-b border-gray-200 bg-gray-50"><td colSpan="5" className="p-2 font-bold text-gray-900">Essential Oils (total 12.5 mL / 1.25% dilution)</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">Cinnamon Bark</td><td className="p-2">0.5 mL (~10 drops)</td><td className="p-2 font-mono">0.5 mcL (0.46 mg)</td><td className="p-2 font-mono">1.84 mg</td><td className="p-2">Max dermal 0.07% (Tisserand); used ~0.05%</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">Clove (Eugenol)</td><td className="p-2">2 mL (~40 drops)</td><td className="p-2 font-mono">2 mcL (2.1 mg)</td><td className="p-2 font-mono">8.4 mg</td><td className="p-2">Max 0.5%; limited to 0.2% in blend. <a href="https://pubmed.ncbi.nlm.nih.gov/22065645/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 22065645</a></td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">Oregano (Carvacrol)</td><td className="p-2">2 mL (~40 drops)</td><td className="p-2 font-mono">2 mcL (1.9 mg)</td><td className="p-2 font-mono">7.6 mg</td><td className="p-2">Max 0.5-1%; capped at 0.2% for DMSO compat. <a href="https://pubmed.ncbi.nlm.nih.gov/25963495/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 25963495</a></td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">Rosemary (Carnosic acid)</td><td className="p-2">3 mL (~60 drops)</td><td className="p-2 font-mono">3 mcL (2.7 mg)</td><td className="p-2 font-mono">10.8 mg</td><td className="p-2">Safe up to 3%; used 0.3%. <a href="https://pubmed.ncbi.nlm.nih.gov/26205156/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 26205156</a></td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">Holy Basil (Tulsi)</td><td className="p-2">2 mL (~40 drops)</td><td className="p-2 font-mono">2 mcL (1.8 mg)</td><td className="p-2 font-mono">7.2 mg</td><td className="p-2">Max 1% (Tisserand); capped at 0.2%</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">Frankincense (Boswellic acid)</td><td className="p-2">3 mL (~60 drops)</td><td className="p-2 font-mono">3 mcL (2.6 mg)</td><td className="p-2 font-mono">10.4 mg</td><td className="p-2">Safe up to 5%; used 0.3%. <a href="https://pubmed.ncbi.nlm.nih.gov/21553931/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 21553931</a></td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">Thyme (Thymol)</td><td className="p-2">included in oregano fraction</td><td className="p-2 font-mono">trace</td><td className="p-2 font-mono">trace</td><td className="p-2"><a href="https://pubmed.ncbi.nlm.nih.gov/30934680/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">PMID: 30934680</a></td></tr>
+                  <tr className="border-b border-gray-200 bg-gray-50"><td colSpan="4" className="p-2 font-bold text-gray-900">Antiparasitic Compounds (pharmaceutical grade)</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Fenbendazole (powder)</td><td className="p-2 font-mono">55,000 mg (55 g)</td><td className="p-2 font-mono font-semibold">55.0 mg</td><td className="p-2 font-mono font-semibold">220.0 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Ivermectin (pure pharmaceutical grade)</td><td className="p-2 font-mono">4,000 mg (4 g)</td><td className="p-2 font-mono font-semibold">4.0 mg</td><td className="p-2 font-mono font-semibold">16.0 mg</td></tr>
 
-                  <tr className="border-b border-gray-200 bg-gray-50"><td colSpan="5" className="p-2 font-bold text-gray-900">Cannabinoids</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">CBD (Full Spectrum)</td><td className="p-2 font-semibold">10,000 mg (10 g)</td><td className="p-2 font-mono font-semibold">10.0 mg</td><td className="p-2 font-mono font-semibold">40.0 mg</td><td className="p-2">Anti-proliferative, pro-apoptotic in GBM lines. Neuroprotective.</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">THC (Full Spectrum)</td><td className="p-2">per local formulation</td><td className="p-2 font-mono">variable</td><td className="p-2 font-mono">variable</td><td className="p-2">Autophagy/apoptosis in glioma cells. Selective toxicity.</td></tr>
+                  <tr className="border-b border-gray-200 bg-gray-50"><td colSpan="4" className="p-2 font-bold text-gray-900">Cannabinoids</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">CBD (Full Spectrum Oil)</td><td className="p-2 font-mono">20,000 mg (20 g)</td><td className="p-2 font-mono font-semibold">20.0 mg</td><td className="p-2 font-mono font-semibold">80.0 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">THC (Full Spectrum)</td><td className="p-2 font-mono">per local formulation</td><td className="p-2 font-mono">variable</td><td className="p-2 font-mono">variable</td></tr>
 
-                  <tr className="border-b border-gray-200 bg-gray-50"><td colSpan="5" className="p-2 font-bold text-gray-900">Antiparasitic Compounds</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">Fenbendazole (powder)</td><td className="p-2 font-semibold">2,500 mg</td><td className="p-2 font-mono font-semibold">2.5 mg</td><td className="p-2 font-mono font-semibold">10.0 mg</td><td className="p-2">Microtubule disruption, glucose uptake inhibition, p53 stabilization</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">Ivermectin (powder)</td><td className="p-2 font-semibold">112 mg</td><td className="p-2 font-mono font-semibold">0.112 mg (112 mcg)</td><td className="p-2 font-mono font-semibold">0.448 mg (448 mcg)</td><td className="p-2">Akt/mTOR inhibition, PAK1 kinase, mitochondrial dysfunction</td></tr>
+                  <tr className="border-b border-gray-200 bg-gray-50"><td colSpan="4" className="p-2 font-bold text-gray-900">Essential Oils (total 12.5 mL / 1.25% dilution)</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">Cinnamon Bark</td><td className="p-2 font-mono">0.5 mL (~10 drops)</td><td className="p-2 font-mono">0.46 mg</td><td className="p-2 font-mono">1.84 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">Clove (Eugenol)</td><td className="p-2 font-mono">2 mL (~40 drops)</td><td className="p-2 font-mono">2.1 mg</td><td className="p-2 font-mono">8.4 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">Oregano (Carvacrol)</td><td className="p-2 font-mono">2 mL (~40 drops)</td><td className="p-2 font-mono">1.9 mg</td><td className="p-2 font-mono">7.6 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">Rosemary (Carnosic acid)</td><td className="p-2 font-mono">3 mL (~60 drops)</td><td className="p-2 font-mono">2.7 mg</td><td className="p-2 font-mono">10.8 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">Holy Basil (Tulsi)</td><td className="p-2 font-mono">2 mL (~40 drops)</td><td className="p-2 font-mono">1.8 mg</td><td className="p-2 font-mono">7.2 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">Frankincense (Boswellic acid)</td><td className="p-2 font-mono">3 mL (~60 drops)</td><td className="p-2 font-mono">2.6 mg</td><td className="p-2 font-mono">10.4 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">Thyme (Thymol)</td><td className="p-2 font-mono">incl. in oregano</td><td className="p-2 font-mono">trace</td><td className="p-2 font-mono">trace</td></tr>
 
-                  <tr className="border-b border-gray-200 bg-gray-50"><td colSpan="5" className="p-2 font-bold text-gray-900">Carrier Base</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2">High-polyphenol EVOO</td><td className="p-2">~150-200 mL (beyond base)</td><td className="p-2 font-mono">0.15-0.2 mL</td><td className="p-2 font-mono">0.6-0.8 mL</td><td className="p-2">Soothing polyphenols, dilution vehicle</td></tr>
-                  <tr><td className="p-2">Olive oil base (remainder)</td><td className="p-2">~787.5 mL</td><td className="p-2 font-mono">~0.79 mL</td><td className="p-2 font-mono">~3.15 mL</td><td className="p-2">Carrier medium, transdermal absorption facilitator</td></tr>
+                  <tr className="border-b border-gray-200 bg-gray-50"><td colSpan="4" className="p-2 font-bold text-gray-900">Carrier Base</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">High-polyphenol EVOO</td><td className="p-2 font-mono">~175 mL</td><td className="p-2 font-mono">0.175 mL</td><td className="p-2 font-mono">0.7 mL</td></tr>
+                  <tr><td className="p-2">Olive oil base (remainder)</td><td className="p-2 font-mono">~812.5 mL</td><td className="p-2 font-mono">~0.81 mL</td><td className="p-2 font-mono">~3.25 mL</td></tr>
                 </tbody>
               </table>
             </div>
 
-            <h3 className="text-sm font-bold text-gray-900 mb-2">Per-Dropper Summary (1 mL dose)</h3>
+            <h3 className="text-sm font-bold text-gray-900 mb-2">Drug Facts — Per Dropper (1 mL)</h3>
             <div className="overflow-x-auto mb-4">
               <table className="w-full text-sm border border-gray-300">
                 <thead><tr className="bg-gray-100 border-b border-gray-300">
-                  <th className="p-2 text-left font-semibold text-gray-700">Compound</th>
-                  <th className="p-2 text-left font-semibold text-gray-700">Per Dropper</th>
-                  <th className="p-2 text-left font-semibold text-gray-700">Daily (4x)</th>
+                  <th className="p-2.5 text-left font-semibold text-gray-700">Active Compound</th>
+                  <th className="p-2.5 text-left font-semibold text-gray-700">Per Dropper (1 mL)</th>
+                  <th className="p-2.5 text-left font-semibold text-gray-700">Daily Dose (4 mL)</th>
+                  <th className="p-2.5 text-left font-semibold text-gray-700">mg/kg/day (77.3 kg)</th>
                 </tr></thead>
-                <tbody className="text-gray-700 text-xs">
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">CBD</td><td className="p-2 font-mono">10.0 mg</td><td className="p-2 font-mono">40.0 mg</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Fenbendazole</td><td className="p-2 font-mono">2.5 mg</td><td className="p-2 font-mono">10.0 mg</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Ivermectin</td><td className="p-2 font-mono">112 mcg</td><td className="p-2 font-mono">448 mcg</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Rosemary oil</td><td className="p-2 font-mono">2.7 mg</td><td className="p-2 font-mono">10.8 mg</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Frankincense oil</td><td className="p-2 font-mono">2.6 mg</td><td className="p-2 font-mono">10.4 mg</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Clove oil</td><td className="p-2 font-mono">2.1 mg</td><td className="p-2 font-mono">8.4 mg</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Oregano oil</td><td className="p-2 font-mono">1.9 mg</td><td className="p-2 font-mono">7.6 mg</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Holy Basil oil</td><td className="p-2 font-mono">1.8 mg</td><td className="p-2 font-mono">7.2 mg</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Cinnamon Bark oil</td><td className="p-2 font-mono">0.46 mg (460 mcg)</td><td className="p-2 font-mono">1.84 mg</td></tr>
-                  <tr className="border-b border-gray-200"><td className="p-2 font-semibold">Total essential oils</td><td className="p-2 font-mono">12.5 mcL (~11.6 mg)</td><td className="p-2 font-mono">~46.2 mg</td></tr>
-                  <tr><td className="p-2 font-semibold">EVOO carrier</td><td className="p-2 font-mono">~0.98 mL</td><td className="p-2 font-mono">~3.9 mL</td></tr>
+                <tbody className="text-gray-700">
+                  <tr className="border-b border-gray-200 font-semibold"><td className="p-2.5">Fenbendazole</td><td className="p-2.5 font-mono">55.0 mg</td><td className="p-2.5 font-mono">220.0 mg</td><td className="p-2.5 font-mono">2.85 mg/kg</td></tr>
+                  <tr className="border-b border-gray-200 font-semibold"><td className="p-2.5">Ivermectin</td><td className="p-2.5 font-mono">4.0 mg</td><td className="p-2.5 font-mono">16.0 mg</td><td className="p-2.5 font-mono">0.207 mg/kg</td></tr>
+                  <tr className="border-b border-gray-200 font-semibold"><td className="p-2.5">CBD (Full Spectrum)</td><td className="p-2.5 font-mono">20.0 mg</td><td className="p-2.5 font-mono">80.0 mg</td><td className="p-2.5 font-mono">1.035 mg/kg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5">Rosemary oil</td><td className="p-2.5 font-mono">2.7 mg</td><td className="p-2.5 font-mono">10.8 mg</td><td className="p-2.5 font-mono">0.140 mg/kg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5">Frankincense oil</td><td className="p-2.5 font-mono">2.6 mg</td><td className="p-2.5 font-mono">10.4 mg</td><td className="p-2.5 font-mono">0.135 mg/kg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5">Clove oil</td><td className="p-2.5 font-mono">2.1 mg</td><td className="p-2.5 font-mono">8.4 mg</td><td className="p-2.5 font-mono">0.109 mg/kg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5">Oregano oil</td><td className="p-2.5 font-mono">1.9 mg</td><td className="p-2.5 font-mono">7.6 mg</td><td className="p-2.5 font-mono">0.098 mg/kg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5">Holy Basil oil</td><td className="p-2.5 font-mono">1.8 mg</td><td className="p-2.5 font-mono">7.2 mg</td><td className="p-2.5 font-mono">0.093 mg/kg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2.5">Cinnamon Bark oil</td><td className="p-2.5 font-mono">0.46 mg</td><td className="p-2.5 font-mono">1.84 mg</td><td className="p-2.5 font-mono">0.024 mg/kg</td></tr>
+                  <tr className="border-b border-gray-200 bg-gray-50"><td className="p-2.5 font-bold">Total essential oils</td><td className="p-2.5 font-mono font-bold">11.56 mg</td><td className="p-2.5 font-mono font-bold">46.24 mg</td><td className="p-2.5 font-mono">0.598 mg/kg</td></tr>
+                  <tr className="bg-gray-50"><td className="p-2.5 font-bold">EVOO carrier</td><td className="p-2.5 font-mono">~0.99 mL</td><td className="p-2.5 font-mono">~3.95 mL</td><td className="p-2.5 font-mono">—</td></tr>
                 </tbody>
               </table>
+            </div>
+
+            <h3 className="text-sm font-bold text-gray-900 mb-2">Weight-Based Dosing Adjustment</h3>
+            <p className="text-sm text-gray-700 leading-relaxed mb-3">Reference dose calibrated to 170 lb (77.3 kg) at 4 droppers/day. Adjust proportionally by body weight:</p>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm border border-gray-300">
+                <thead><tr className="bg-gray-100 border-b border-gray-300">
+                  <th className="p-2 text-left font-semibold text-gray-700">Body Weight</th>
+                  <th className="p-2 text-left font-semibold text-gray-700">Droppers/Day</th>
+                  <th className="p-2 text-left font-semibold text-gray-700">Fenbendazole</th>
+                  <th className="p-2 text-left font-semibold text-gray-700">Ivermectin</th>
+                  <th className="p-2 text-left font-semibold text-gray-700">CBD</th>
+                </tr></thead>
+                <tbody className="text-gray-700 text-xs">
+                  <tr className="border-b border-gray-200"><td className="p-2">110 lb (50 kg)</td><td className="p-2 font-mono">3</td><td className="p-2 font-mono">165 mg</td><td className="p-2 font-mono">12.0 mg</td><td className="p-2 font-mono">60 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">130 lb (59 kg)</td><td className="p-2 font-mono">3</td><td className="p-2 font-mono">165 mg</td><td className="p-2 font-mono">12.0 mg</td><td className="p-2 font-mono">60 mg</td></tr>
+                  <tr className="border-b border-gray-200 font-semibold bg-gray-50"><td className="p-2">170 lb (77 kg)</td><td className="p-2 font-mono">4</td><td className="p-2 font-mono">220 mg</td><td className="p-2 font-mono">16.0 mg</td><td className="p-2 font-mono">80 mg</td></tr>
+                  <tr className="border-b border-gray-200"><td className="p-2">200 lb (91 kg)</td><td className="p-2 font-mono">5</td><td className="p-2 font-mono">275 mg</td><td className="p-2 font-mono">20.0 mg</td><td className="p-2 font-mono">100 mg</td></tr>
+                  <tr><td className="p-2">250 lb (113 kg)</td><td className="p-2 font-mono">6</td><td className="p-2 font-mono">330 mg</td><td className="p-2 font-mono">24.0 mg</td><td className="p-2 font-mono">120 mg</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="text-sm font-bold text-gray-900 mb-2">Proposed Study Protocol</h3>
+            <div className="border border-gray-300 rounded p-5 bg-gray-50 mb-4">
+              <p className="text-sm text-gray-700 leading-relaxed mb-3"><strong>Study design:</strong> Open-label topical application study. Modified Makis antiparasitic protocol adapted for transdermal delivery with DMSO-compatible botanical carrier.</p>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3"><strong>Administration:</strong> 1 full dropper (1 mL) applied topically to skin at target area. 4 applications per day at approximately 6-hour intervals (e.g., 7 AM, 1 PM, 7 PM, 1 AM or nearest practical schedule). Gentle massage for 60 seconds per application to facilitate transdermal absorption.</p>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3"><strong>Application sites:</strong> Scalp at nearest proximity to target area, temples, posterior neck, and upper back between shoulder blades (areas with thin dermis and high vascularity).</p>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3"><strong>Duration:</strong> 12-week initial course. Assessment at weeks 4, 8, and 12 via clinical evaluation and imaging as appropriate.</p>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3"><strong>Monitoring:</strong> Skin integrity at application sites (daily). Liver function panel (baseline, week 4, week 8, week 12). CBC with differential (same schedule). Clinical status assessment at each checkpoint.</p>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3"><strong>Dose adjustment:</strong> Scale droppers/day linearly by body weight using 170 lb = 4 droppers as reference. Round to nearest whole dropper.</p>
+              <p className="text-sm text-gray-700 leading-relaxed"><strong>Batch yield:</strong> 1 liter = 1,000 droppers = 250 days at 4x/day for a 170 lb subject.</p>
             </div>
 
             <h3 className="text-sm font-bold text-gray-900 mb-2">Formulation Notes</h3>
             <ul className="list-disc pl-6 text-sm text-gray-700 leading-relaxed space-y-1 mb-4">
-              <li><strong>Total essential oil dilution:</strong> 1.25% (12.5 mL / 1000 mL) — well within safe topical limits for all individual compounds per Tisserand safety guidelines.</li>
-              <li><strong>CBD concentration:</strong> 10 mg/mL (1%). Delivers 40 mg/day across 4 applications — within studied topical ranges for anti-inflammatory and anti-proliferative effects.</li>
-              <li><strong>Fenbendazole:</strong> 2.5 mg/mL. Dissolved in warm olive oil. Daily topical dose of 10 mg is sub-therapeutic for systemic anti-cancer effect but provides local transdermal delivery to the application site.</li>
-              <li><strong>Ivermectin:</strong> 112 mcg/mL. Daily topical dose of 448 mcg — comparable to FDA-approved topical ivermectin (Soolantra) concentrations for dermal applications.</li>
-              <li><strong>Application protocol:</strong> 1 full dropper (1 mL) applied topically to scalp at tumor proximity, temples, and posterior neck. 4 times daily at ~6-hour intervals. Gentle massage for 60 seconds to facilitate absorption.</li>
-              <li><strong>Batch yield:</strong> 1 liter = 1,000 doses = 250 days of 4x/day application.</li>
+              <li><strong>Fenbendazole (55 mg/mL):</strong> Pharmaceutical-grade powder dissolved/suspended in warm olive oil with agitation. Daily topical dose of 220 mg (2.85 mg/kg) at 170 lb. Microtubule disruption, glucose uptake inhibition, p53 stabilization.</li>
+              <li><strong>Ivermectin (4 mg/mL):</strong> Pure pharmaceutical-grade powder. Daily topical dose of 16 mg (0.207 mg/kg) at 170 lb. For reference, FDA-approved oral ivermectin dosing is 0.2 mg/kg; topical Soolantra delivers 1% concentration. Akt/mTOR inhibition, PAK1 kinase, mitochondrial dysfunction in cancer cells.</li>
+              <li><strong>CBD (20 mg/mL):</strong> Full spectrum oil. Daily topical dose of 80 mg (1.035 mg/kg). Anti-proliferative, pro-apoptotic in GBM cell lines. Neuroprotective. Within studied topical ranges.</li>
+              <li><strong>Essential oil dilution:</strong> 1.25% total (12.5 mL / 1000 mL). All individual compounds within Tisserand safe topical limits. Each targets documented anti-cancer pathways (see previous compound table for PubMed citations).</li>
+              <li><strong>Carrier:</strong> High-polyphenol extra virgin olive oil provides polyphenol antioxidants and optimal lipophilic solubility for transdermal delivery of the active compounds.</li>
             </ul>
 
-            <h3 className="text-sm font-bold text-gray-900 mb-2">Mechanism Rationale</h3>
+            <h3 className="text-sm font-bold text-gray-900 mb-2">Candidate Conditions for Investigation</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
-              Each compound targets documented anti-cancer pathways: <strong>CBD</strong> (anti-proliferative, pro-apoptotic in GBM cell lines, neuroprotective), <strong>fenbendazole</strong> (microtubule disruption, glucose uptake inhibition, p53 stabilization), <strong>ivermectin</strong> (Akt/mTOR inhibition, PAK1 kinase, mitochondrial dysfunction), <strong>rosemary/carnosic acid</strong> (PI3K/Akt pathway, chemotherapy uptake enhancement), <strong>frankincense/boswellic acid</strong> (GBM apoptosis, cerebral edema reduction via 5-LOX inhibition), <strong>clove/eugenol</strong> (ROS-mediated apoptosis in brain tumor cells), <strong>oregano/carvacrol</strong> (MAPK pathway inhibition), <strong>cinnamon/cinnamaldehyde</strong> (NF-kB suppression, anti-angiogenic). The combination delivers multi-pathway coverage via transdermal absorption at safe, non-caustic concentrations.
+              This formulation targets multiple anti-cancer pathways simultaneously via transdermal delivery. Primary candidate conditions for study include: glioblastoma and other CNS tumors (scalp application for BBB-adjacent delivery), melanoma and cutaneous malignancies (direct application to lesion), breast cancer (chest wall application post-mastectomy or for accessible tumors), and any solid tumor accessible to topical delivery. The multi-compound approach is designed to reduce the probability of single-pathway resistance by engaging microtubule disruption, metabolic interference, mTOR suppression, apoptotic signaling, and anti-inflammatory cascades concurrently.
             </p>
 
             <p className="text-sm text-gray-600 italic">
-              Proposed for veterinary medical study. 170 lb mammal. Not a substitute for any primary therapy. Complementary topical application only.
+              Proposed university research study formulation. Requires institutional approval, prescriptions for pharmaceutical-grade compounds, and appropriate oversight before any application. This is a theoretical protocol pending formal study approval.
             </p>
           </section>
         </Chapter>
