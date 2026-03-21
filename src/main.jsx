@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import BiopsyMethodology from './pages/BiopsyMethodology.jsx'
 import DoxycyclineAnomaly from './pages/DoxycyclineAnomaly.jsx'
+import PhoenixTearsStudy from './pages/PhoenixTearsStudy.jsx'
 import './index.css'
 
 function Router() {
@@ -19,6 +20,9 @@ function Router() {
   }
   if (path === '#/doxycycline-anomaly') {
     return <DoxycyclineAnomaly />;
+  }
+  if (path === '#/phoenix-tears-study') {
+    return <PhoenixTearsStudy />;
   }
 
   return <App />;

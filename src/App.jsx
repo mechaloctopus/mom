@@ -108,6 +108,13 @@ export default function App() {
               </div>
               <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
             </a>
+            <a href="#/phoenix-tears-study" className="flex items-center justify-between p-3 border border-gray-200 rounded hover:bg-gray-50 transition-colors group">
+              <div>
+                <p className="text-sm font-semibold text-gray-800 group-hover:text-blue-800">Phoenix Tears — Research Study Proposal</p>
+                <p className="text-xs text-gray-500">Multi-compound DMSO-enhanced topical formulation — full study design with evidence review</p>
+              </div>
+              <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
+            </a>
           </div>
         </div>
 
