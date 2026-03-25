@@ -115,6 +115,13 @@ export default function App() {
               </div>
               <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
             </a>
+            <a href="#/hyponatremia-hypothesis" className="flex items-center justify-between p-3 border border-gray-200 rounded hover:bg-gray-50 transition-colors group">
+              <div>
+                <p className="text-sm font-semibold text-gray-800 group-hover:text-blue-800">The Hyponatremia Hypothesis</p>
+                <p className="text-xs text-gray-500">Novel case hypothesis — chronic polydipsia-induced osmotic injury mimicking glioma, with cannabinoid neuroprotection</p>
+              </div>
+              <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
+            </a>
           </div>
         </div>
 

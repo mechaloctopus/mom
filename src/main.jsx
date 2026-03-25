@@ -4,6 +4,7 @@ import App from './App.jsx'
 import BiopsyMethodology from './pages/BiopsyMethodology.jsx'
 import DoxycyclineAnomaly from './pages/DoxycyclineAnomaly.jsx'
 import PhoenixTearsStudy from './pages/PhoenixTearsStudy.jsx'
+import HyponatremiaHypothesis from './pages/HyponatremiaHypothesis.jsx'
 import './index.css'
 
 function Router() {
@@ -23,6 +24,9 @@ function Router() {
   }
   if (path === '#/phoenix-tears-study') {
     return <PhoenixTearsStudy />;
+  }
+  if (path === '#/hyponatremia-hypothesis') {
+    return <HyponatremiaHypothesis />;
   }
 
   return <App />;
