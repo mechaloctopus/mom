@@ -2,7 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { ArrowLeft, ExternalLink, ChevronDown, ChevronUp, AlertTriangle, Brain, FlaskConical, ImageIcon } from 'lucide-react';
 
 function Ref({ n }) {
-  return <sup className="text-blue-700 font-medium cursor-pointer hover:underline"><a href="#hypo-refs">[{n}]</a></sup>;
+  const ref = REFS.find(r => r.n === n);
+  const href = ref?.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${ref.pmid}/` : null;
+
+  if (!href) {
+    return <sup className="text-gray-600 font-medium">[{n}]</sup>;
+  }
+
+  return (
+    <sup className="text-blue-700 font-medium cursor-pointer hover:underline">
+      <a href={href} target="_blank" rel="noopener noreferrer">[{n}]</a>
+    </sup>
+  );
 }
 
 function Expandable({ title, children, defaultOpen = false }) {
