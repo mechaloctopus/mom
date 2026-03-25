@@ -81,10 +81,6 @@ const momMri1 = new URL('../../hyponatremia/mom_mri1.jpg', import.meta.url).href
 const momMri2 = new URL('../../hyponatremia/mom_mri2.jpg', import.meta.url).href;
 const momMri3 = new URL('../../hyponatremia/mom_mri3.jpg', import.meta.url).href;
 const diffuseHyponatremiaImg = new URL('../../hyponatremia/diffusive_hyponatremia.jpg', import.meta.url).href;
-const focalHyponatremiaClosestImg = new URL('../../hyponatremia/hyponatremia image just like moms.jpg', import.meta.url).href;
-const focalHyponatremiaImg = new URL('../../hyponatremia/hyponatremia image.jpg', import.meta.url).href;
-const malignantEdemaHyponatremiaImg = new URL('../../hyponatremia/another hyponatremia image.jpg', import.meta.url).href;
-const focalCtHyponatremiaImg = new URL('../../hyponatremia/another hyponatremia image2.jpg', import.meta.url).href;
 const ccjmCtBaselineImg = new URL('../../hyponatremia/ccjm_hyponatremia_ct_baseline.jpg', import.meta.url).href;
 const ccjmCtEdemaImg = new URL('../../hyponatremia/ccjm_hyponatremia_ct_edema.jpg', import.meta.url).href;
 const ccjmCtResolvedImg = new URL('../../hyponatremia/ccjm_hyponatremia_ct_resolved.jpg', import.meta.url).href;
@@ -371,30 +367,14 @@ function MRIComparison() {
           These images are qualitative visual comparators, not standardized radiology plates. The point is plausibility, not one-to-one diagnostic equivalence.
         </p>
 
-        <div className="bg-white rounded border border-blue-200 p-4 mb-4">
+         <div className="bg-white rounded border border-blue-200 p-4 mb-4">
           <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6A — The Usual Pattern: Diffuse Hyponatremic Brain Swelling</h4>
           <img src={diffuseHyponatremiaImg} alt="Diffuse hyponatremia example showing global brain swelling" className="w-full rounded object-contain bg-white mb-3" />
           <p className="text-xs text-gray-600">Diffuse/global swelling is the common pattern when the BBB remains broadly intact.</p>
         </div>
 
         <div className="bg-white rounded border border-blue-200 p-4 mb-4">
-          <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6B — Literature Proof That Osmotic / Hyponatremic Injury Can Localize</h4>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <img src={focalHyponatremiaClosestImg} alt="Closest focal hyponatremia comparator" className="w-full h-52 rounded border border-gray-200 object-cover object-center bg-white" />
-            <img src={focalHyponatremiaImg} alt="Focal hyponatremia comparator" className="w-full h-52 rounded border border-gray-200 object-cover object-center bg-white" />
-            <img src={focalCtHyponatremiaImg} alt="Focal CT hyponatremia comparator" className="w-full h-52 rounded border border-gray-200 object-cover object-center bg-white" />
-          </div>
-          <p className="text-xs text-gray-600 mt-3">These examples show that hyponatremic or osmotic injury can sometimes become focal rather than remaining globally diffuse.</p>
-        </div>
-
-        <div className="bg-white rounded border border-blue-200 p-4 mb-4">
-          <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6C — Focal Hyponatremia / Localized Edema in One Region</h4>
-          <img src={malignantEdemaHyponatremiaImg} alt="Localized hyponatremia-related edema focused in one brain region" className="w-full max-h-[28rem] rounded border border-gray-200 object-contain bg-white mb-3" />
-          <p className="text-xs text-gray-600">This image reinforces the same point: hyponatremia-associated edema can localize to one region.</p>
-        </div>
-
-        <div className="bg-white rounded border border-blue-200 p-4 mb-4">
-          <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6D — Cleveland Clinic Hyponatremia Case: Baseline, Focal Edema, Then Resolution</h4>
+          <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6B — Cleveland Clinic Hyponatremia Case: Baseline, Focal Edema, Then Resolution</h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <img src={ccjmCtBaselineImg} alt="Cleveland Clinic hyponatremia case baseline CT showing original hematoma" className="w-full h-52 rounded border border-gray-200 object-cover object-center bg-white mb-2" />
@@ -409,11 +389,11 @@ function MRIComparison() {
               <p className="text-xs text-gray-600">After hyponatremia correction: the edema resolved.</p>
             </div>
           </div>
-          <p className="text-xs text-gray-600 mt-3">These are CT rather than MRI images, but they are highly relevant because they document a localized, mass-like edema pattern emerging in one vulnerable region during hyponatremia and then reversing after sodium correction.<Ref n={60} /></p>
+          <p className="text-xs text-gray-600 mt-3">This is the strongest comparator in the article because it shows a localized, mass-like edema pattern emerging during hyponatremia and then reversing after sodium correction.<Ref n={60} /></p>
         </div>
 
-        <div className="bg-white rounded border border-blue-200 p-4">
-          <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6E — This Patient vs. Similar MRI Examples of Hyponatremia</h4>
+        <div className="bg-white rounded border border-blue-200 p-4 mb-4">
+          <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6C — This Patient vs. the Strongest Hyponatremia Comparator</h4>
           <div className="grid grid-cols-1 xl:grid-cols-[1.15fr_0.95fr] gap-5 items-start">
             <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
               <p className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">This Patient — Mom's MRI</p>
@@ -425,16 +405,16 @@ function MRIComparison() {
               <p className="text-xs text-gray-600 mt-3">Family-provided MRI photographs shown larger here so the lesion geometry and visual pattern are easier to compare.</p>
             </div>
             <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
-              <p className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Similar MRI's of Hyponatremia</p>
+              <p className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Published Hyponatremia Comparator</p>
               <div className="space-y-4">
-                <img src={focalHyponatremiaClosestImg} alt="Closest literature comparator of focal hyponatremia" className="w-full h-48 rounded border border-gray-200 object-cover object-center bg-white" />
-                <img src={focalHyponatremiaImg} alt="Additional focal hyponatremia comparator" className="w-full h-48 rounded border border-gray-200 object-cover object-center bg-white" />
-                <img src={focalCtHyponatremiaImg} alt="Additional focal hyponatremia CT comparator" className="w-full h-48 rounded border border-gray-200 object-cover object-center bg-white" />
+                <img src={ccjmCtBaselineImg} alt="Published hyponatremia comparator baseline CT" className="w-full h-48 rounded border border-gray-200 object-cover object-center bg-white" />
+                <img src={ccjmCtEdemaImg} alt="Published hyponatremia comparator focal edema CT" className="w-full h-48 rounded border border-gray-200 object-cover object-center bg-white" />
+                <img src={ccjmCtResolvedImg} alt="Published hyponatremia comparator resolved edema CT" className="w-full h-48 rounded border border-gray-200 object-cover object-center bg-white" />
               </div>
-              <p className="text-xs text-gray-600 mt-3">These literature comparators are grouped separately to emphasize that they are similar focal hyponatremia / osmotic-injury appearances, not the patient's own scans.</p>
+              <p className="text-xs text-gray-600 mt-3">These published comparator images are shown separately to emphasize that they are not the patient's scans, but a documented hyponatremia case with focal edema that later reversed after sodium correction.<Ref n={60} /></p>
             </div>
           </div>
-          <p className="text-xs text-gray-600 mt-3">These side-by-side panels do not prove diagnosis, but they make the visual overlap with published focal hyponatremia and osmotic-injury patterns easier to assess.</p>
+          <p className="text-xs text-gray-600 mt-3">These side-by-side panels do not prove diagnosis, but they keep the comparison focused on the strongest documented hyponatremia case rather than weaker or uncertain visual analogies.</p>
         </div>
       </div>
     </section>
