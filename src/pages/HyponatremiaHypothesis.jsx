@@ -294,7 +294,7 @@ function HonestyBanner() {
         If biopsy remains ambiguous, a true glioma may still exist within this region and simply have been missed by the needle biopsy. Stereotactic biopsies sample only a small tissue cylinder, and heterogeneous lesions are inherently vulnerable to sampling error; even modern review literature notes lower diagnostic yield in small or heterogeneous lesions.<Ref n={47} /><Ref n={50} /><Ref n={51} /> If a glioma exists, its abnormal vasculature could itself create focal BBB weakness, meaning hyponatremia-related fluctuation might be <strong>superimposed on a real tumor</strong> rather than replacing it as an explanation.<Ref n={15} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed">
-        Differentiation therefore depends on sustained fluid control, clinician-guided sodium normalization, supportive recovery, and repeat MRI. If the lesion complex regresses without antineoplastic treatment, the hyponatremia-led explanation gains support. If the core persists but fluctuating components resolve, the hybrid scenario becomes more plausible.
+        The main practical discriminator is sustained fluid control, clinician-guided sodium normalization, time for recovery, and repeat MRI. Regression without antineoplastic treatment would strengthen a reversible hyponatremia-led component, while persistence of a core lesion with resolution of fluctuating features would favor a hybrid scenario.
       </p>
     </section>
   );
@@ -523,6 +523,17 @@ function DemyelinatingMimics() {
           <strong>Why these images matter:</strong> osmotic and myelin-related injury can produce focal, enhancing, edematous lesions that look tumor-like on MRI. Classic osmotic demyelination is usually discussed after rapid correction of chronic hyponatremia, but the broader point is that major sodium shifts can damage myelin and create non-neoplastic radiographic patterns. Here, decades of extreme polydipsia and likely repeated sodium swings make some form of osmotic myelin injury plausible rather than simple uninterrupted tumor growth.<Ref n={18} /><Ref n={35} /><Ref n={38} /><Ref n={39} /><Ref n={46} />
         </p>
       </div>
+    </section>
+  );
+}
+
+function CannabinoidSection() {
+  return (
+    <section className="mb-10">
+      <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">9. Cannabinoid-Relevant Mechanisms and Adjunctive Rationale</h2>
+      <p className="text-sm text-gray-700 leading-relaxed mb-4">
+        This section is intentionally narrower than the main hyponatremia argument. It does <strong>not</strong> claim cannabinoids diagnose the lesion or exclude tumor. It asks a more limited question: whether published cannabinoid literature on edema, BBB stabilization, fluid handling, and myelin biology helps explain why these agents remain mechanistically relevant as adjuncts while the core differential is still being tested.
+      </p>
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">9.1 Clickable Mini-Study Summaries</h3>
       <div className="space-y-3 mb-5">
         <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
@@ -702,7 +713,7 @@ function VerificationStrategy() {
         <strong>Limitations</strong> are substantial. This hypothesis is authored by a family member, not a clinician; there is no direct sodium-at-time-of-MRI correlation yet; imaging overlap with tumor remains real; and the literature supports diffuse edema more strongly than focal tumor-like injury. The low oxygen finding and reported lung fluid are supportive but not specific, and several mechanistic pathways discussed here — especially AQP4 biology — also appear in genuine glioblastoma edema biology.<Ref n={52} /><Ref n={53} /><Ref n={56} /><Ref n={57} /><Ref n={58} /><Ref n={59} /> Its credibility ultimately rises or falls with the repeat MRI and the eventual tissue story.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed">
-        Cannabinoids remain a mechanistically interesting adjunct because of their published relevance to edema biology, BBB stabilization, and — more speculatively — myelin-related recovery. The lipophilic shield mini-hypothesis in Section 10 remains the most speculative part of the article and should be treated as hypothesis-generating rather than evidentiary.
+        Cannabinoids remain a mechanistically interesting adjunct because of their published relevance to edema biology, BBB stabilization, and — more speculatively — myelin-related recovery. The lipophilic shield mini-hypothesis in Section 10 is the most speculative part of the article and should be treated as hypothesis-generating rather than evidentiary.
       </p>
     </section>
   );
@@ -717,7 +728,7 @@ function VerificationStrategy() {
         We propose that this 64-year-old woman{"'"}s imaging abnormalities may be substantially shaped by 20 years of polydipsia-induced chronic hyponatremia. In this framing, the acute presentation and later MRI findings belong to the same broader sodium-driven story. The leading non-neoplastic reading is focal osmotic injury with BBB disruption; a second is osmotic injury with secondary demyelinating change; and a third is a hybrid model in which a hidden neoplasm exists but hyponatremia is materially distorting the radiographic picture.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        Verification through fluid control, clinician-guided sodium normalization, supportive therapy, and repeat MRI offers a <strong>practical way to test reversibility</strong>. If the lesion complex regresses, a reversible water-handling component becomes much harder to dismiss. If it persists, conventional oncologic management should proceed without delay. The purpose of this article is not to replace standard diagnosis, but to show that chronic extreme hyponatremia, focal BBB disruption, and demyelinating mimicry all sit within the realm of biologic possibility here.
+        Verification through fluid control, clinician-guided sodium normalization, supportive therapy, and repeat MRI offers a <strong>practical way to test reversibility</strong>. If the lesion complex regresses, a reversible water-handling component becomes much harder to dismiss. If it does not, conventional oncologic management should proceed without delay. The purpose of this article is not to replace standard diagnosis, but to show that chronic extreme hyponatremia, focal BBB disruption, and demyelinating mimicry all sit within the realm of biologic possibility here.
       </p>
     </section>
   );
