@@ -140,12 +140,12 @@ export default function HyponatremiaHypothesis() {
 }
 
 /* ═══ TITLE ═══ */
- function TitleBlock() {
+function TitleBlock() {
   return (
     <div className="border-b-2 border-gray-900 pb-8 mb-10">
       <p className="text-xs font-mono text-gray-400 uppercase tracking-widest mb-4">A Hypothesis of Hypotheses &middot; An Investigation Into How To Get Mom Better</p>
       <h1 className="text-2xl sm:text-3xl font-serif font-bold text-gray-900 leading-tight mb-4">
-        Hypothetical Osmotic Demyelination Syndrome and Focal Blood–Brain Barrier Disruption Secondary to Chronic Hyponatremia from Long-Term Polydipsia, Mimicking Glioma
+        Hypothetical Osmotic Demyelination Syndrome and Focal Blood–Brain Barrier Disruption Secondary to Chronic Hyponatremia from Long-Term Polydipsia, Driving Acute Seizures and Encephalopathic Collapse While Mimicking Glioma or Exaggerating Glioma Size and Pseudoprogression.
       </h1>
       <p className="text-lg font-serif text-gray-600 leading-relaxed mb-4">
         A case hypothesis integrating clinical chronology, ambiguous biopsy findings, and established literature on hyponatremic encephalopathy, BBB disruption, osmotic demyelination, brain-lung complications, and cannabinoid neurobiology — asking whether a 20-year water-chugging ritual produced a focal osmotic injury syndrome now mimicking glioma.
