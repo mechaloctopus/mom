@@ -164,7 +164,7 @@ function HonestyBanner() {
 }
 
 /* ═══ 1. ABSTRACT ═══ */
-function Abstract() {
+ function Abstract() {
   return (
     <section className="mb-10">
       <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">1. Abstract</h2>
@@ -172,13 +172,10 @@ function Abstract() {
         We present the case of a 64-year-old woman (170 lb / 77 kg) with an estimated <strong>20-year history of extreme, stereotyped water loading</strong> — commonly 2-3 quarts before bed and another 2-3 quarts on waking, sometimes exceeding 1.5 gallons per day. Witnesses describe the intake as rapid and strikingly excessive rather than casual sipping. Following her last major episode, she developed seizures, ICU-level encephalopathy, profound cognitive disorientation, lungs reportedly filled with fluid, and severe hypoxemia with oxygen saturation around 74%.<Ref n={45} /><Ref n={56} /><Ref n={57} /><Ref n={58} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        Neuroimaging showed one dominant lesion plus a secondary ~10–11 mm enhancing nodule interpreted as possible progression. If that secondary focus later shrinks or disappears, the pattern would be more compatible with transient edema, treatment effect, or pseudoprogression than with straightforward uninterrupted growth, though imaging alone cannot determine cause.<Ref n={14} /><Ref n={29} />
-      </p>
-      <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        Tissue sampling has not yet provided definitive clarification, and the available biopsy picture remains ambiguous rather than dispositive. Laboratory evaluation reportedly showed preserved renal function and no SIADH.
+        Neuroimaging showed one dominant lesion plus a secondary ~10–11 mm enhancing nodule interpreted as possible progression. Tissue sampling remains ambiguous rather than definitive, while laboratory evaluation reportedly showed preserved renal function and no SIADH.<Ref n={14} /><Ref n={29} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed">
-        The central hypothesis is that chronic recurrent hyponatremia from primary polydipsia may be driving a substantial part of this presentation — not only the acute brain-lung crisis, but also the later lesion appearance — through focal osmotic injury, focal BBB disruption with recurrent localized edema, secondary demyelinating or myelin-injury patterns, or a hybrid interaction with a real underlying tumor. Within that framework, the smaller enhancing nodule may represent a reversible hyponatremia-associated component rather than fixed neoplastic progression. A published glioblastoma case of reversible hyponatremic encephalopathy mimicking pseudoprogression makes that possibility especially important here.<Ref n={15} /> Improvement after sustained fluid control, clinician-guided sodium normalization, supportive care, and serial follow-up imaging would strengthen this interpretation, though not prove it in isolation.<Ref n={44} />
+        The central hypothesis is that chronic recurrent hyponatremia from primary polydipsia may be driving both the acute brain-lung crisis and part of the later lesion appearance through focal osmotic injury, BBB disruption, secondary myelin injury, or a hybrid interaction with a real underlying tumor. Within that framework, the smaller enhancing nodule may represent a reversible hyponatremia-associated component rather than fixed neoplastic progression. A published glioblastoma case of reversible hyponatremic encephalopathy mimicking pseudoprogression makes that possibility especially important here.<Ref n={15} /> Improvement after sustained fluid control, clinician-guided sodium normalization, and follow-up imaging would strengthen this interpretation, though not prove it in isolation.<Ref n={44} />
       </p>
     </section>
   );
@@ -193,10 +190,10 @@ function Abstract() {
         A 64-year-old woman presented emergently after witnessed seizures. Family history revealed an approximately <strong>20-year ritual of extreme water intake</strong> — commonly 2-3 quarts before bedtime and again on waking, consumed rapidly as a perceived cleansing practice. Multiple witnesses independently described the behavior as extraordinary in both volume and speed. In broad clinical terms, that history fits the spectrum of primary or psychogenic polydipsia described in the literature, though the article does not claim a formal psychiatric diagnosis.<Ref n={45} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        On admission she exhibited profound altered mental status progressing to a near-vegetative presentation with failure of orientation testing. She was also reportedly found with dangerously low oxygen saturation, around 74%, and with fluid in the lungs. In the severe hyponatremia literature, that brain-plus-lung combination is important because symptomatic hyponatremia can be accompanied by hypoxemia and noncardiogenic pulmonary edema rather than only isolated brain findings.<Ref n={56} /><Ref n={57} /><Ref n={58} /> Brain imaging demonstrated one primary lesion and a secondary ~11 mm focus interpreted as tumor progression. If follow-up MRI performed during stable normonatremia shows major improvement, that would favor a reversible water-handling component over uninterrupted neoplastic expansion.<Ref n={14} /><Ref n={15} /><Ref n={29} />
+        On admission she exhibited profound altered mental status progressing to a near-vegetative presentation with failure of orientation testing. She was also reportedly found with dangerously low oxygen saturation, around 74%, and with fluid in the lungs. In the severe hyponatremia literature, that brain-plus-lung combination is important because symptomatic hyponatremia can be accompanied by hypoxemia and noncardiogenic pulmonary edema rather than only isolated brain findings.<Ref n={56} /><Ref n={57} /><Ref n={58} /> Brain imaging demonstrated one primary lesion and a secondary ~11 mm focus interpreted as tumor progression.<Ref n={14} /><Ref n={15} /><Ref n={29} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        Tissue sampling remains under evaluation, and the biopsy picture is treated here as ambiguous rather than final. Comprehensive metabolic evaluation reportedly ruled out SIADH and showed intact renal function. She was managed with osmotic IV agents for presumed cerebral edema. Her weight (170 lb) and the absence of obvious alternative metabolic explanations make chronic water intoxication a serious explanatory candidate rather than a trivial side note. The low oxygen finding and lung-fluid report do not by themselves prove hyponatremia as the cause, but they fit a syndrome already described in hyponatremic encephalopathy literature and therefore strengthen the overall coherence of the case.<Ref n={56} /><Ref n={57} /><Ref n={58} />
+        Tissue sampling remains under evaluation, and the biopsy picture is treated here as ambiguous rather than final. Comprehensive metabolic evaluation reportedly ruled out SIADH and showed intact renal function. She was managed with osmotic IV agents for presumed cerebral edema. Her weight (170 lb) and the absence of obvious alternative metabolic explanations make chronic water intoxication a serious explanatory candidate rather than a trivial side note. The low oxygen finding and lung-fluid report do not by themselves prove hyponatremia, but they do fit a syndrome already described in hyponatremic encephalopathy literature.<Ref n={56} /><Ref n={57} /><Ref n={58} />
       </p>
     </section>
   );
@@ -210,7 +207,7 @@ function Abstract() {
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
         <p className="text-sm font-bold text-blue-900 mb-2 flex items-center gap-2"><Brain className="w-4 h-4" /> Central Claim</p>
         <p className="text-sm text-blue-800 leading-relaxed">
-          The central proposal is that <strong>chronic recurrent hyponatremia is the main destabilizing force in this case</strong>. It could explain both the acute collapse and the later imaging puzzle through more than one pathway: direct focal osmotic injury, focal BBB disruption with recurrent localized edema, secondary demyelinating or myelin-injury patterns, or a hybrid scenario in which a true tumor exists but hyponatremia materially worsens the imaging appearance. Twenty years of extreme polydipsia provides a biologically plausible engine for repeated acute-on-chronic osmotic stress across the BBB and, in severe episodes, the lungs as well.
+          The central proposal is that <strong>chronic recurrent hyponatremia is the main destabilizing force in this case</strong>. It could explain both the acute collapse and the later imaging puzzle through focal osmotic injury, focal BBB disruption with recurrent localized edema, secondary myelin injury, or a hybrid scenario in which a true tumor exists but hyponatremia materially worsens the imaging appearance. Twenty years of extreme polydipsia provides a biologically plausible engine for repeated acute-on-chronic osmotic stress across the BBB and, in severe episodes, the lungs as well.
         </p>
       </div>
 
@@ -240,7 +237,7 @@ function Abstract() {
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">3.3 The Transient Lesion: Pseudoprogression Explained</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        The ~10–11 mm enhancing nodule is one of the strongest imaging clues supporting a reversible component. A disappearing secondary focus is generally more compatible with fluctuating edema, treatment effect, or pseudoprogression than with straightforward uninterrupted tumor expansion.<Ref n={14} /><Ref n={29} /> Most importantly, published literature documents a glioblastoma patient in whom acute hyponatremia produced encephalopathy and radiographic worsening that mimicked pseudoprogression, then improved strikingly after sodium correction alone.<Ref n={15} />
+        The ~10–11 mm enhancing nodule is one of the strongest imaging clues supporting a reversible component. A disappearing secondary focus is generally more compatible with fluctuating edema, treatment effect, or pseudoprogression than with straightforward uninterrupted tumor expansion.<Ref n={14} /><Ref n={29} /> Published literature also documents a glioblastoma patient in whom acute hyponatremia produced encephalopathy and radiographic worsening that mimicked pseudoprogression, then improved after sodium correction alone.<Ref n={15} />
       </p>
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">3.4 The Alternative: A Hidden Tumor</h3>
@@ -248,7 +245,7 @@ function Abstract() {
         If biopsy remains ambiguous, a true glioma may still exist within this region and simply have been missed by the needle biopsy. Stereotactic biopsies sample only a small tissue cylinder, and heterogeneous lesions are inherently vulnerable to sampling error; even modern review literature notes lower diagnostic yield in small or heterogeneous lesions.<Ref n={47} /><Ref n={50} /><Ref n={51} /> If a glioma exists, its abnormal vasculature could itself create focal BBB weakness, meaning hyponatremia-related fluctuation might be <strong>superimposed on a real tumor</strong> rather than replacing it as an explanation.<Ref n={15} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed">
-        Differentiation therefore depends on the verification strategy in Section 10: sustained fluid control, clinician-guided sodium normalization, supportive recovery, and repeat MRI. If the lesion complex regresses without antineoplastic treatment, the hyponatremia-led explanation gains support. If the core persists but fluctuating components resolve, the hybrid scenario becomes more plausible. If nothing changes, the article has likely overestimated the role of hyponatremia.
+        Differentiation therefore depends on the verification strategy in Section 10: sustained fluid control, clinician-guided sodium normalization, supportive recovery, and repeat MRI. If the lesion complex regresses without antineoplastic treatment, the hyponatremia-led explanation gains support. If the core persists but fluctuating components resolve, the hybrid scenario becomes more plausible.
       </p>
     </section>
   );
@@ -386,13 +383,13 @@ function MRIComparison() {
             <img src={focalHyponatremiaImg} alt="Focal hyponatremia comparator" className="w-full h-52 rounded border border-gray-200 object-cover object-center bg-white" />
             <img src={focalCtHyponatremiaImg} alt="Focal CT hyponatremia comparator" className="w-full h-52 rounded border border-gray-200 object-cover object-center bg-white" />
           </div>
-          <p className="text-xs text-gray-600 mt-3">These literature examples are included to show that hyponatremic or osmotic injury can sometimes become focal rather than remaining globally diffuse.</p>
+          <p className="text-xs text-gray-600 mt-3">These examples show that hyponatremic or osmotic injury can sometimes become focal rather than remaining globally diffuse.</p>
         </div>
 
         <div className="bg-white rounded border border-blue-200 p-4 mb-4">
           <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6C — Focal Hyponatremia / Localized Edema in One Region</h4>
           <img src={malignantEdemaHyponatremiaImg} alt="Localized hyponatremia-related edema focused in one brain region" className="w-full max-h-[28rem] rounded border border-gray-200 object-contain bg-white mb-3" />
-          <p className="text-xs text-gray-600">This image is included here mainly to show that hyponatremia-associated edema can be localized to one section of the brain rather than appearing perfectly diffuse everywhere.</p>
+          <p className="text-xs text-gray-600">This image reinforces the same point: hyponatremia-associated edema can localize to one region.</p>
         </div>
 
         <div className="bg-white rounded border border-blue-200 p-4">
@@ -417,7 +414,7 @@ function MRIComparison() {
               <p className="text-xs text-gray-600 mt-3">These literature comparators are grouped separately to emphasize that they are similar focal hyponatremia / osmotic-injury appearances, not the patient's own scans.</p>
             </div>
           </div>
-          <p className="text-xs text-gray-600 mt-3">These grouped side-by-side panels do not prove diagnosis, but they make the intended visual argument clearer: the patient's MRI appearance overlaps with published focal hyponatremia and osmotic-injury patterns.</p>
+          <p className="text-xs text-gray-600 mt-3">These side-by-side panels do not prove diagnosis, but they make the visual overlap with published focal hyponatremia and osmotic-injury patterns easier to assess.</p>
         </div>
       </div>
     </section>
@@ -443,10 +440,10 @@ function DemyelinatingMimics() {
           <img src={tdlMimicImg6} alt="Tumefactive demyelinating mimic 3" className="w-full h-44 rounded object-cover object-center bg-white" />
         </div>
         <p className="text-sm text-purple-800 leading-relaxed mb-3">
-          The conceptual value of this comparator class is that it broadens the differential. In this case, the proposed non-neoplastic explanation remains hyponatremia-led. But the demyelinating literature shows that <strong>mass-like, enhancing, edematous lesions are not synonymous with tumor</strong>.<Ref n={38} /><Ref n={39} /><Ref n={46} />
+          <strong>Why these images matter:</strong> osmotic and myelin-related injury can produce focal, enhancing, edematous lesions that look tumor-like on MRI. In classic osmotic demyelination syndrome, the injury is usually discussed in the setting of rapid correction of chronic hyponatremia; the broader point here is that major sodium shifts can damage myelin and create non-neoplastic radiographic patterns. In this case, 20 years of extreme polydipsia and likely repeated acute-on-chronic sodium swings raise the possibility of a related osmotic myelin-injury process rather than simple uninterrupted tumor growth.<Ref n={18} /><Ref n={35} /><Ref n={38} /><Ref n={39} /><Ref n={46} />
         </p>
         <p className="text-sm text-purple-800 leading-relaxed">
-          Said differently: the demyelinating literature does not prove the hyponatremia hypothesis. What it does show is that severe myelin-related or inflammatory pathology can masquerade as brain tumor on MRI, which makes a secondary myelin-injury framing more plausible than it would otherwise seem.
+          This does not mean the article is claiming textbook central pontine myelinolysis or proving definite ODS. The narrower claim is that severe chronic hyponatremia may have produced an <strong>osmotic myelin-injury spectrum lesion</strong> — potentially extrapontine, focal, or mixed with BBB disruption. These comparators matter because they show the kind of mass-like demyelinating appearance such an injury can assume.
         </p>
       </div>
     </section>
@@ -622,7 +619,7 @@ function VerificationStrategy() {
     <section className="mb-10">
       <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">10. Verification Strategy — The Practical Test</h2>
       <p className="text-sm text-gray-700 leading-relaxed mb-4">
-        This hypothesis makes a falsifiable prediction: if hyponatremia, focal BBB disruption, and/or secondary demyelinating injury are materially contributing to the imaging appearance, the lesion complex should <strong>partially regress, fluctuate downward, or otherwise become less conspicuous</strong> after sustained fluid control, clinician-guided sodium normalization, and a reasonable interval for recovery before repeat MRI. The same logic applies to the acute collapse: if the syndrome was substantially sodium-driven, neurologic and respiratory abnormalities should improve together as the osmotic crisis resolves. All three prior MRIs may have been taken while the patient was still hyponatremic, which is one reason this repeat scan matters so much.<Ref n={44} /><Ref n={56} /><Ref n={57} /><Ref n={58} />
+        This hypothesis makes a falsifiable prediction: if hyponatremia, focal BBB disruption, and/or secondary demyelinating injury are materially contributing to the imaging appearance, the lesion complex should <strong>partially regress, fluctuate downward, or otherwise become less conspicuous</strong> after sustained fluid control, clinician-guided sodium normalization, and a reasonable interval for recovery before repeat MRI. The same logic applies to the acute collapse: if the syndrome was substantially sodium-driven, neurologic and respiratory abnormalities should improve together as the osmotic crisis resolves.<Ref n={44} /><Ref n={56} /><Ref n={57} /><Ref n={58} />
       </p>
       <div className="overflow-x-auto mb-4">
         <table className="w-full text-sm border border-gray-300">
@@ -662,7 +659,7 @@ function VerificationStrategy() {
     <section className="mb-10">
       <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">11. Discussion</h2>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        The strongest parts of this hypothesis are the chronology, the biologic plausibility, the normal renal/SIADH work-up, the acute brain-lung syndrome, and the potentially transient ~10–11 mm secondary nodule. Together, they justify serious consideration of a hyponatremia-led explanation. That explanation may be purely osmotic, may include focal BBB failure with secondary demyelinating injury, or may coexist with an underlying tumor whose imaging behavior is being exaggerated by water-handling pathology. Especially important is the published glioblastoma pseudoprogression case in which hyponatremia itself drove reversible encephalopathy and radiographic worsening, because it shows that apparent progression on imaging does not automatically equal true tumor growth.<Ref n={15} />
+        The strongest parts of this hypothesis are the chronology, the biologic plausibility, the normal renal/SIADH work-up, the acute brain-lung syndrome, and the potentially transient ~10–11 mm secondary nodule. Together, they justify serious consideration of a hyponatremia-led explanation, whether purely osmotic, partly demyelinating, or hybrid with an underlying tumor. Especially important is the published glioblastoma pseudoprogression case in which hyponatremia itself drove reversible encephalopathy and radiographic worsening, because it shows that apparent progression on imaging does not automatically equal true tumor growth.<Ref n={15} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
         <strong>Limitations</strong> are substantial. This hypothesis is authored by a family member, not a clinician. Pending serial imaging, incomplete tissue clarification, and the rarity of focal osmotic injury mimicking glioma in the literature all limit confidence. The 20+ year duration of polydipsia described here is unusual enough that there is no close published precedent for the cumulative damage pattern being proposed.
@@ -671,7 +668,7 @@ function VerificationStrategy() {
         The weakest parts are equally important to acknowledge: there is no direct sodium-at-time-of-MRI correlation yet, imaging overlap with tumor remains real, and the literature more strongly supports diffuse edema than focal tumor-like injury. The low oxygen finding and reported lung fluid are also supportive but not exclusive: in the literature, hypoxemia and noncardiogenic pulmonary edema may accompany hyponatremic encephalopathy and may worsen its brain effects, but they still have their own differential diagnosis and cannot be treated as proof of hyponatremia by themselves.<Ref n={56} /><Ref n={57} /><Ref n={58} /><Ref n={59} /> In addition, several of the mechanistic pathways discussed here — especially AQP4 biology — are not exclusive to hyponatremia and also appear in genuine glioblastoma edema biology.<Ref n={52} /><Ref n={53} /> In other words, the hypothesis is biologically coherent but still inferential. Its credibility rises or falls with the repeat MRI and the eventual tissue story.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed">
-        Cannabinoids remain a mechanistically interesting adjunct because of their published relevance to edema biology, BBB stabilization, anti-tumor effects, and — more speculatively — myelin-related recovery and lipophilic membrane reinforcement. The lipophilic shield mini-hypothesis in Section 9 remains the most speculative part of the article and should be treated as hypothesis-generating rather than evidentiary.
+        Cannabinoids remain a mechanistically interesting adjunct because of their published relevance to edema biology, BBB stabilization, anti-tumor effects, and — more speculatively — myelin-related recovery. The lipophilic shield mini-hypothesis in Section 9 remains the most speculative part of the article and should be treated as hypothesis-generating rather than evidentiary.
       </p>
     </section>
   );
@@ -683,13 +680,13 @@ function VerificationStrategy() {
     <section className="mb-10">
       <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">12. Conclusion</h2>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        We propose that this 64-year-old woman{"'"}s imaging abnormalities may be substantially shaped by 20 years of polydipsia-induced chronic hyponatremia. In this framing, the acute presentation — seizures, encephalopathy, hypoxemia, and lung fluid — and the later MRI findings belong to the same broader sodium-driven story rather than two unrelated problems. The leading non-neoplastic reading is focal osmotic injury with BBB disruption; a second plausible reading is osmotic injury with secondary demyelinating change; and a third is a hybrid model in which a hidden neoplasm exists but hyponatremia is materially distorting the radiographic picture. The normal metabolic work-up, ambiguous tissue picture, and potentially reversible ~11 mm secondary nodule make these alternatives worth serious consideration.
+        We propose that this 64-year-old woman{"'"}s imaging abnormalities may be substantially shaped by 20 years of polydipsia-induced chronic hyponatremia. In this framing, the acute presentation and the later MRI findings belong to the same broader sodium-driven story rather than two unrelated problems. The leading non-neoplastic reading is focal osmotic injury with BBB disruption; a second plausible reading is osmotic injury with secondary demyelinating change; and a third is a hybrid model in which a hidden neoplasm exists but hyponatremia is materially distorting the radiographic picture.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        Verification through fluid control, clinician-guided sodium normalization, supportive therapy, and repeat MRI offers a <strong>practical way to test reversibility</strong>. If the lesion complex regresses, a reversible water-handling component becomes much harder to dismiss. If it persists, conventional oncologic management proceeds without delay. Either result is informative.
+        Verification through fluid control, clinician-guided sodium normalization, supportive therapy, and repeat MRI offers a <strong>practical way to test reversibility</strong>. If the lesion complex regresses, a reversible water-handling component becomes much harder to dismiss. If it persists, conventional oncologic management proceeds without delay.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed">
-        This hypothesis-of-hypotheses, grounded in clinical chronology and peer-reviewed mechanisms, warrants formal evaluation by the neuro-oncology team. Its purpose is not to replace standard diagnosis, but to show that chronic extreme hyponatremia, focal BBB disruption, and demyelinating mimicry all sit within the realm of biologic possibility here — and that rescanning after meaningful brain-water recovery time is the most practical way to sort those possibilities.
+        This hypothesis-of-hypotheses, grounded in clinical chronology and peer-reviewed mechanisms, warrants formal evaluation by the neuro-oncology team. Its purpose is not to replace standard diagnosis, but to show that chronic extreme hyponatremia, focal BBB disruption, and demyelinating mimicry all sit within the realm of biologic possibility here.
       </p>
     </section>
   );
