@@ -136,7 +136,7 @@ function HonestyBanner() {
         <div>
           <p className="text-sm font-bold text-amber-900 mb-2">A Note on Intellectual Honesty</p>
           <p className="text-sm text-amber-800 leading-relaxed mb-2">
-            This hypothesis is authored by a feral scientist related to the patient. It may represent wishful thinking. Focal osmotic injury mimicking glioma is <strong>extremely rare</strong> and scarcely represented in the medical literature. Several possibilities remain open: chronic hyponatremia may be the primary driver; chronic hyponatremia may have caused focal BBB disruption and secondary demyelinating-appearing injury; or a true tumor may yet exist and itself be contributing to focal BBB weakness.
+            This hypothesis is authored by a citizen scientist related to the patient. It may represent wishful thinking but it just makes alot of sense that this could be the case. Focal osmotic injury mimicking glioma is <strong>extremely rare</strong> and scarcely represented in the medical literature. Several possibilities remain open: chronic hyponatremia may be the primary driver; chronic hyponatremia may have caused focal BBB disruption and secondary demyelinating-appearing injury; or a true tumor may yet exist and itself be contributing to focal BBB weakness.
           </p>
           <p className="text-sm text-amber-800 leading-relaxed">
             Every claim below is linked to its PubMed source. The practical discriminator is repeat MRI after sustained fluid control, sodium normalization, and supportive recovery measures. If the lesion persists unchanged, the hyponatremia-led explanation is weakened/ruled-out and conventional neuro-oncologic management should proceed without delay.
