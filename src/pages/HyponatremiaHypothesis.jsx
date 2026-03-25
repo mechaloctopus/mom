@@ -92,6 +92,10 @@ const REFS = [
   { n: 64, pmid: '22030327', t: 'Santos M et al. Hyponatremia--an unusual trigger of Takotsubo cardiomyopathy. Rev Port Cardiol. 2011.' },
   { n: 65, pmid: '36514473', t: 'Dodoo SN et al. Takotsubo cardiomyopathy in the setting of severe hyponatremia and beer potomania: A case report. Clin Case Rep. 2022.' },
   { n: 66, pmid: '37698728', t: 'Yalta K et al. Hyponatremia and takotsubo syndrome: a review of pathogenetic and clinical implications. Heart Fail Rev. 2023.' },
+  { n: 67, pmid: '26574669', t: 'Hay JR et al. Blood-Brain Barrier Disruption Is an Early Event That May Persist for Many Years After Traumatic Brain Injury in Humans. J Neuropathol Exp Neurol. 2015.' },
+  { n: 68, pmid: '32919030', t: 'van Vliet EA et al. Long-lasting blood-brain barrier dysfunction and neuroinflammation after traumatic brain injury. Neurobiol Dis. 2020.' },
+  { n: 69, pmid: '33632026', t: 'Amoo M et al. Permeability of the Blood-Brain Barrier after Traumatic Brain Injury: Radiological Considerations. J Neurotrauma. 2021.' },
+  { n: 70, pmid: '32973558', t: 'Wu YC et al. Blood-Brain Barrier Dysfunction in Mild Traumatic Brain Injury: What We Know and What We Should Know. Front Physiol. 2020.' },
 ];
 
 const momMri1 = new URL('../../hyponatremia/mom_mri1.jpg', import.meta.url).href;
@@ -186,8 +190,17 @@ function HonestyBanner() {
         We present the case of a 64-year-old woman (170 lb / 77 kg) with an estimated <strong>20-year history of daily rapid water chugging</strong> — usually at least 1 quart at a time, sometimes 2 quarts and sometimes 3 quarts, often before bed and again on waking, and often using reverse-osmosis water that would not provide meaningful electrolyte replacement. If renal free-water clearance was even modestly impaired, that repeated intake pattern could plausibly push her toward recurrent hyponatremic states and steadily feed chronic edema. In the three days leading up to her major collapse, she reportedly experienced three brief episodes of stabbing chest pain, each lasting about 30 seconds, before the later seizure, ICU-level encephalopathy, severe hypoxemia around 74%, and lungs reportedly filling with fluid — a brain-lung pattern described in severe hyponatremic encephalopathy. The chest-pain history matters not as proof of classic Takotsubo, but as a possible <strong>Takotsubo-like / brain-heart stress signal</strong> within the broader sodium-driven syndrome.<Ref n={45} /><Ref n={56} /><Ref n={57} /><Ref n={58} /><Ref n={64} /><Ref n={65} /><Ref n={66} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-4">
-        Neuroimaging showed a dominant lesion plus a secondary ~10–11 mm enhancing nodule interpreted as possible progression, while tissue sampling remained ambiguous and reported labs showed preserved renal function with no SIADH.<Ref n={14} /><Ref n={29} /> The central hypothesis is that recurrent hyponatremia from primary polydipsia contributed materially to both the acute collapse and the later imaging through focal osmotic injury, BBB disruption, secondary myelin injury, and possibly other systemic complications, including transient Takotsubo-like cardiac stress. The reversible nodule is therefore especially important given published hyponatremia-associated pseudoprogression in glioblastoma; repeat MRI after sustained fluid control and clinician-guided sodium normalization remains the key practical test.<Ref n={15} /><Ref n={44} /><Ref n={66} />
+        Neuroimaging showed a dominant lesion plus a secondary ~10–11 mm enhancing nodule interpreted as possible progression, while tissue sampling remained ambiguous and reported labs showed preserved renal function with no SIADH.<Ref n={14} /><Ref n={29} /> The central hypothesis is that recurrent hyponatremia from primary polydipsia contributed materially to both the acute collapse and the later imaging through focal osmotic injury, BBB disruption, secondary myelin injury, and possibly other systemic complications, including transient Takotsubo-like cardiac stress. A major candidate cofactor is a later-reported severe waterslide head impact that was never medically evaluated: if that event caused even a small contusion, microbleed, or hematoma, the TBI literature makes it biologically plausible that it left a chronic focal BBB weak point years later, creating a preferred pooling site for sodium-driven edema.<Ref n={60} /><Ref n={67} /><Ref n={68} /><Ref n={69} /><Ref n={70} /> The reversible nodule is therefore especially important given published hyponatremia-associated pseudoprogression in glioblastoma; repeat MRI after sustained fluid control and clinician-guided sodium normalization remains the key practical test.<Ref n={15} /><Ref n={44} /><Ref n={66} />
       </p>
+      <div className="border-2 border-cyan-200 bg-cyan-50 rounded-lg p-5 mb-4">
+        <p className="text-sm font-bold text-cyan-900 mb-2">Possible Prefactor: Waterslide Head Trauma as the Focal BBB Weak Point</p>
+        <p className="text-sm text-cyan-800 leading-relaxed mb-2">
+          The patient repeatedly reports a severe head impact on a waterslide a few years before the later edema syndrome and says she has long suspected that event may have injured the same region. This article cannot prove that an untreated hematoma or contusion occurred, but if such an injury did occur, it would offer a concrete explanation for <strong>why one spot became selectively vulnerable</strong> rather than the whole brain swelling uniformly.
+        </p>
+        <p className="text-sm text-cyan-800 leading-relaxed">
+          That chronology is medically plausible: traumatic brain injury can leave long-lasting focal BBB leakage, blood-product-related inflammation, iron deposition, and perilesional vulnerability for years. In that setting, later hyponatremic episodes could preferentially draw water into the old injury site, amplifying focal edema, mass effect, and even transient pseudoprogression-like imaging rather than causing only diffuse whole-brain swelling.<Ref n={60} /><Ref n={67} /><Ref n={68} /><Ref n={69} /><Ref n={70} />
+        </p>
+      </div>
       <div className="overflow-x-auto mb-3">
         <table className="w-full text-sm border border-gray-300">
           <thead>
@@ -228,6 +241,11 @@ function HonestyBanner() {
               <td className="p-2.5">This is not a classic confirmed Takotsubo presentation, but published review and case-report literature shows severe hyponatremia can trigger Takotsubo / stress cardiomyopathy, with acute chest-pain presentations and broader brain-heart stress responses.</td>
               <td className="p-2.5"><Ref n={64} /><Ref n={65} /><Ref n={66} /></td>
             </tr>
+            <tr className="border-b border-gray-200">
+              <td className="p-2.5 font-semibold">Reported severe waterslide head impact a few years earlier, never medically evaluated</td>
+              <td className="p-2.5">If that event caused a small contusion, microbleed, or hematoma, it could have left a chronic focal BBB weak point. Published TBI literature shows BBB leakage can persist for years, making a prior injury site a plausible location for later preferential water accumulation during hyponatremic states.</td>
+              <td className="p-2.5"><Ref n={60} /><Ref n={67} /><Ref n={68} /><Ref n={69} /><Ref n={70} /></td>
+            </tr>
             <tr>
               <td className="p-2.5 font-semibold">Possible pseudoprogression from one scan to the next</td>
               <td className="p-2.5">A published glioblastoma case and related comparator literature show that hyponatremia can worsen edema and imaging appearance in ways that mimic progression.</td>
@@ -249,6 +267,9 @@ function HonestyBanner() {
         A 64-year-old woman presented emergently after witnessed seizures. Family history describes an approximately <strong>20-year ritual of extreme daily water intake</strong> — usually at least 1 quart at a time, sometimes 2 quarts and sometimes 3 quarts, typically consumed as a straight chug, often before bedtime and again on waking, and often as reverse-osmosis water — performed as a perceived cleansing practice. Multiple witnesses described the behavior as extraordinary in both volume and speed. For this article, the key point is physiologic rather than psychiatric: the pattern fits the literature on primary polydipsia and water-intoxication risk.<Ref n={45} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
+        She also repeatedly reports a severe head strike on a waterslide a few years before the current illness, severe enough that she now wonders whether it caused the vulnerable spot later seen on imaging. No medical evaluation from that event is available in this record, so an old hematoma or contusion cannot be established retrospectively. Even so, the chronology is notable because human TBI literature shows that BBB disruption can persist for years after a single injury, especially around damaged vessels and perilesional tissue.<Ref n={67} /><Ref n={68} /><Ref n={69} /><Ref n={70} />
+      </p>
+      <p className="text-sm text-gray-700 leading-relaxed mb-3">
         In the three days before the major collapse, she reportedly experienced sharp stabbing chest pain once per day, each episode lasting about 30 seconds. She then presented with profound altered mental status, witnessed seizures, severe hypoxemia around 74%, and lungs reportedly filled with fluid. Brain imaging demonstrated one primary lesion and a secondary ~11 mm focus interpreted as tumor progression.<Ref n={14} /><Ref n={15} /><Ref n={29} /> Tissue sampling remains under evaluation, but the biopsy picture is treated here as ambiguous rather than final.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
@@ -266,7 +287,7 @@ function HonestyBanner() {
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
         <p className="text-sm font-bold text-blue-900 mb-2 flex items-center gap-2"><Brain className="w-4 h-4" /> Central Claim</p>
         <p className="text-sm text-blue-800 leading-relaxed">
-          The central proposal is that <strong>chronic recurrent hyponatremia may be the main destabilizing force in this case</strong>. It could link the acute collapse and the later imaging puzzle through focal osmotic injury, BBB disruption, secondary myelin injury, or a hybrid scenario in which a true tumor exists but sodium-driven edema materially worsens its appearance. Twenty years of extreme polydipsia makes repeated acute-on-chronic osmotic stress biologically plausible.
+          The central proposal is that <strong>chronic recurrent hyponatremia may be the main destabilizing force in this case</strong>. It could link the acute collapse and the later imaging puzzle through focal osmotic injury, BBB disruption, secondary myelin injury, or a hybrid scenario in which a true tumor exists but sodium-driven edema materially worsens its appearance. Twenty years of extreme polydipsia makes repeated acute-on-chronic osmotic stress biologically plausible, and a prior untreated head injury may help explain why one focal region became the preferred weak point for that stress.
         </p>
       </div>
 
@@ -285,11 +306,12 @@ function HonestyBanner() {
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">3.2 Why Focal Rather Than Diffuse?</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        A common objection is that hyponatremia usually causes <strong>diffuse</strong> cerebral edema. That is true in many acute cases.<Ref n={1} /><Ref n={2} /> The narrower claim here is that once the brain contains a <strong>pre-injured or structurally vulnerable region</strong>, the osmotic burden may stop distributing evenly. Case reports involving hemorrhage beds, postoperative tissue, and glioma, plus neurosurgical review literature, support the possibility that low sodium can worsen edema where the BBB is already compromised or adaptation is already failing.<Ref n={15} /><Ref n={60} /><Ref n={61} /><Ref n={62} /><Ref n={63} />
+        A common objection is that hyponatremia usually causes <strong>diffuse</strong> cerebral edema. That is true in many acute cases.<Ref n={1} /><Ref n={2} /> The narrower claim here is that once the brain contains a <strong>pre-injured or structurally vulnerable region</strong>, the osmotic burden may stop distributing evenly. Case reports involving hemorrhage beds, postoperative tissue, and glioma, plus neurosurgical and TBI literature, support the possibility that low sodium can worsen edema where the BBB is already compromised or adaptation is already failing.<Ref n={15} /><Ref n={60} /><Ref n={61} /><Ref n={62} /><Ref n={63} /><Ref n={67} /><Ref n={68} />
       </p>
       <ul className="list-disc pl-6 text-sm text-gray-700 leading-relaxed space-y-2 mb-3">
         <li><strong>BBB heterogeneity:</strong> the barrier is not uniformly robust, and once a focal weak point develops it may become the path of least resistance for later water influx.<Ref n={4} /><Ref n={5} /></li>
         <li><strong>Clinical weak-point precedent:</strong> published cases show hyponatremia worsening edema preferentially at a prior hematoma site, after craniotomy, and during other evolving brain injuries rather than producing only perfectly symmetric swelling.<Ref n={60} /><Ref n={61} /><Ref n={62} /></li>
+        <li><strong>Possible post-traumatic weak point in this case:</strong> the patient repeatedly reports a severe waterslide head impact a few years earlier. If that caused an untreated contusion, microbleed, or hematoma, long-term BBB-persistence studies make it plausible that the old injury site remained a chronic leak-prone zone into which later hyponatremic episodes preferentially pulled water.<Ref n={67} /><Ref n={68} /><Ref n={69} /><Ref n={70} /></li>
         <li><strong>The weak-point phenomenon:</strong> repeated osmotic insults over years could create a self-perpetuating vulnerable zone that swells preferentially during each water-loading episode.<Ref n={3} /><Ref n={7} /><Ref n={63} /></li>
         <li><strong>AQP4 dysregulation:</strong> regional aquaporin changes could turn one area into a local water sink during hypo-osmolar states.<Ref n={25} /><Ref n={30} /></li>
         <li><strong>Precedent in ODS:</strong> osmotic demyelination can present as focal mass-like lesions that mimic tumors on MRI.<Ref n={7} /><Ref n={18} /><Ref n={19} /></li>
@@ -324,12 +346,13 @@ function Pathophysiology() {
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">4.2 Osmotic Stress → BBB Disruption → Focal Edema</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        When plasma sodium falls, water moves into brain tissue by osmosis, initially causing diffuse swelling. When adaptation fails, astrocytic swelling, hypoxia, and structural injury follow. In already-injured brain, that osmotic stress may become <strong>focal</strong> because water preferentially accumulates where the BBB has been weakened by hemorrhage, surgery, tumor, or prior inflammatory damage.<Ref n={1} /><Ref n={2} /><Ref n={4} /><Ref n={5} /><Ref n={44} /><Ref n={48} /><Ref n={49} /><Ref n={59} /><Ref n={60} /><Ref n={61} /><Ref n={62} /><Ref n={63} />
+        When plasma sodium falls, water moves into brain tissue by osmosis, initially causing diffuse swelling. When adaptation fails, astrocytic swelling, hypoxia, and structural injury follow. In already-injured brain, that osmotic stress may become <strong>focal</strong> because water preferentially accumulates where the BBB has been weakened by hemorrhage, surgery, tumor, prior inflammatory damage, or a remote traumatic lesion that never fully normalized.<Ref n={1} /><Ref n={2} /><Ref n={4} /><Ref n={5} /><Ref n={44} /><Ref n={48} /><Ref n={49} /><Ref n={59} /><Ref n={60} /><Ref n={61} /><Ref n={62} /><Ref n={63} /><Ref n={67} /><Ref n={68} /><Ref n={69} /><Ref n={70} />
       </p>
       <ul className="list-disc pl-6 text-sm text-gray-700 leading-relaxed space-y-2 mb-3">
         <li><strong>BBB tight-junction disruption:</strong> endothelial barrier proteins may degrade, converting a purely osmotic problem into a focal vasogenic one.</li>
         <li><strong>AQP4 dysregulation:</strong> abnormal aquaporin expression may make one area accumulate water more readily than another. Review literature on hyponatremia emphasizes early astrocytic water influx through AQP4, while brain-injury studies show injury-linked changes in AQP4 expression and polarity.<Ref n={25} /><Ref n={37} /><Ref n={49} /></li>
         <li><strong>Myelin injury:</strong> osmotic stress can damage myelin directly, creating a plausible bridge between hyponatremia and demyelinating-looking imaging patterns.<Ref n={7} /><Ref n={8} /></li>
+        <li><strong>Remote-trauma persistence:</strong> post-traumatic BBB leak can persist for years, so a prior untreated contusion or hematoma is a plausible explanation for why one location kept behaving like a water sink long after the original injury.<Ref n={67} /><Ref n={68} /><Ref n={69} /><Ref n={70} /></li>
         <li><strong>Hypoxia amplification:</strong> experimental and clinical literature suggests that hypoxia can worsen hyponatremic brain injury by impairing adaptive responses, while hyponatremic encephalopathy can itself be accompanied by hypoxemia through noncardiogenic pulmonary edema or hypercapnic respiratory failure.<Ref n={49} /><Ref n={56} /><Ref n={57} /><Ref n={58} /><Ref n={59} /></li>
       </ul>
 
