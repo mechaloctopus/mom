@@ -74,6 +74,7 @@ const REFS = [
   { n: 57, pmid: '7842787', t: 'Ayus JC et al. Pulmonary complications of hyponatremic encephalopathy. Noncardiogenic pulmonary edema and hypercapnic respiratory failure. Chest. 1995.' },
   { n: 58, pmid: '10787364', t: 'Ayus JC et al. Hyponatremia, cerebral edema, and noncardiogenic pulmonary edema in marathon runners. Ann Intern Med. 2000.' },
   { n: 59, pmid: '8282795', t: 'Ayus JC et al. Hypoxic and ischemic hypoxia exacerbate brain injury associated with metabolic encephalopathy in laboratory animals. J Clin Invest. 1994.' },
+  { n: 60, pmid: '17506243', t: 'Widdess-Walsh P et al. Neurologic effects of hyponatremia and its treatment. Cleve Clin J Med. 2007.' },
 ];
 
 const momMri1 = new URL('../../hyponatremia/mom_mri1.jpg', import.meta.url).href;
@@ -84,6 +85,9 @@ const focalHyponatremiaClosestImg = new URL('../../hyponatremia/hyponatremia ima
 const focalHyponatremiaImg = new URL('../../hyponatremia/hyponatremia image.jpg', import.meta.url).href;
 const malignantEdemaHyponatremiaImg = new URL('../../hyponatremia/another hyponatremia image.jpg', import.meta.url).href;
 const focalCtHyponatremiaImg = new URL('../../hyponatremia/another hyponatremia image2.jpg', import.meta.url).href;
+const ccjmCtBaselineImg = new URL('../../hyponatremia/ccjm_hyponatremia_ct_baseline.jpg', import.meta.url).href;
+const ccjmCtEdemaImg = new URL('../../hyponatremia/ccjm_hyponatremia_ct_edema.jpg', import.meta.url).href;
+const ccjmCtResolvedImg = new URL('../../hyponatremia/ccjm_hyponatremia_ct_resolved.jpg', import.meta.url).href;
 const tdlMimicImg1 = new URL('../../hyponatremia/atypical tumefactive demyelinating glioma mimic.jpg', import.meta.url).href;
 const tdlMimicImg2 = new URL('../../hyponatremia/Demyelination Ring enhancement.jpg', import.meta.url).href;
 const tdlMimicImg3 = new URL('../../hyponatremia/Demyelination Ring enhancement 2.jpg', import.meta.url).href;
@@ -311,6 +315,7 @@ function LiteratureEvidence() {
               <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Reversible diffuse cerebral edema</td><td className="p-2.5">Chronic hyponatremia causes measurable brain swelling on MRI that can resolve with correction.</td><td className="p-2.5"><Ref n={6} /></td></tr>
               <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Cortical enhancement mimicking tumor</td><td className="p-2.5">Rapid correction of hyponatremia produced gadolinium-enhancing abnormalities resembling tumor progression that later resolved.</td><td className="p-2.5"><Ref n={16} /></td></tr>
               <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Hyponatremia as pseudoprogression trigger</td><td className="p-2.5">A published glioblastoma case showed that acute hyponatremia produced clinical decline plus radiographic worsening mimicking pseudoprogression, and both encephalopathy and brain edema regressed after sodium correction. This is one of the most important precedents for the present hypothesis.</td><td className="p-2.5"><Ref n={15} /></td></tr>
+              <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Localized edema appearing at one vulnerable site</td><td className="p-2.5">In a Cleveland Clinic case report, a patient developed new focal cerebral edema and mass effect in the region of a prior hematoma when serum sodium fell to 121 mmol/L, without recurrent hemorrhage; after correction of the hyponatremia, the edema resolved. That sequence is important because it shows a sodium-driven lesion can become localized and later reverse on imaging.<Ref n={60} /></td><td className="p-2.5"><Ref n={60} /></td></tr>
               <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Severe edema from polydipsia</td><td className="p-2.5">Primary polydipsia with normal kidneys can cause life-threatening cerebral edema.</td><td className="p-2.5"><Ref n={10} /></td></tr>
               <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Cumulative osmotic brain injury</td><td className="p-2.5">Repeated hyponatremic episodes can produce progressive brain edema with cumulative effects.</td><td className="p-2.5"><Ref n={3} /></td></tr>
               <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">Hyponatremic encephalopathy is established cerebral edema</td><td className="p-2.5">Critical care literature explicitly frames symptomatic hyponatremia as cerebral edema from a hypo-osmolar state and emphasizes careful correction.</td><td className="p-2.5"><Ref n={44} /><Ref n={48} /></td></tr>
@@ -388,8 +393,27 @@ function MRIComparison() {
           <p className="text-xs text-gray-600">This image reinforces the same point: hyponatremia-associated edema can localize to one region.</p>
         </div>
 
+        <div className="bg-white rounded border border-blue-200 p-4 mb-4">
+          <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6D — Cleveland Clinic Hyponatremia Case: Baseline, Focal Edema, Then Resolution</h4>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <img src={ccjmCtBaselineImg} alt="Cleveland Clinic hyponatremia case baseline CT showing original hematoma" className="w-full h-52 rounded border border-gray-200 object-cover object-center bg-white mb-2" />
+              <p className="text-xs text-gray-600">Admission CT: right frontotemporal capsular hematoma.</p>
+            </div>
+            <div>
+              <img src={ccjmCtEdemaImg} alt="Cleveland Clinic hyponatremia case follow-up CT showing new focal edema and mass effect" className="w-full h-52 rounded border border-gray-200 object-cover object-center bg-white mb-2" />
+              <p className="text-xs text-gray-600">21 days later: new focal cerebral edema and mass effect in the same region, with no recurrent hemorrhage.</p>
+            </div>
+            <div>
+              <img src={ccjmCtResolvedImg} alt="Cleveland Clinic hyponatremia case follow-up CT after sodium correction showing edema resolution" className="w-full h-52 rounded border border-gray-200 object-cover object-center bg-white mb-2" />
+              <p className="text-xs text-gray-600">After hyponatremia correction: the edema resolved.</p>
+            </div>
+          </div>
+          <p className="text-xs text-gray-600 mt-3">These are CT rather than MRI images, but they are highly relevant because they document a localized, mass-like edema pattern emerging in one vulnerable region during hyponatremia and then reversing after sodium correction.<Ref n={60} /></p>
+        </div>
+
         <div className="bg-white rounded border border-blue-200 p-4">
-          <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6D — This Patient vs. Similar MRI Examples of Hyponatremia</h4>
+          <h4 className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">Figure 6E — This Patient vs. Similar MRI Examples of Hyponatremia</h4>
           <div className="grid grid-cols-1 xl:grid-cols-[1.15fr_0.95fr] gap-5 items-start">
             <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
               <p className="text-xs font-mono font-bold text-gray-500 uppercase tracking-wide mb-3">This Patient — Mom's MRI</p>
