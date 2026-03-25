@@ -172,10 +172,10 @@ function HonestyBanner() {
     <section className="mb-10">
       <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">1. Abstract</h2>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        We present the case of a 64-year-old woman (170 lb / 77 kg) with an estimated <strong>20-year history of large-volume daily water loading</strong> — often 2-3 quarts before bed and again on waking, sometimes exceeding 1.5 gallons per day, and often using reverse-osmosis water that would not provide meaningful electrolyte replacement. After a major episode, she developed seizures, ICU-level encephalopathy, severe hypoxemia around 74%, and lungs reportedly filled with fluid — a brain-lung pattern described in severe hyponatremic encephalopathy. She also later reported three separate days of extremely sharp acute chest pain during hyponatremic periods, raising concern that the sodium-driven stress may not have been limited to the brain and lungs.<Ref n={45} /><Ref n={56} /><Ref n={57} /><Ref n={58} /><Ref n={64} /><Ref n={65} /><Ref n={66} />
+        We present the case of a 64-year-old woman (170 lb / 77 kg) with an estimated <strong>20-year history of daily large-volume water chugging</strong> — often 2-3 quarts before bed and again on waking, sometimes exceeding 1.5 gallons per day, and often using reverse-osmosis water that would not provide meaningful electrolyte replacement. In the three days leading up to her major collapse, she reportedly experienced three brief episodes of stabbing chest pain, each lasting about 30 seconds, before the later seizure, ICU-level encephalopathy, severe hypoxemia around 74%, and lungs reportedly filling with fluid — a brain-lung pattern described in severe hyponatremic encephalopathy. The chest-pain history is important not as proof of classic Takotsubo, but as a possible <strong>Takotsubo-like / brain-heart stress signal</strong> within the broader sodium-driven syndrome.<Ref n={45} /><Ref n={56} /><Ref n={57} /><Ref n={58} /><Ref n={64} /><Ref n={65} /><Ref n={66} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-4">
-        Neuroimaging showed a dominant lesion plus a secondary ~10–11 mm enhancing nodule interpreted as possible progression, while tissue sampling remained ambiguous and reported labs showed preserved renal function with no SIADH.<Ref n={14} /><Ref n={29} /> The central hypothesis is that recurrent hyponatremia from primary polydipsia contributed materially to both the acute collapse and the later imaging through focal osmotic injury, BBB disruption, secondary myelin injury, and possibly other systemic complications such as stress cardiomyopathy. The reversible nodule is therefore important, especially given published hyponatremia-associated pseudoprogression in glioblastoma; repeat MRI after sustained fluid control and clinician-guided sodium normalization is the key practical test.<Ref n={15} /><Ref n={44} /><Ref n={66} />
+        Neuroimaging showed a dominant lesion plus a secondary ~10–11 mm enhancing nodule interpreted as possible progression, while tissue sampling remained ambiguous and reported labs showed preserved renal function with no SIADH.<Ref n={14} /><Ref n={29} /> The central hypothesis is that recurrent hyponatremia from primary polydipsia contributed materially to both the acute collapse and the later imaging through focal osmotic injury, BBB disruption, secondary myelin injury, and possibly other systemic complications including transient Takotsubo-like cardiac stress. The reversible nodule is therefore important, especially given published hyponatremia-associated pseudoprogression in glioblastoma; repeat MRI after sustained fluid control and clinician-guided sodium normalization is the key practical test.<Ref n={15} /><Ref n={44} /><Ref n={66} />
       </p>
       <div className="overflow-x-auto mb-3">
         <table className="w-full text-sm border border-gray-300">
@@ -188,7 +188,7 @@ function HonestyBanner() {
           </thead>
           <tbody className="text-gray-700 text-xs">
             <tr className="border-b border-gray-200">
-              <td className="p-2.5 font-semibold">Large quantities of water nearly every day, often reverse-osmosis water</td>
+              <td className="p-2.5 font-semibold">Daily large-volume water chugging, often reverse-osmosis water</td>
               <td className="p-2.5">Chronic high-volume intake fits primary polydipsia / water-intoxication risk; using water without meaningful electrolyte content would not offset dilutional stress.</td>
               <td className="p-2.5"><Ref n={45} /></td>
             </tr>
@@ -213,8 +213,8 @@ function HonestyBanner() {
               <td className="p-2.5"><Ref n={57} /><Ref n={58} /></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="p-2.5 font-semibold">Severe sharp chest pain</td>
-              <td className="p-2.5">Published review and case-report literature shows severe hyponatremia can trigger Takotsubo / stress cardiomyopathy with acute chest-pain presentations.</td>
+              <td className="p-2.5 font-semibold">Three consecutive days of brief stabbing chest pain before collapse</td>
+              <td className="p-2.5">This is not a classic confirmed Takotsubo presentation, but published review and case-report literature shows severe hyponatremia can trigger Takotsubo / stress cardiomyopathy, with acute chest-pain presentations and broader brain-heart stress responses.</td>
               <td className="p-2.5"><Ref n={64} /><Ref n={65} /><Ref n={66} /></td>
             </tr>
             <tr>
@@ -235,17 +235,17 @@ function HonestyBanner() {
     <section className="mb-10">
       <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">2. Detailed Case Presentation</h2>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        A 64-year-old woman presented emergently after witnessed seizures. Family history describes an approximately <strong>20-year ritual of extreme water intake</strong> — often 2-3 quarts before bedtime and again on waking, with large quantities consumed on most days and often as reverse-osmosis water — performed as a perceived cleansing practice. Multiple witnesses described the behavior as extraordinary in both volume and speed. For this article, the key point is physiologic rather than psychiatric: the pattern fits the literature on primary polydipsia and water-intoxication risk.<Ref n={45} />
+        A 64-year-old woman presented emergently after witnessed seizures. Family history describes an approximately <strong>20-year ritual of extreme daily water intake</strong> — often 2-3 quarts before bedtime and again on waking, with large quantities consumed on most days and often as reverse-osmosis water — performed as a perceived cleansing practice. Multiple witnesses described the behavior as extraordinary in both volume and speed. For this article, the key point is physiologic rather than psychiatric: the pattern fits the literature on primary polydipsia and water-intoxication risk.<Ref n={45} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        On admission she exhibited profound altered mental status, severe hypoxemia around 74%, and lungs reportedly filled with fluid. Brain imaging demonstrated one primary lesion and a secondary ~11 mm focus interpreted as tumor progression.<Ref n={14} /><Ref n={15} /><Ref n={29} /> Tissue sampling remains under evaluation, but the biopsy picture is treated here as ambiguous rather than final.
+        In the three days before the major collapse, she reportedly experienced sharp stabbing chest pain once per day, each episode lasting about 30 seconds. She then presented with profound altered mental status, witnessed seizures, severe hypoxemia around 74%, and lungs reportedly filled with fluid. Brain imaging demonstrated one primary lesion and a secondary ~11 mm focus interpreted as tumor progression.<Ref n={14} /><Ref n={15} /><Ref n={29} /> Tissue sampling remains under evaluation, but the biopsy picture is treated here as ambiguous rather than final.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        Comprehensive metabolic evaluation reportedly ruled out SIADH and showed intact renal function. She was managed with osmotic IV agents for presumed cerebral edema. Her weight (170 lb) and the absence of obvious alternative metabolic explanations make chronic water intoxication a serious explanatory candidate. She also later reported three distinct days of extremely sharp acute chest pain while hyponatremic. That history does <strong>not</strong> establish Takotsubo cardiomyopathy retrospectively, because no ECG, troponin, echocardiographic, or angiographic confirmation is presented here, but it is noteworthy because severe hyponatremia is a recognized trigger of stress cardiomyopathy with acute chest-pain presentations.<Ref n={56} /><Ref n={57} /><Ref n={58} /><Ref n={64} /><Ref n={65} /><Ref n={66} />
+        Comprehensive metabolic evaluation reportedly ruled out SIADH and showed intact renal function. She was managed with osmotic IV agents for presumed cerebral edema. Her weight (170 lb) and the absence of obvious alternative metabolic explanations make chronic water intoxication a serious explanatory candidate. The pre-collapse chest-pain history does <strong>not</strong> establish classic Takotsubo cardiomyopathy retrospectively, especially because the reported episodes were brief rather than prolonged and because no ECG, troponin, echocardiographic, or angiographic confirmation is presented here. Even so, it remains noteworthy because severe hyponatremia is a recognized trigger of stress cardiomyopathy and broader brain-heart stress phenomena, making the stabbing chest pain a potentially relevant Takotsubo-like clue rather than a standalone diagnosis.<Ref n={56} /><Ref n={57} /><Ref n={58} /><Ref n={64} /><Ref n={65} /><Ref n={66} />
       </p>
     </section>
   );
- }
+}
 
 /* ═══ 3. CORE HYPOTHESIS ═══ */
  function CoreHypothesis() {
@@ -354,12 +354,12 @@ function CardiacComplications() {
         Severe hyponatremia can affect more than the brain and lungs. Review literature now specifically discusses an association between severe hyponatremia and <strong>Takotsubo syndrome</strong>, a usually reversible stress cardiomyopathy that often presents with sudden chest pain, ECG changes, troponin elevation, and characteristic ventricular ballooning despite no obstructive coronary artery disease.<Ref n={64} /><Ref n={65} /><Ref n={66} /> The proposed link runs through catecholamine surge, osmotic stress, and brain-heart signaling during severe systemic physiologic stress.<Ref n={66} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        In this case, she reportedly experienced extremely sharp acute chest pain on three separate days while hyponatremic. That history does not prove Takotsubo retrospectively, and this article is <strong>not</strong> claiming an established cardiac diagnosis from symptoms alone. But it does widen the syndrome from brain-lung involvement toward a broader sodium-stress picture affecting multiple organs, and it creates a concrete question for chart review: whether those episodes were accompanied by ECG abnormalities, troponin elevation, echocardiographic wall-motion changes, or documentation of transient cardiomyopathy.<Ref n={64} /><Ref n={65} /><Ref n={66} />
+        In this case, she reportedly experienced stabbing chest pain on three consecutive days in the run-up to the main collapse, with each episode lasting only about 30 seconds. That is <strong>not</strong> a classic confirmed Takotsubo presentation, which more often involves more sustained chest-pain syndromes plus objective cardiac findings, and this article is not claiming an established retrospective diagnosis from symptoms alone. The value of the history is narrower: it suggests a possible <strong>Takotsubo-like brain-heart stress signal</strong> occurring just before the later seizure, hypoxemia, and fluid-filled-lung picture, and it creates a concrete chart-review question about whether those brief episodes were accompanied by ECG abnormalities, troponin elevation, echocardiographic wall-motion changes, or documentation of transient cardiomyopathy.<Ref n={64} /><Ref n={65} /><Ref n={66} />
       </p>
       <div className="border border-gray-200 rounded p-4 bg-gray-50">
         <p className="text-sm font-semibold text-gray-800 mb-2">What would strengthen this link in the records</p>
         <ul className="list-disc pl-6 text-sm text-gray-700 leading-relaxed space-y-1">
-          <li><strong>ED / ICU documentation of chest-pain episodes</strong> during confirmed hyponatremia.</li>
+          <li><strong>Documentation of the 3-day pre-collapse chest-pain sequence</strong> during confirmed or suspected hyponatremia.</li>
           <li><strong>ECG or troponin abnormalities</strong> suggesting acute myocardial stress rather than only subjective pain.</li>
           <li><strong>Echocardiographic or ventriculographic evidence</strong> of transient apical or mid-ventricular ballooning / wall-motion abnormality.</li>
           <li><strong>Recovery after sodium correction</strong> without evidence of obstructive coronary disease.<Ref n={64} /><Ref n={65} /></li>
@@ -415,7 +415,7 @@ function LiteratureEvidence() {
           <li><strong>Reversibility:</strong> in survivors, water restriction alone may normalize imaging and neurologic function within days to weeks.<Ref n={11} /><Ref n={12} /></li>
           <li><strong>Review-level support:</strong> review literature on severe polydipsia describes progression from confusion and lethargy to seizures and death when water intoxication produces hyponatremia.<Ref n={45} /></li>
           <li><strong>Respiratory complications:</strong> symptomatic hyponatremia can coexist with severe hypoxemia, and case series describe hypoxia arising from noncardiogenic pulmonary edema or hypercapnic respiratory failure during hyponatremic encephalopathy; these findings can even resemble pneumonia early in the course.<Ref n={56} /><Ref n={57} /><Ref n={58} /></li>
-          <li><strong>Cardiac stress presentations:</strong> review and case-report literature also links severe hyponatremia to Takotsubo / stress cardiomyopathy, with acute chest pain and transient cardiac dysfunction in some patients.<Ref n={64} /><Ref n={65} /><Ref n={66} /></li>
+          <li><strong>Cardiac stress presentations:</strong> review and case-report literature also links severe hyponatremia to Takotsubo / stress cardiomyopathy and related brain-heart stress phenomena, usually with more classic sustained chest-pain syndromes plus objective cardiac findings; in this case, the reported brief stabbing episodes are used more cautiously as a Takotsubo-like clue than as a diagnosis.<Ref n={64} /><Ref n={65} /><Ref n={66} /></li>
         </ul>
       </Expandable>
 
