@@ -121,7 +121,7 @@ function TitleBlock() {
         A novel case hypothesis integrating clinical chronology, inconclusive biopsy findings, and established mechanisms of hyponatremic encephalopathy with cannabinoid-mediated neuroprotection — proposing that a 20-year water-chugging ritual produced focal osmotic brain injury radiographically indistinguishable from glioma.
       </p>
       <p className="text-xs text-gray-400 font-mono">
-        Draft: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} &middot; Author: Josh Trembath (family investigator) &middot; Contact: jptrembath@gmail.com
+        Draft: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} &middot; Author: Josh Trembath (citizen scientist) &middot; Contact: jptrembath@gmail.com
       </p>
     </div>
   );
@@ -499,6 +499,31 @@ function CannabinoidSection() {
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">8.5 Cannabinoids and Demyelination / Myelin Repair</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
         Reviews of experimental demyelinating disease report that cannabinoids can reduce neuroinflammation, lessen demyelination severity in some models, and in certain settings may support remyelination-related biology.<Ref n={40} /><Ref n={41} /> That evidence is <strong>primarily preclinical</strong> and should not be treated as proof that cannabinoids reverse a human mass-like lesion.
+      </p>
+      <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">8.6 Remyelination and Oligodendrocyte Support</h3>
+      <div className="space-y-3 mb-4">
+        <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33804243/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-blue-700 hover:underline inline-flex items-center gap-1">
+            Review: cannabinoids may support remyelination biology in demyelinating disease models <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+          <p className="text-xs text-gray-600 mt-2">
+            This review summarizes experimental evidence that cannabinoids can reduce neuroinflammation, influence oligodendrocyte lineage biology, and in some settings support remyelination-related processes. It is useful here as a mechanistic bridge between edema control and possible white-matter repair, but it remains <strong>preclinical</strong> rather than direct proof in a human lesion like this one.<Ref n={40} />
+          </p>
+        </div>
+        <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/35327341/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-blue-700 hover:underline inline-flex items-center gap-1">
+            Review: cannabinoid signaling may protect oligodendrocytes and create a repair-permissive environment <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+          <p className="text-xs text-gray-600 mt-2">
+            This review discusses CB1- and CB2-linked mechanisms relevant to oligodendrocyte survival, inflammatory downshifting, and the broader neuropathologic promise of cannabinoids in demyelinating conditions. In practical terms, it supports the idea that cannabinoids are being studied not only for symptom control, but also for potential roles in limiting myelin injury and helping recovery biology.<Ref n={41} />
+          </p>
+        </div>
+      </div>
+      <p className="text-sm text-gray-700 leading-relaxed mb-3">
+        Taken together, these reviews make it biologically reasonable to discuss oligodendrocyte precursor differentiation, oligodendrocyte protection, and remyelination support in the same article as osmotic injury and tumefactive demyelinating mimics.<Ref n={40} /><Ref n={41} /> That is relevant because one branch of this article's differential hypothesis is that repeated osmotic stress may have produced a demyelinating or myelin-injury component rather than a purely neoplastic one.
+      </p>
+      <p className="text-sm text-gray-700 leading-relaxed mb-3">
+        Still, the boundary has to stay clear: these findings do <strong>not</strong> demonstrate that CBD or THC can reliably remyelinate a human lesion of this size or explain away a genuine tumor. They simply add mechanistic support for why cannabinoids remain scientifically interesting in a scenario where edema control, inflammatory reduction, and possible myelin repair may all matter at the same time.<Ref n={40} /><Ref n={41} />
       </p>
     </section>
   );
