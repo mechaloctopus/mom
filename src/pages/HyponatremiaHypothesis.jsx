@@ -50,7 +50,6 @@ const REFS = [
   { n: 29, pmid: '25894594', t: 'Young RJ et al. Characterization of pseudoprogression in GBM: systematic review. J Neurooncol. 2015.' },
   { n: 30, pmid: '20356447', t: 'Taya K et al. Aquaporin-4 and traumatic brain edema. Transl Stroke Res. 2010.' },
   { n: 31, pmid: '24819918', t: 'Fujii M et al. CB2 receptor stimulation attenuates brain edema. J Cereb Blood Flow Metab. 2014.' },
-  { n: 32, pmid: '33507244', t: 'Twelves C et al. Phase 1b trial: nabiximols + TMZ in recurrent GBM — 83% vs 53% 1-yr survival. Br J Cancer. 2021.' },
   { n: 33, pmid: '19425170', t: 'Salazar M et al. Cannabinoid action induces autophagy-mediated cell death in glioma. J Clin Invest. 2009.' },
   { n: 34, pmid: '7458496', t: 'Goldman MB et al. Hyponatremia in psychogenic polydipsia. Kidney Int. 1988.' },
   { n: 35, pmid: '34909286', t: 'Li YC et al. Temporal brain MRI changes from EPM to CPM. Am J Med Sci. 2022.' },
@@ -61,7 +60,6 @@ const REFS = [
   { n: 40, pmid: '33804243', t: 'Feliú A et al. Cannabidiol and Other Cannabinoids in Demyelinating Diseases. Int J Mol Sci. 2021.' },
   { n: 41, pmid: '35327341', t: 'Maresz K et al. Neurological Benefits, Clinical Challenges, and Neuropathologic Promise of Cannabinoids in Demyelinating Disease. Biomedicines. 2022.' },
   { n: 42, pmid: '38553903', t: 'Xu Y et al. Cannabidiol alleviates neurological deficits after TBI by improving intracranial lymphatic drainage. CNS Neurosci Ther. 2024.' },
-  { n: 43, pmid: '21220494', t: 'Torres S et al. A combined preclinical therapy of cannabinoids and temozolomide against glioma. Mol Cancer Ther. 2011.' },
   { n: 44, pmid: '28704229', t: 'Ayus JC, Achinger SG. Treatment of Hyponatremic Encephalopathy in the Critically Ill. Crit Care Med. 2017.' },
   { n: 45, pmid: '17521521', t: 'Dundas B, Harris M, Narasimhan M. Psychogenic polydipsia review: etiology, differential, and treatment. Curr Psychiatry Rep. 2007.' },
   { n: 46, pmid: '30115676', t: 'Suh CH et al. MRI Findings in Tumefactive Demyelinating Lesions: A Systematic Review and Meta-Analysis. AJNR Am J Neuroradiol. 2018.' },
@@ -72,8 +70,6 @@ const REFS = [
   { n: 51, pmid: '29241178', t: 'Karschnia P et al. Role of Biopsies in the Management of Intracranial Gliomas. Curr Treat Options Neurol. 2018.' },
   { n: 52, pmid: '14735305', t: 'Noell S et al. Redistribution of aquaporin-4 in human glioblastoma correlates with loss of agrin immunoreactivity from brain capillary basal laminae. Acta Neuropathol. 2004.' },
   { n: 53, pmid: '20685122', t: 'Ding T et al. Aquaporin-4 in glioma invasion and an analysis of molecular mechanisms. J Clin Neurosci. 2010.' },
-  { n: 54, pmid: '29867351', t: 'Nabissi M, Morelli MB, Santoni M. Cannabinoids in Glioblastoma Therapy: New Applications for Old Drugs. Cancers (Basel). 2018.' },
-  { n: 55, pmid: '33623077', t: 'Muir M et al. Cannabinoids in glioblastoma multiforme-hype or hope? Br J Cancer. 2021.' },
   { n: 56, pmid: '16614718', t: 'Ayus JC. Symptomatic hyponatremia with hypoxia is a medical emergency. Kidney Int. 2006.' },
   { n: 57, pmid: '7842787', t: 'Ayus JC et al. Pulmonary complications of hyponatremic encephalopathy. Noncardiogenic pulmonary edema and hypercapnic respiratory failure. Chest. 1995.' },
   { n: 58, pmid: '10787364', t: 'Ayus JC et al. Hyponatremia, cerebral edema, and noncardiogenic pulmonary edema in marathon runners. Ann Intern Med. 2000.' },
@@ -187,7 +183,7 @@ function HonestyBanner() {
     <section className="mb-10">
       <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">2. Detailed Case Presentation</h2>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        A 64-year-old woman presented emergently after witnessed seizures. Family history revealed an approximately <strong>20-year ritual of extreme water intake</strong> — commonly 2-3 quarts before bedtime and again on waking, consumed rapidly as a perceived cleansing practice. Multiple witnesses independently described the behavior as extraordinary in both volume and speed. In broad clinical terms, that history fits the spectrum of primary or psychogenic polydipsia described in the literature, though the article does not claim a formal psychiatric diagnosis.<Ref n={45} />
+        A 64-year-old woman presented emergently after witnessed seizures. Family history revealed an approximately <strong>20-year ritual of extreme water intake</strong> — commonly 2-3 quarts before bedtime and again on waking, consumed rapidly as a perceived cleansing practice. Multiple witnesses independently described the behavior as extraordinary in both volume and speed. The key point for this article is behavioral and physiologic rather than psychiatric: she appears to have sincerely believed that drinking large amounts of water was health-promoting, yet the resulting intake pattern still fits the clinical literature on primary polydipsia and water-intoxication risk.<Ref n={45} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
         On admission she exhibited profound altered mental status progressing to a near-vegetative presentation with failure of orientation testing. She was also reportedly found with dangerously low oxygen saturation, around 74%, and with fluid in the lungs. In the severe hyponatremia literature, that brain-plus-lung combination is important because symptomatic hyponatremia can be accompanied by hypoxemia and noncardiogenic pulmonary edema rather than only isolated brain findings.<Ref n={56} /><Ref n={57} /><Ref n={58} /> Brain imaging demonstrated one primary lesion and a secondary ~11 mm focus interpreted as tumor progression.<Ref n={14} /><Ref n={15} /><Ref n={29} />
@@ -335,9 +331,9 @@ function LiteratureEvidence() {
       <Expandable title="5.3 Polydipsia-Induced Hyponatremia: The Clinical Spectrum">
         <ul className="list-disc pl-6 text-sm text-gray-700 leading-relaxed space-y-2 mb-3 mt-3">
           <li><strong>Seizures and coma:</strong> acute symptomatic hyponatremia from polydipsia routinely causes seizures and coma.<Ref n={10} /><Ref n={13} /></li>
-          <li><strong>Osmotic myelinolysis from polydipsia:</strong> psychogenic polydipsia has been linked directly to osmotic myelinolysis with MRI changes.<Ref n={9} /></li>
+          <li><strong>Osmotic myelinolysis from polydipsia:</strong> severe polydipsia and water intoxication have been linked directly to osmotic myelinolysis with MRI changes.<Ref n={9} /></li>
           <li><strong>Reversibility:</strong> in survivors, water restriction alone may normalize imaging and neurologic function within days to weeks.<Ref n={11} /><Ref n={12} /></li>
-          <li><strong>Review-level support:</strong> psychogenic polydipsia reviews describe progression from confusion and lethargy to seizures and death when water intoxication produces hyponatremia.<Ref n={45} /></li>
+          <li><strong>Review-level support:</strong> review literature on severe polydipsia describes progression from confusion and lethargy to seizures and death when water intoxication produces hyponatremia.<Ref n={45} /></li>
           <li><strong>Respiratory complications:</strong> symptomatic hyponatremia can coexist with severe hypoxemia, and case series describe hypoxia arising from noncardiogenic pulmonary edema or hypercapnic respiratory failure during hyponatremic encephalopathy; these findings can even resemble pneumonia early in the course.<Ref n={56} /><Ref n={57} /><Ref n={58} /></li>
         </ul>
       </Expandable>
@@ -456,7 +452,7 @@ function CannabinoidSection() {
     <section className="mb-10">
       <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">8. Cannabinoid Neuroprotection — CBD, THC, and Brain Water Homeostasis</h2>
       <p className="text-sm text-gray-700 leading-relaxed mb-4">
-        Cannabinoids are relevant here for three separate reasons: preclinical evidence that they can influence edema biology and BBB integrity; mechanistic evidence that they may interact with AQP4- and drainage-related pathways; and separate glioma literature that becomes relevant if a real tumor is present. The evidence is strongest for mechanistic and preclinical support, mixed but still developing in glioblastoma, and much weaker for direct clinical efficacy in a human lesion like this.<Ref n={54} /><Ref n={55} />
+        Cannabinoids are relevant here because preclinical literature suggests they can influence edema biology, BBB integrity, AQP4-linked water handling, and possibly myelin-related recovery pathways. The evidence in this section is largely mechanistic and preclinical rather than direct proof of clinical efficacy in a human lesion like this.
       </p>
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">8.1 Clickable Mini-Study Summaries</h3>
@@ -483,22 +479,6 @@ function CannabinoidSection() {
           </a>
           <p className="text-xs text-gray-600 mt-2">
             This mouse TBI study found that AQP4 rose alongside edema and neurologic impairment, while cannabinoid-receptor changes correlated with recovery biology. It is mechanistic rather than therapeutic, but it helps justify why cannabinoid signaling and drainage-channel biology are being discussed in the same framework.<Ref n={26} />
-          </p>
-        </div>
-        <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33507244/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-blue-700 hover:underline inline-flex items-center gap-1">
-            Nabiximols plus temozolomide showed a signal in recurrent glioblastoma <ExternalLink className="w-3.5 h-3.5" />
-          </a>
-          <p className="text-xs text-gray-600 mt-2">
-            In a small phase 1b trial in recurrent GBM, nabiximols added to dose-intense temozolomide was associated with a survival signal that makes cannabinoids relevant even in a tumor-containing scenario, though the study was small and not definitive.<Ref n={32} />
-          </p>
-        </div>
-        <div className="border border-gray-200 rounded-lg p-4 bg-gray-50">
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21220494/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-blue-700 hover:underline inline-flex items-center gap-1">
-            THC + CBD showed strong preclinical antitumor activity in glioma xenografts <ExternalLink className="w-3.5 h-3.5" />
-          </a>
-          <p className="text-xs text-gray-600 mt-2">
-            In a preclinical glioma paper, submaximal THC plus CBD markedly reduced xenograft growth, and the combination with temozolomide remained active even in TMZ-resistant tumors. This is preclinical evidence, but it strengthens the argument that cannabinoids stay relevant even if the lesion proves neoplastic.<Ref n={43} />
           </p>
         </div>
       </div>
@@ -528,15 +508,7 @@ function CannabinoidSection() {
         There is also an important tumor-side reason to discuss AQP4 carefully: human glioblastoma studies report redistribution and upregulation of AQP4 in relation to edema biology and tumor behavior.<Ref n={52} /><Ref n={53} /> That means AQP4 cannot be treated here as evidence for only one side of the differential. It is relevant both to hyponatremic swelling biology and to genuine glioma-related edema.
       </p>
 
-      <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">8.4 Tumor-Contingent Rationale</h3>
-      <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        If a true glioma exists, cannabinoids remain relevant for a separate reason: there is independent anti-glioma literature. The small nabiximols plus temozolomide trial in recurrent GBM, mechanistic work on autophagy-mediated glioma cell death, preclinical glioma xenograft studies combining THC with CBD or temozolomide, and broader review literature on cannabinoid effects in GBM all make cannabinoids biologically interesting in a tumor-containing scenario as well.<Ref n={32} /><Ref n={33} /><Ref n={43} /><Ref n={54} />
-      </p>
-      <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        Cannabinoids are therefore being discussed because they could matter in more than one scenario: BBB stabilization and anti-edema support if the process is largely osmotic, myelin-related support if demyelination is contributing, and separate anti-glioma relevance if tumor is present. None of that establishes clinical efficacy in this case, and review-level oncology commentary still emphasizes that the clinical data remain limited despite promising preclinical signals.<Ref n={55} />
-      </p>
-
-      <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">8.5 Cannabinoids and Myelin Biology</h3>
+      <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">8.4 Cannabinoids and Myelin Biology</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
         Reviews of experimental demyelinating disease report that cannabinoids can reduce neuroinflammation, lessen demyelination severity in some models, and in certain settings may support remyelination-related biology.<Ref n={40} /><Ref n={41} /> That evidence is <strong>primarily preclinical</strong> and should not be treated as proof that cannabinoids reverse a human mass-like lesion.
       </p>
@@ -632,7 +604,7 @@ function VerificationStrategy() {
           <tbody className="text-gray-700 text-xs">
             <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">1</td><td className="p-2.5">Permanent cessation of excessive water intake</td><td className="p-2.5">{"<"}1.5–2 L total fluid/day</td><td className="p-2.5">Eliminates the osmotic trigger — the single most important intervention.</td></tr>
             <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">2</td><td className="p-2.5">Clinician-guided maintenance of normonatremia</td><td className="p-2.5">Serum Na⁺ 135–145 mmol/L</td><td className="p-2.5">Maintains normonatremia and avoids renewed hypo-osmolar gradients. Correction should be medically supervised to avoid over-rapid shifts and osmotic demyelination.<Ref n={7} /><Ref n={44} /></td></tr>
-            <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">3</td><td className="p-2.5">Continue or discuss cannabinoid therapy</td><td className="p-2.5">CBD 100+ mg/day; THC titrated if used</td><td className="p-2.5">Adjunctive support aimed at BBB stabilization, anti-edema effects, and possibly myelin-related recovery pathways. If tumor is present, separate anti-glioma literature also exists.<Ref n={20} /><Ref n={32} /><Ref n={40} /></td></tr>
+            <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">3</td><td className="p-2.5">Continue or discuss cannabinoid therapy</td><td className="p-2.5">CBD 100+ mg/day; THC titrated if used</td><td className="p-2.5">Adjunctive support aimed at BBB stabilization, anti-edema effects, and possibly myelin-related recovery pathways.<Ref n={20} /><Ref n={40} /></td></tr>
             <tr className="border-b border-gray-200"><td className="p-2.5 font-semibold">4</td><td className="p-2.5">Repeat MRI with contrast</td><td className="p-2.5">After a defined interval of fluid control and supportive therapy</td><td className="p-2.5">This is the practical discriminator. If the brain is given a real chance to recover through sustained fluid restriction, sodium stabilization, and supportive care, meaningful lesion improvement would argue that a reversible water-handling component is present, even if it would not fully settle whether the process is purely osmotic, partly demyelinating, or hybrid.</td></tr>
             <tr><td className="p-2.5 font-semibold">5</td><td className="p-2.5">Clinical neurologic and respiratory reassessment</td><td className="p-2.5">Orientation, cognition, seizure frequency, oxygenation</td><td className="p-2.5">If hyponatremia meaningfully contributed to the acute syndrome, improvement in brain function and oxygenation may travel together, though oxygen abnormalities still require a standard pulmonary work-up.<Ref n={56} /><Ref n={57} /><Ref n={58} /></td></tr>
           </tbody>
@@ -668,7 +640,7 @@ function VerificationStrategy() {
         The weakest parts are equally important to acknowledge: there is no direct sodium-at-time-of-MRI correlation yet, imaging overlap with tumor remains real, and the literature more strongly supports diffuse edema than focal tumor-like injury. The low oxygen finding and reported lung fluid are also supportive but not exclusive: in the literature, hypoxemia and noncardiogenic pulmonary edema may accompany hyponatremic encephalopathy and may worsen its brain effects, but they still have their own differential diagnosis and cannot be treated as proof of hyponatremia by themselves.<Ref n={56} /><Ref n={57} /><Ref n={58} /><Ref n={59} /> In addition, several of the mechanistic pathways discussed here — especially AQP4 biology — are not exclusive to hyponatremia and also appear in genuine glioblastoma edema biology.<Ref n={52} /><Ref n={53} /> In other words, the hypothesis is biologically coherent but still inferential. Its credibility rises or falls with the repeat MRI and the eventual tissue story.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed">
-        Cannabinoids remain a mechanistically interesting adjunct because of their published relevance to edema biology, BBB stabilization, anti-tumor effects, and — more speculatively — myelin-related recovery. The lipophilic shield mini-hypothesis in Section 9 remains the most speculative part of the article and should be treated as hypothesis-generating rather than evidentiary.
+        Cannabinoids remain a mechanistically interesting adjunct because of their published relevance to edema biology, BBB stabilization, and — more speculatively — myelin-related recovery. The lipophilic shield mini-hypothesis in Section 9 remains the most speculative part of the article and should be treated as hypothesis-generating rather than evidentiary.
       </p>
     </section>
   );
