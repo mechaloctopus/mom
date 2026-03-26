@@ -5,6 +5,7 @@ import BiopsyMethodology from './pages/BiopsyMethodology.jsx'
 import DoxycyclineAnomaly from './pages/DoxycyclineAnomaly.jsx'
 import PhoenixTearsStudy from './pages/PhoenixTearsStudy.jsx'
 import HyponatremiaHypothesis from './pages/HyponatremiaHypothesis.jsx'
+import HyponatremiaFinalArticle from './pages/HyponatremiaFinalArticle.jsx'
 import './index.css'
 
 function Router() {
@@ -27,6 +28,9 @@ function Router() {
   }
   if (path === '#/hyponatremia-hypothesis') {
     return <HyponatremiaHypothesis />;
+  }
+  if (path === '#/hyponatremia-final') {
+    return <HyponatremiaFinalArticle />;
   }
 
   return <App />;

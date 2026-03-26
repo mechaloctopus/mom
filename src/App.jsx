@@ -115,10 +115,17 @@ export default function App() {
               </div>
               <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
             </a>
+            <a href="#/hyponatremia-final" className="flex items-center justify-between p-3 border border-blue-300 bg-blue-50 rounded hover:bg-blue-100 transition-colors group">
+              <div>
+                <p className="text-sm font-semibold text-blue-900 group-hover:text-blue-800">Hyponatremia Clinical Brief (for Tumor Panel)</p>
+                <p className="text-xs text-blue-700">Concise case argument for baseline normonatremic imaging — directed at neuro-oncology team</p>
+              </div>
+              <ExternalLink className="w-4 h-4 text-blue-400 flex-shrink-0" />
+            </a>
             <a href="#/hyponatremia-hypothesis" className="flex items-center justify-between p-3 border border-gray-200 rounded hover:bg-gray-50 transition-colors group">
               <div>
-                <p className="text-sm font-semibold text-gray-800 group-hover:text-blue-800">The Hyponatremia Hypothesis</p>
-                <p className="text-xs text-gray-500">Novel case hypothesis — chronic polydipsia-induced osmotic injury mimicking glioma, with cannabinoid neuroprotection</p>
+                <p className="text-sm font-semibold text-gray-800 group-hover:text-blue-800">The Hyponatremia Hypothesis (Full Technical Version)</p>
+                <p className="text-xs text-gray-500">Extended research compilation — chronic polydipsia-induced osmotic injury, BBB disruption, and detailed literature review</p>
               </div>
               <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
             </a>
