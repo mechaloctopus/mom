@@ -81,7 +81,7 @@ function TitleBlock() {
         Hyponatremia as a Plausible Driver of Acute Episodes and Imaging Distortion in a Patient with Presumed Glioma and a 9-Year History of Excessive Reverse-Osmosis Water Intake
       </h1>
       <p className="text-lg font-serif text-gray-600 leading-relaxed mb-4">
-        A concise case argument for obtaining baseline brain imaging under normonatremic conditions to rule out hyponatremia-induced edema as the source of apparent lesion progression.
+        Rationale for obtaining baseline brain imaging under normonatremic conditions to rule out hyponatremia-induced edema as the source of apparent lesion progression.
       </p>
       <p className="text-xs text-gray-400 font-mono">
         Prepared: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} &middot; Author: Josh Trembath (family advocate) &middot; Contact: jptrembath@gmail.com
@@ -99,7 +99,7 @@ function OccamsRazor() {
         <strong>Occam's Razor:</strong> the simplest explanation that accounts for all the facts should be tested first. <strong>"When you hear hoofbeats, think horses, not zebras."</strong>
       </p>
       <p className="text-sm text-blue-800 leading-relaxed">
-        In this case, Occam's razor suggests starting with the simplest unifying explanation that fits all the observed facts: <strong>chronic heavy water intake → repeated hyponatremia → seizures + reversible edema on scans obtained during those episodes</strong> — before assuming multiple independent tumor progressions. That is exactly why getting a clean baseline scan while normonatremic makes so much sense as the next logical step.
+        In this case, the simplest unifying explanation that fits all the observed facts is: <strong>chronic heavy mineral-stripped water intake → repeated hyponatremia → seizures + reversible edema on every scan obtained during those episodes</strong>. A clean baseline scan while normonatremic is the logical next step — not a shot in the dark, but a targeted test. She is known to drink extreme amounts of mineral-stripped water, a practice that can cause chronic hyponatremia, which the medical record already shows may account for at least some — and possibly all — of what we are seeing (pending biopsy results).
       </p>
     </div>
   );
@@ -109,25 +109,25 @@ function OccamsRazor() {
 function ExecutiveSummary() {
   return (
     <section className="mb-10">
-      <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">1. Executive Summary</h2>
+      <h2 className="text-lg font-serif font-bold text-gray-900 mb-3 border-b border-gray-200 pb-1">1. Case Summary</h2>
 
       <div className="border-2 border-amber-300 bg-amber-50 rounded-lg p-5 mb-5">
         <div className="flex items-start gap-3">
           <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
           <p className="text-sm text-amber-800 leading-relaxed">
-            <strong>Disclosure:</strong> This brief was prepared by a family member, not a clinician. It is intended to raise a specific, testable clinical question — not to override expert judgment. Every claim cites a source.
+            <strong>Disclosure:</strong> This brief was prepared by a family member with a background in computer and mechanical diagnostics, not a medical clinician. It raises a specific, testable clinical question. The medical records are also being reviewed by neurologists familiar with published literature on similar rare cases. The intent is to inform — not to override expert judgment. Every claim cites a source.
           </p>
         </div>
       </div>
 
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        A 64-year-old woman (170 lb / 77 kg) with a presumed low-grade glioma has a <strong>9-year history of chugging 1-3 liters of reverse-osmosis water</strong> every morning and every night as a self-prescribed "cleanse." Her family believes the tumor panel may be unaware of this habit and its clinical significance.
+        A 64-year-old woman (170 lb / 77 kg) with a presumed low-grade glioma has a <strong>9-year history of chugging 1-3 liters of reverse-osmosis water</strong> nearly every morning and every night as a self-prescribed "cleanse." The tumor panel may be unaware of this habit. At these volumes, her kidneys may be unable to clear the free water fast enough, plausibly producing a chronic or recurrent hyponatremic state.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
         <strong>The common denominator across all three of her hospital presentations</strong> — including two with seizures and complete unresponsiveness — is that each episode followed her habitual heavy water chugging. Every brain scan obtained to date was acquired during or shortly after one of these acute hyponatremic episodes.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        The patient has a disrupted blood-brain barrier (BBB), whether from the tumor itself, a prior unreported head injury, osmotic demyelination from years of sodium swings, or some combination. Published case literature shows that in patients with a disrupted BBB, hyponatremia can cause focal cerebral edema that <strong>mimics tumor progression on imaging</strong> and then <strong>reverses completely after sodium correction</strong>.<Cite id={1} /><Cite id={2} />
+        She has plausible signs of a disrupted blood-brain barrier (BBB) — whether from the tumor itself, a prior unreported head injury, osmotic demyelination from years of sodium swings, or some combination. Published case literature shows that in patients with a disrupted BBB, hyponatremia causes focal cerebral edema that <strong>mimics tumor progression on imaging</strong> and <strong>reverses completely after sodium correction</strong>.<Cite id={1} /><Cite id={2} />
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
         <strong>The bottom line:</strong> no brain scan of this patient has ever been obtained while she was normonatremic. If hyponatremia-induced edema is distorting lesion size and creating the appearance of a progressive ~11 mm nodule, then every clinical decision based on those scans is built on a distorted baseline. The single most informative next step is a <strong>repeat MRI under documented normonatremic conditions</strong>.
@@ -161,19 +161,19 @@ function Chronology() {
             </tr>
             <tr className="border-b border-gray-200">
               <td className="p-2.5 font-semibold">First hospital presentation</td>
-              <td className="p-2.5">Initial brain imaging identifies a lesion. <strong>Context: scan obtained after heavy water intake.</strong></td>
+              <td className="p-2.5">She was in a car accident. In the days that followed, while continuing to chug large amounts of reverse-osmosis water, she progressively lost function and responsiveness. She was taken to the hospital, where initial brain imaging identified a lesion. <strong>Context: hyponatremic at time of scan.</strong></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="p-2.5 font-semibold">Second presentation</td>
-              <td className="p-2.5">Seizures and unresponsiveness after water chugging. Brain imaging obtained during acute episode. <strong>Context: hyponatremic at time of scan.</strong></td>
+              <td className="p-2.5">Found in a vegetative state after continued heavy water chugging. Lungs filled with fluid (diagnosed as pneumonia, though noncardiogenic pulmonary edema is a documented effect of severe hyponatremia<Cite id={11} />). SpO₂ ~74% (hypoxemia — also a recognized hyponatremia complication<Cite id={10} />). In the three days prior, she reported sharp stabbing chest pain once per day (Takotsubo-like stress cardiomyopathy is another documented hyponatremia effect). She had been chugging water throughout this period. Brain imaging: primary lesion plus a new ~11 mm enhancing nodule interpreted as possible glioblastoma progression. <strong>Context: hyponatremic at time of scan.</strong></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="p-2.5 font-semibold">Third presentation (most recent)</td>
-              <td className="p-2.5">Witnessed seizures, profound altered mental status, severe hypoxemia (SpO₂ ~74%), lungs reportedly filled with fluid. Three days of brief stabbing chest pain preceded the collapse. Brain imaging shows primary lesion plus a secondary ~11 mm enhancing nodule interpreted as possible glioblastoma progression. Biopsy results remain ambiguous. <strong>Context: again hyponatremic at time of scan.</strong></td>
+              <td className="p-2.5">Witnessed chugging water the night before and the morning of the event. Acute seizures followed, with profound altered mental status. Biopsy taken; results pending. <strong>Context: again hyponatremic at time of scan.</strong></td>
             </tr>
             <tr>
               <td className="p-2.5 font-semibold">Present</td>
-              <td className="p-2.5">Presumed grade 2 glioma based on imaging and intraoperative impression. <strong>No scan has ever been obtained while the patient was verifiably normonatremic.</strong></td>
+              <td className="p-2.5">Presumed grade 2 glioma based on imaging and intraoperative impression (pending final pathology). <strong>No scan has ever been obtained while the patient was verifiably normonatremic.</strong></td>
             </tr>
           </tbody>
         </table>
@@ -195,13 +195,13 @@ function Hypothesis() {
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-5">
         <p className="text-sm font-bold text-blue-900 mb-2 flex items-center gap-2"><Brain className="w-4 h-4" /> Core Claim</p>
         <p className="text-sm text-blue-800 leading-relaxed">
-          This patient's BBB is disrupted. When she chugs large volumes of reverse-osmosis water — which provides essentially no electrolyte replacement<Cite id={3} /> — she enters a hyponatremic state. Because her BBB is already compromised, this causes <strong>focal cerebral edema</strong> at the vulnerable site. Every brain scan to date was obtained during or shortly after such an episode, meaning <strong>every image reflects the brain in a water-logged state, not a true baseline</strong>.
+          This patient's BBB is disrupted. When she chugs large volumes of reverse-osmosis water — which provides essentially no electrolyte replacement<Cite id={3} /> — she enters a hyponatremic state. Because her BBB is already compromised, she is especially vulnerable to focal cerebral edema at the weak point (as opposed to the diffuse swelling more commonly seen in hyponatremia). Every brain scan to date was obtained during or shortly after such an episode, meaning <strong>every image reflects the brain in a water-logged state, not a true baseline</strong>.
         </p>
       </div>
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">3.1 What disrupted the BBB?</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        This article does <strong>not</strong> claim to know the single cause. Several possibilities are plausible, and they are not mutually exclusive:
+        The exact cause is unknown, and several possibilities are plausible — they are not mutually exclusive:
       </p>
       <ul className="list-disc pl-6 text-sm text-gray-700 leading-relaxed space-y-2 mb-3">
         <li><strong>The tumor itself:</strong> gliomas are well known to disrupt the BBB through abnormal vasculature. If a tumor exists, it creates the focal weak point.</li>
@@ -212,7 +212,7 @@ function Hypothesis() {
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">3.2 What the disrupted BBB means for imaging</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        Regardless of the cause, once the BBB has a focal weak point, hyponatremia does not distribute evenly. Water preferentially accumulates at the compromised site, producing <strong>focal edema that looks like tumor growth on imaging</strong>. This is not theoretical — it is documented:
+        Once the BBB has a focal weak point, hyponatremia does not distribute evenly — water preferentially accumulates at the compromised site, producing <strong>focal edema that looks like tumor growth on imaging</strong>. This is documented:
       </p>
       <ul className="list-disc pl-6 text-sm text-gray-700 leading-relaxed space-y-2 mb-3">
         <li>In the Roci et al. case, a glioblastoma patient with hyponatremia (Na⁺ 116 mmol/L) developed diffuse cerebral swelling that was interpreted as possible tumor progression. After sodium correction alone, the edema <strong>completely resolved</strong>. The authors concluded that hyponatremic encephalopathy should be included in the differential diagnosis of glioma pseudoprogression.<Cite id={1} /></li>
@@ -222,17 +222,17 @@ function Hypothesis() {
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">3.3 This does not mean she has no tumor</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        This hypothesis does not claim the brain mass is not real. It argues that <strong>hyponatremia-induced edema may be materially distorting its apparent size and creating the appearance of progression</strong>. The ~11 mm enhancing nodule interpreted as glioblastoma progression may in fact be a pseudoprogression — a reversible water-handling artifact from a brain scanned while hyponatremic. Additionally, the true margins of any underlying mass may be blurred by surrounding edema, making the tumor look larger than it actually is.
+        We are not claiming the brain mass is not real. The argument is that <strong>hyponatremia-induced edema may be distorting its apparent size and creating the appearance of progression</strong>. The ~11 mm nodule interpreted as glioblastoma progression may be a pseudoprogression — a reversible artifact from a brain scanned while hyponatremic. The true margins of any underlying mass may also be blurred by surrounding edema, making the tumor appear larger than it actually is.
       </p>
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">3.4 Why reverse-osmosis water makes this worse</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        The WHO's expert review on demineralized water warns that very low-TDS water provides essentially no sodium, calcium, or magnesium and may increase urinary electrolyte losses.<Cite id={3} /> In a water-intoxication setting, lower TDS worsens the tendency toward serum sodium decline. This patient is not just chugging large volumes of water — she is chugging water specifically designed to have its minerals stripped out, making each episode more destabilizing than the same volume of tap water would be.
+        The WHO warns that very low-TDS water provides essentially no sodium, calcium, or magnesium and may increase urinary electrolyte losses.<Cite id={3} /> She is not just chugging large volumes of water — she is chugging water specifically designed to have its minerals stripped out, making each episode more destabilizing than the same volume of tap water.
       </p>
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">3.5 Why age matters</h3>
       <p className="text-sm text-gray-700 leading-relaxed">
-        Hyponatremia is especially common and dangerous in older adults. Reduced renal free-water clearance, lower total body water, comorbidity, and medications all narrow the margin for safely clearing large water loads.<Cite id={7} /><Cite id={13} /> A 64-year-old woman rapidly chugging 1-3 liters of demineralized water has less physiologic buffer than a younger person doing the same thing.
+        Older adults have reduced renal free-water clearance and lower total body water, narrowing the margin for safely clearing large water loads.<Cite id={7} /><Cite id={13} /> A 64-year-old rapidly chugging 1-3 liters of demineralized water has significantly less physiologic buffer than a younger person doing the same thing.
       </p>
     </section>
   );
@@ -267,7 +267,7 @@ function KeyEvidence() {
             Twenty-one days after surviving a hemorrhagic stroke, a patient developed new neurologic symptoms. CT showed <strong>new focal cerebral edema and mass effect at the site of the prior hematoma</strong>. Serum Na⁺: 121 mmol/L. No recurrent hemorrhage. After sodium correction, <strong>the edema completely resolved</strong>.
           </p>
           <p className="text-xs text-green-700 font-semibold">
-            Why this matters: This proves that hyponatremia can cause localized, mass-like edema specifically at a pre-existing BBB weak point — and that it reverses. This is the exact mechanism we believe is occurring in our patient.
+            Why this matters: This proves hyponatremia can cause localized, mass-like edema at a pre-existing BBB weak point — and that it reverses. This is the exact mechanism we believe is occurring in our patient, driven by her extreme reverse-osmosis water intake.
           </p>
           <a href="https://www.ccjm.org/content/ccjom/74/5/377.full.pdf" target="_blank" rel="noopener noreferrer" className="text-xs text-green-700 font-semibold hover:underline inline-flex items-center gap-1 mt-2">
             Read full paper (PDF) <ExternalLink className="w-3 h-3" />
@@ -372,7 +372,7 @@ function TheAsk() {
 
       <h3 className="text-sm font-bold text-gray-900 mt-4 mb-2">6.2 The problem with only scanning during acute episodes</h3>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
-        If the clinical team only obtains imaging when the patient is symptomatic — which, in her case, means after she has been chugging water and is in a hyponatremic state — then <strong>every scan will include the edema artifact</strong>. This creates a self-reinforcing diagnostic loop: the patient presents hyponatremic → imaging shows edema → edema is attributed to tumor → no normonatremic scan is ever obtained → the contribution of hyponatremia is never tested.
+        If imaging is only obtained when the patient is symptomatic — which in her case means hyponatremic — then <strong>every scan will include the edema artifact, potentially at varying levels</strong>. This creates a self-reinforcing diagnostic loop: patient presents hyponatremic → imaging shows edema → edema is attributed to tumor → no normonatremic scan is ever obtained → the contribution of hyponatremia is never tested.
       </p>
       <p className="text-sm text-gray-700 leading-relaxed mb-3">
         The published literature is clear that this exact scenario can and does happen. In the Roci et al. glioblastoma case, the treating team initially assumed the clinical and radiographic deterioration was tumor-related. Only after laboratory evaluation revealed severe hyponatremia and sodium correction produced complete resolution did they recognize it as pseudoprogression.<Cite id={1} />
@@ -398,7 +398,7 @@ function TheAsk() {
             </tr>
             <tr className="border-b border-gray-200">
               <td className="p-2.5 font-semibold">3</td>
-              <td className="p-2.5">Repeat MRI with contrast after 4-8 weeks of stable normonatremia.</td>
+              <td className="p-2.5">Repeat MRI with contrast after 2-4 weeks of stable normonatremia.</td>
             </tr>
             <tr>
               <td className="p-2.5 font-semibold">4</td>
@@ -440,7 +440,7 @@ function References() {
 function PageFooter() {
   return (
     <footer className="border-t border-gray-200 pt-6 pb-10 text-center">
-      <p className="text-xs text-gray-400 leading-relaxed mb-2">This is a family-prepared clinical brief, not a peer-reviewed publication. It is intended to raise a specific, testable clinical question for the treating team. This document does not constitute medical advice.</p>
+      <p className="text-xs text-gray-400 leading-relaxed mb-2">This is a family-prepared clinical brief, not a peer-reviewed publication. It raises a specific, testable clinical question for the treating team. This document does not constitute medical advice.</p>
       <p className="text-sm text-gray-700 font-semibold mt-3">Contact: Josh Trembath</p>
       <p className="text-sm text-gray-600">jptrembath@gmail.com &middot; (385) 590-4074</p>
       <div className="flex gap-3 justify-center mt-4 flex-wrap">
